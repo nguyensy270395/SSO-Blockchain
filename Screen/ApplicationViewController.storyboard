@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Application View Controller-->
+        <scene sceneID="5xP-XS-Zww">
+            <objects>
+                <viewController storyboardIdentifier="ApplicationViewController" id="c4t-Zm-1Kr" customClass="ApplicationViewController" customModule="BaseSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rDp-x8-3ws">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zZd-Qx-fni">
+                                <rect key="frame" x="117" y="223" width="180" height="180"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="FyI-Nt-Mzc">
+                                        <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="zZd-Qx-fni" secondAttribute="height" id="3U5-ek-pYI"/>
+                                    <constraint firstAttribute="trailing" secondItem="FyI-Nt-Mzc" secondAttribute="trailing" id="Gep-aX-sfY"/>
+                                    <constraint firstAttribute="bottom" secondItem="FyI-Nt-Mzc" secondAttribute="bottom" id="m1q-mf-oqo"/>
+                                    <constraint firstItem="FyI-Nt-Mzc" firstAttribute="top" secondItem="zZd-Qx-fni" secondAttribute="top" id="mbz-dj-N0i"/>
+                                    <constraint firstItem="FyI-Nt-Mzc" firstAttribute="leading" secondItem="zZd-Qx-fni" secondAttribute="leading" id="u7Q-vR-rZ6"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SSO Blockchain" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbJ-2H-XIw">
+                                <rect key="frame" x="96" y="430" width="222.5" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" red="0.98826557400000004" green="0.9921547771" blue="0.99215692280000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="d73-mQ-xNO"/>
+                        <color key="backgroundColor" red="0.157917738" green="0.20331194999999999" blue="0.25883165000000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="qbJ-2H-XIw" firstAttribute="centerX" secondItem="rDp-x8-3ws" secondAttribute="centerX" id="7V7-fK-uvv"/>
+                            <constraint firstItem="FyI-Nt-Mzc" firstAttribute="width" secondItem="rDp-x8-3ws" secondAttribute="width" multiplier="0.434783" id="ISV-Ve-H00"/>
+                            <constraint firstItem="zZd-Qx-fni" firstAttribute="bottom" secondItem="rDp-x8-3ws" secondAttribute="centerY" multiplier="0.9" id="RS6-KM-4ZX"/>
+                            <constraint firstItem="qbJ-2H-XIw" firstAttribute="centerY" secondItem="rDp-x8-3ws" secondAttribute="centerY" id="Ya8-9D-Q3s"/>
+                            <constraint firstItem="zZd-Qx-fni" firstAttribute="centerX" secondItem="rDp-x8-3ws" secondAttribute="centerX" id="zoX-vq-hDo"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xpw-Jf-cA1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon" width="638" height="638"/>
+    </resources>
+</document>

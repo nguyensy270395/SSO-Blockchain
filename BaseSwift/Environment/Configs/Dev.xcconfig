@@ -1,0 +1,7 @@
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+BASE_URL = http:/$()/gurume.commude-vietnam.com/api/v1
+APP_NAME = SSO_App[DEV]
+ENV = DEBUG
+//BUNDLE_ID =
+//APP_ID =

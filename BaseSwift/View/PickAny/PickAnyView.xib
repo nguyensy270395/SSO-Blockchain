@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NotoSansJP-Bold.otf">
+            <string>NotoSansJP-Bold</string>
+        </array>
+        <array key="NotoSansJP-Regular.otf">
+            <string>NotoSansJP-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PickAnyView" customModule="BaseSwift" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="jxl-Uc-jQu" id="NQt-l7-XX3"/>
+                <outlet property="picker" destination="YPq-ol-jT0" id="K2L-ES-cS9"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="RGi-RB-bJV">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jxl-Uc-jQu">
+                    <rect key="frame" x="0.0" y="596" width="414" height="300"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ge-ee-SwH">
+                            <rect key="frame" x="16" y="0.0" width="47" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="saP-je-7v2"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="NotoSansJP-Regular" family="Noto Sans JP" pointSize="15"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Cancel"/>
+                            <connections>
+                                <action selector="cancel:" destination="-1" eventType="touchUpInside" id="s4h-Ez-jBB"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oeM-1S-Jwc">
+                            <rect key="frame" x="362" y="0.0" width="36" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="lbF-cJ-FTN"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="NotoSansJP-Bold" family="Noto Sans JP" pointSize="15"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Done"/>
+                            <connections>
+                                <action selector="done:" destination="-1" eventType="touchUpInside" id="Cq6-Dh-gtA"/>
+                            </connections>
+                        </button>
+                        <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YPq-ol-jT0">
+                            <rect key="frame" x="0.0" y="50" width="414" height="250"/>
+                        </pickerView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="YPq-ol-jT0" secondAttribute="trailing" id="1O9-jf-n6v"/>
+                        <constraint firstItem="oeM-1S-Jwc" firstAttribute="top" secondItem="jxl-Uc-jQu" secondAttribute="top" id="3BU-kY-KtH"/>
+                        <constraint firstAttribute="bottom" secondItem="YPq-ol-jT0" secondAttribute="bottom" id="AaS-cN-t9j"/>
+                        <constraint firstAttribute="trailing" secondItem="oeM-1S-Jwc" secondAttribute="trailing" constant="16" id="Cn5-Zf-FSa"/>
+                        <constraint firstAttribute="height" constant="300" id="EdH-sn-1iD"/>
+                        <constraint firstItem="5ge-ee-SwH" firstAttribute="top" secondItem="jxl-Uc-jQu" secondAttribute="top" id="I2f-IT-xaO"/>
+                        <constraint firstItem="5ge-ee-SwH" firstAttribute="leading" secondItem="jxl-Uc-jQu" secondAttribute="leading" constant="16" id="XrC-sb-43w"/>
+                        <constraint firstItem="YPq-ol-jT0" firstAttribute="leading" secondItem="jxl-Uc-jQu" secondAttribute="leading" id="ZV8-Pg-kip"/>
+                        <constraint firstItem="YPq-ol-jT0" firstAttribute="top" secondItem="5ge-ee-SwH" secondAttribute="bottom" constant="10" id="l4F-dv-toz"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="w8e-Lh-mo0"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="jxl-Uc-jQu" secondAttribute="bottom" id="C3H-2G-6JQ"/>
+                <constraint firstItem="jxl-Uc-jQu" firstAttribute="leading" secondItem="w8e-Lh-mo0" secondAttribute="leading" id="LMD-Gm-aPT"/>
+                <constraint firstItem="jxl-Uc-jQu" firstAttribute="trailing" secondItem="w8e-Lh-mo0" secondAttribute="trailing" id="dCo-S4-nnB"/>
+            </constraints>
+            <point key="canvasLocation" x="442" y="99"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
