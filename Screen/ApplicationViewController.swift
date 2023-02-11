@@ -20,7 +20,7 @@ class ApplicationViewController: BaseViewController {
             let vc = LoginViewController.instantiate { coder in
                 return LoginViewController(coder: coder)
             }
-//            self.navigationController?.pushViewController(vc, animated: true)
+            self.navigationController?.pushViewController(vc, animated: false)
         }
     }
 }

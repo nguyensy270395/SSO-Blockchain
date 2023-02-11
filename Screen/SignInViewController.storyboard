@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sign In View Controller-->
+        <scene sceneID="fsM-Wq-7sQ">
+            <objects>
+                <viewController storyboardIdentifier="SignInViewController" id="vqu-Fq-3dX" customClass="SignInViewController" customModule="BaseSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9PS-TH-yJc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4ti-Gl-MoN">
+                                <rect key="frame" x="0.0" y="48" width="414" height="814"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MrN-bc-qho">
+                                        <rect key="frame" x="16" y="8" width="36" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="36" id="0Ju-2o-yVz"/>
+                                            <constraint firstAttribute="height" constant="36" id="D0L-jE-t9f"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal">
+                                            <imageReference key="image" image="arrow.left" catalog="system" renderingMode="hierarchical-single">
+                                                <hierarchicalColors>
+                                                    <color name="FCFCFC"/>
+                                                    <color systemColor="secondaryLabelColor"/>
+                                                    <color systemColor="tertiaryLabelColor"/>
+                                                </hierarchicalColors>
+                                            </imageReference>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="bold"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign In" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qBs-jU-gG0">
+                                        <rect key="frame" x="16" y="64" width="99" height="38"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="32"/>
+                                        <color key="textColor" name="FCFCFC"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="qBs-jU-gG0" firstAttribute="top" secondItem="MrN-bc-qho" secondAttribute="bottom" constant="20" id="Evl-Rw-Xlz"/>
+                                    <constraint firstItem="MrN-bc-qho" firstAttribute="leading" secondItem="4ti-Gl-MoN" secondAttribute="leading" constant="16" id="KT7-qh-RYo"/>
+                                    <constraint firstItem="MrN-bc-qho" firstAttribute="top" secondItem="4ti-Gl-MoN" secondAttribute="top" constant="8" id="bLN-z2-4eV"/>
+                                    <constraint firstItem="qBs-jU-gG0" firstAttribute="leading" secondItem="4ti-Gl-MoN" secondAttribute="leading" constant="16" id="j2k-LE-HqS"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ImK-Go-H7r"/>
+                        <color key="backgroundColor" red="0.15686274510000001" green="0.20392156859999999" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="ImK-Go-H7r" firstAttribute="trailing" secondItem="4ti-Gl-MoN" secondAttribute="trailing" id="5nF-tw-RzI"/>
+                            <constraint firstItem="4ti-Gl-MoN" firstAttribute="leading" secondItem="ImK-Go-H7r" secondAttribute="leading" id="NMq-be-sqx"/>
+                            <constraint firstItem="4ti-Gl-MoN" firstAttribute="top" secondItem="ImK-Go-H7r" secondAttribute="top" id="hIi-NR-i2r"/>
+                            <constraint firstItem="ImK-Go-H7r" firstAttribute="bottom" secondItem="4ti-Gl-MoN" secondAttribute="bottom" id="koH-7n-5hf"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kpA-XO-8ID" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="60.9375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.left" catalog="system" width="128" height="95"/>
+        <namedColor name="FCFCFC">
+            <color red="0.98799997568130493" green="0.98799997568130493" blue="0.98799997568130493" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29803921568627451" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
