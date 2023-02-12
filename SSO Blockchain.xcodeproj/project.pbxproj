@@ -85,6 +85,9 @@
 		0293DDD2299543290098FC0D /* Nunito-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0293DDC2299543290098FC0D /* Nunito-Italic.ttf */; };
 		02A2C7802997B7E400316C82 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A2C77F2997B7E400316C82 /* SignInViewController.swift */; };
 		02A2C7822997B7F700316C82 /* SignInViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02A2C7812997B7F700316C82 /* SignInViewController.storyboard */; };
+		02D69DF42998DEDF00F5BBB7 /* UITextField+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D69DF32998DEDF00F5BBB7 /* UITextField+Ex.swift */; };
+		02D69DF6299934DB00F5BBB7 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D69DF5299934DB00F5BBB7 /* SignUpViewController.swift */; };
+		02D69DF8299934E500F5BBB7 /* SignUpViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02D69DF7299934E500F5BBB7 /* SignUpViewController.storyboard */; };
 		8F4658EDF896961459319B6B /* Pods_BaseSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43AFEA3736D1FDAA7A7486C2 /* Pods_BaseSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -169,6 +172,9 @@
 		0293DDC2299543290098FC0D /* Nunito-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Italic.ttf"; sourceTree = "<group>"; };
 		02A2C77F2997B7E400316C82 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		02A2C7812997B7F700316C82 /* SignInViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignInViewController.storyboard; sourceTree = "<group>"; };
+		02D69DF32998DEDF00F5BBB7 /* UITextField+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Ex.swift"; sourceTree = "<group>"; };
+		02D69DF5299934DB00F5BBB7 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		02D69DF7299934E500F5BBB7 /* SignUpViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUpViewController.storyboard; sourceTree = "<group>"; };
 		2A5AF832CCD0CDEC2B45B035 /* Pods-BaseSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseSwift.release.xcconfig"; path = "Target Support Files/Pods-BaseSwift/Pods-BaseSwift.release.xcconfig"; sourceTree = "<group>"; };
 		43AFEA3736D1FDAA7A7486C2 /* Pods_BaseSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaseSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D83524F9FAA0D46C7BBA1F88 /* Pods-BaseSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseSwift.debug.xcconfig"; path = "Target Support Files/Pods-BaseSwift/Pods-BaseSwift.debug.xcconfig"; sourceTree = "<group>"; };
@@ -346,6 +352,7 @@
 				0201FC72289CBC200030CE24 /* Double+extensions.swift */,
 				0201FC73289CBC200030CE24 /* UICollectionView+extensions.swift */,
 				0201FC74289CBC200030CE24 /* UITableView+Extension.swift */,
+				02D69DF32998DEDF00F5BBB7 /* UITextField+Ex.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -471,6 +478,8 @@
 				024A72552992A4270053E369 /* LoginViewController.storyboard */,
 				02A2C77F2997B7E400316C82 /* SignInViewController.swift */,
 				02A2C7812997B7F700316C82 /* SignInViewController.storyboard */,
+				02D69DF5299934DB00F5BBB7 /* SignUpViewController.swift */,
+				02D69DF7299934E500F5BBB7 /* SignUpViewController.storyboard */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -595,6 +604,7 @@
 				0293DDCC299543290098FC0D /* Nunito-SemiBoldItalic.ttf in Resources */,
 				0293DDC5299543290098FC0D /* Nunito-Medium.ttf in Resources */,
 				0293DDC8299543290098FC0D /* Nunito-ExtraBoldItalic.ttf in Resources */,
+				02D69DF8299934E500F5BBB7 /* SignUpViewController.storyboard in Resources */,
 				024A72522992A1B50053E369 /* ApplicationViewController.storyboard in Resources */,
 				0293DDCF299543290098FC0D /* Nunito-LightItalic.ttf in Resources */,
 				0201FCB2289CBC410030CE24 /* Production.xcconfig in Resources */,
@@ -659,10 +669,12 @@
 				0201FC91289CBC200030CE24 /* UITableView+Extension.swift in Sources */,
 				0201FC5B289CBC010030CE24 /* BaseView.swift in Sources */,
 				0201FC53289CBC010030CE24 /* BaseViewController.swift in Sources */,
+				02D69DF6299934DB00F5BBB7 /* SignUpViewController.swift in Sources */,
 				0201FC84289CBC200030CE24 /* UIColor+extensions.swift in Sources */,
 				0201FC8E289CBC200030CE24 /* UITableView+Rx.swift in Sources */,
 				0201FC2F289CB9530030CE24 /* ViewController.swift in Sources */,
 				0201FC57289CBC010030CE24 /* BaseCollectionViewCell.swift in Sources */,
+				02D69DF42998DEDF00F5BBB7 /* UITextField+Ex.swift in Sources */,
 				0201FC87289CBC200030CE24 /* UICollectionViewCell+extensions.swift in Sources */,
 				0201FC8C289CBC200030CE24 /* UIViewController+RxLifeCycle.swift in Sources */,
 				0201FCBB289CC0070030CE24 /* PickAnyView.swift in Sources */,

@@ -50,8 +50,8 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chat bots like GPT are powered by large amounts of data and computing techniques to make predictions to string words together " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hkp-iX-CKe">
-                                                <rect key="frame" x="34" y="101" width="346" height="70"/>
-                                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="17"/>
+                                                <rect key="frame" x="34" y="101" width="346" height="98.5"/>
+                                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -144,7 +144,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="signInButton" destination="j7M-g7-l5n" id="e8s-NA-ttM"/>
                         <outlet property="signInView" destination="B6X-WT-dzS" id="whV-C4-Ngh"/>
+                        <outlet property="signUpButton" destination="d2u-Fb-UFV" id="Ga9-Zp-BHX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

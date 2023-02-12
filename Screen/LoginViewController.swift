@@ -6,6 +6,9 @@
 //
 
 import UIKit
+import RxCocoa
+import RxSwift
+import RxRelay
 
 class LoginViewController: BaseViewController {
 
@@ -14,11 +17,13 @@ class LoginViewController: BaseViewController {
     }
     
     @IBOutlet weak var signInView: UIView!
+    @IBOutlet weak var signInButton: UIButton!
+    @IBOutlet weak var signUpButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setupAnimation()
-
+        setupRx()
     }
     func setupAnimation() {
         UIView.animate(withDuration: 1,
@@ -29,5 +34,14 @@ class LoginViewController: BaseViewController {
                        animations: {
             self.signInView.center.y = 0
                 }, completion: nil)
+    }
+    func setupRx() {
+        signInButton.rx.tap.subscribe(onNext: {[weak self] _ in
+            let vc = SignInViewController.instantiate { coder in
+                return SignInViewController(coder: coder)
+            }
+            vc.modalPresentationStyle = .fullScreen
+            self?.present(vc, animated: true)
+        }).disposed(by: disposeBag)
     }
 }
