@@ -84,9 +84,6 @@
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0tm-bC-xeR">
                                                 <rect key="frame" x="32" y="146" width="350" height="56"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="56" id="75p-wZ-hhN"/>
-                                                </constraints>
                                                 <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits" textContentType="password"/>
                                                 <userDefinedRuntimeAttributes>
@@ -108,7 +105,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kgQ-bQ-B0c">
-                                                <rect key="frame" x="77" y="300" width="260" height="56"/>
+                                                <rect key="frame" x="77" y="360" width="260" height="56"/>
                                                 <color key="backgroundColor" name="283442"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="56" id="3tA-hD-jPm"/>
@@ -125,11 +122,8 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </button>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hPf-Pj-JRS">
-                                                <rect key="frame" x="-21" y="228" width="350" height="56"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="56" id="eUd-Ou-Vfe"/>
-                                                </constraints>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hPf-Pj-JRS">
+                                                <rect key="frame" x="32" y="232" width="350" height="56"/>
                                                 <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits" textContentType="password"/>
                                                 <userDefinedRuntimeAttributes>
@@ -154,11 +148,15 @@
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="0tm-bC-xeR" firstAttribute="top" secondItem="cPc-4p-1K6" secondAttribute="bottom" constant="30" id="1GB-TY-IpQ"/>
+                                            <constraint firstItem="hPf-Pj-JRS" firstAttribute="centerX" secondItem="peY-UK-dhM" secondAttribute="centerX" id="3Zt-NV-E1x"/>
                                             <constraint firstItem="cPc-4p-1K6" firstAttribute="leading" secondItem="peY-UK-dhM" secondAttribute="leading" constant="32" id="6tH-oz-vv9"/>
                                             <constraint firstItem="0tm-bC-xeR" firstAttribute="height" secondItem="cPc-4p-1K6" secondAttribute="height" id="G3I-0I-BdE"/>
+                                            <constraint firstItem="hPf-Pj-JRS" firstAttribute="width" secondItem="cPc-4p-1K6" secondAttribute="width" id="amQ-OE-DCw"/>
                                             <constraint firstItem="cPc-4p-1K6" firstAttribute="top" secondItem="peY-UK-dhM" secondAttribute="top" constant="60" id="gJF-Ys-gKW"/>
+                                            <constraint firstItem="hPf-Pj-JRS" firstAttribute="height" secondItem="cPc-4p-1K6" secondAttribute="height" id="gmi-rg-sZQ"/>
                                             <constraint firstItem="kgQ-bQ-B0c" firstAttribute="centerX" secondItem="peY-UK-dhM" secondAttribute="centerX" id="hwg-1y-lAL"/>
-                                            <constraint firstItem="kgQ-bQ-B0c" firstAttribute="top" secondItem="0tm-bC-xeR" secondAttribute="bottom" constant="98" id="lrE-3M-flo"/>
+                                            <constraint firstItem="hPf-Pj-JRS" firstAttribute="top" secondItem="0tm-bC-xeR" secondAttribute="bottom" constant="30" id="jWk-eF-3sb"/>
+                                            <constraint firstItem="kgQ-bQ-B0c" firstAttribute="top" secondItem="0tm-bC-xeR" secondAttribute="bottom" constant="158" id="lrE-3M-flo"/>
                                             <constraint firstItem="cPc-4p-1K6" firstAttribute="centerX" secondItem="peY-UK-dhM" secondAttribute="centerX" id="nfS-WS-3mY"/>
                                             <constraint firstItem="0tm-bC-xeR" firstAttribute="centerX" secondItem="cPc-4p-1K6" secondAttribute="centerX" id="qo2-1o-kZ1"/>
                                             <constraint firstItem="0tm-bC-xeR" firstAttribute="width" secondItem="cPc-4p-1K6" secondAttribute="width" id="slP-mj-DMa"/>
