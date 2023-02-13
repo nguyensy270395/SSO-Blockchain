@@ -160,12 +160,22 @@
                                         <color key="textColor" name="FCFCFC"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="daF-Zb-9hU">
+                                        <rect key="frame" x="328" y="51.5" width="70" height="37"/>
+                                        <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="18"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Register">
+                                            <color key="titleColor" name="FCFCFC"/>
+                                        </state>
+                                    </button>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="daF-Zb-9hU" firstAttribute="centerY" secondItem="MrN-bc-qho" secondAttribute="centerY" id="1ys-yC-5Gl"/>
                                     <constraint firstItem="mZm-vo-S23" firstAttribute="top" relation="lessThanOrEqual" secondItem="pOP-w8-aA3" secondAttribute="bottom" constant="79" id="3dL-tm-ndm"/>
                                     <constraint firstItem="mZm-vo-S23" firstAttribute="top" secondItem="4ti-Gl-MoN" secondAttribute="centerY" multiplier="0.68" id="BBP-ap-Faj"/>
                                     <constraint firstItem="qBs-jU-gG0" firstAttribute="top" secondItem="MrN-bc-qho" secondAttribute="bottom" constant="20" id="Evl-Rw-Xlz"/>
                                     <constraint firstItem="MrN-bc-qho" firstAttribute="leading" secondItem="4ti-Gl-MoN" secondAttribute="leading" constant="16" id="KT7-qh-RYo"/>
+                                    <constraint firstAttribute="trailing" secondItem="daF-Zb-9hU" secondAttribute="trailing" constant="16" id="XAO-uc-SVr"/>
                                     <constraint firstItem="mZm-vo-S23" firstAttribute="leading" secondItem="4ti-Gl-MoN" secondAttribute="leading" id="YS9-D2-beH"/>
                                     <constraint firstItem="MrN-bc-qho" firstAttribute="top" secondItem="4ti-Gl-MoN" secondAttribute="top" constant="52" id="bLN-z2-4eV"/>
                                     <constraint firstAttribute="bottom" secondItem="mZm-vo-S23" secondAttribute="bottom" id="crp-pQ-1dB"/>
@@ -188,7 +198,10 @@
                     </view>
                     <connections>
                         <outlet property="backButton" destination="MrN-bc-qho" id="TDJ-2h-dtY"/>
+                        <outlet property="forgotPassButton" destination="hpp-b4-Kov" id="DbL-d6-HVL"/>
+                        <outlet property="loginButton" destination="V0Z-sX-lmM" id="QrP-xx-ENY"/>
                         <outlet property="passWordText" destination="6KP-an-rcN" id="uJ8-ZZ-ckz"/>
+                        <outlet property="registerButton" destination="daF-Zb-9hU" id="920-3E-9Nf"/>
                         <outlet property="userNameText" destination="zRj-gC-KhC" id="xpK-2y-aIm"/>
                     </connections>
                 </viewController>

@@ -25,6 +25,7 @@ class LoginViewController: BaseViewController {
         setupAnimation()
         setupRx()
     }
+
     func setupAnimation() {
         UIView.animate(withDuration: 1,
                        delay: 0.5,
@@ -35,13 +36,26 @@ class LoginViewController: BaseViewController {
             self.signInView.center.y = 0
                 }, completion: nil)
     }
+
     func setupRx() {
         signInButton.rx.tap.subscribe(onNext: {[weak self] _ in
             let vc = SignInViewController.instantiate { coder in
                 return SignInViewController(coder: coder)
             }
-            vc.modalPresentationStyle = .fullScreen
-            self?.present(vc, animated: true)
+            let nav = BaseNavigationViewController(rootViewController: vc)
+            nav.modalPresentationStyle = .fullScreen
+            self?.present(nav, animated: true)
         }).disposed(by: disposeBag)
+
+        signUpButton.rx.tap.subscribe(onNext: {[weak self] _ in
+            let vc = SignUpViewController.instantiate { coder in
+                return SignUpViewController(coder: coder)
+            }
+            vc.present.toggle()
+            let nav = BaseNavigationViewController(rootViewController: vc)
+            nav.modalPresentationStyle = .fullScreen
+            self?.present(nav, animated: true)
+        }).disposed(by: disposeBag)
+
     }
 }

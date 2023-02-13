@@ -19,10 +19,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Sign Up View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUpViewController" id="Y6W-OH-hqX" customClass="SignUpViewController" customModule="BaseSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -111,9 +111,9 @@
                                                     <constraint firstAttribute="height" constant="56" id="3tA-hD-jPm"/>
                                                     <constraint firstAttribute="width" constant="260" id="6tY-a0-gAz"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="18"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" title="Login">
+                                                <state key="normal" title="Register">
                                                     <color key="titleColor" name="FCFCFC"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -199,6 +199,13 @@
                             <constraint firstAttribute="bottom" secondItem="LlK-4J-YV1" secondAttribute="bottom" id="wjs-7d-XsN"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="backButton" destination="w7L-Zu-wnR" id="9H0-P2-YR3"/>
+                        <outlet property="passWordText" destination="0tm-bC-xeR" id="s9B-MQ-t2L"/>
+                        <outlet property="rePassWordText" destination="hPf-Pj-JRS" id="raB-kG-4GT"/>
+                        <outlet property="registerButton" destination="kgQ-bQ-B0c" id="zJt-U1-s7C"/>
+                        <outlet property="userNameText" destination="cPc-4p-1K6" id="jTp-MA-zdp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

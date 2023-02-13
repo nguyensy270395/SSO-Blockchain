@@ -6,24 +6,40 @@
 //
 
 import UIKit
+import RxCocoa
+import RxSwift
+import RxRelay
 
-class SignUpViewController: UIViewController {
+class SignUpViewController: BaseViewController {
+
+    @IBOutlet weak var backButton: UIButton!
+    @IBOutlet weak var userNameText: UITextField!
+    @IBOutlet weak var passWordText: UITextField!
+    @IBOutlet weak var rePassWordText: UITextField!
+    @IBOutlet weak var registerButton: UIButton!
+
+    var present: Bool = true
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setupRx()
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func setupRx() {
+        backButton.rx.tap.subscribe(onNext: { [weak self] _ in
+            guard let self = self else { return }
+            if self.present {
+                self.navigationController?.popViewController(animated: true)
+            } else {
+                self.dismiss(animated: true)
+            }
+        }).disposed(by: disposeBag)
+        
+        registerButton.rx.tap.subscribe(onNext: { [weak self] _ in
+            //TODO: register
+        }).disposed(by: disposeBag)
     }
-    */
-
 }
