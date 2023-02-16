@@ -83,8 +83,14 @@
 		0293DDD0299543290098FC0D /* Nunito-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0293DDC0299543290098FC0D /* Nunito-BlackItalic.ttf */; };
 		0293DDD1299543290098FC0D /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0293DDC1299543290098FC0D /* Nunito-Bold.ttf */; };
 		0293DDD2299543290098FC0D /* Nunito-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0293DDC2299543290098FC0D /* Nunito-Italic.ttf */; };
+		029432D8299E7DD000DA0C94 /* AuthCodeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029432D6299E7DD000DA0C94 /* AuthCodeTableViewCell.swift */; };
+		029432D9299E7DD000DA0C94 /* AuthCodeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 029432D7299E7DD000DA0C94 /* AuthCodeTableViewCell.xib */; };
 		02A2C7802997B7E400316C82 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A2C77F2997B7E400316C82 /* SignInViewController.swift */; };
 		02A2C7822997B7F700316C82 /* SignInViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02A2C7812997B7F700316C82 /* SignInViewController.storyboard */; };
+		02A972B1299D285E0021229C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A972B0299D285E0021229C /* HomeViewController.swift */; };
+		02A972B3299D286A0021229C /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02A972B2299D286A0021229C /* HomeViewController.storyboard */; };
+		02A972B6299D2B7D0021229C /* MainTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A972B5299D2B7D0021229C /* MainTabbarViewController.swift */; };
+		02A972B8299D2DB30021229C /* MainTabbarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A972B7299D2DB30021229C /* MainTabbarViewModel.swift */; };
 		02D69DF42998DEDF00F5BBB7 /* UITextField+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D69DF32998DEDF00F5BBB7 /* UITextField+Ex.swift */; };
 		02D69DF6299934DB00F5BBB7 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D69DF5299934DB00F5BBB7 /* SignUpViewController.swift */; };
 		02D69DF8299934E500F5BBB7 /* SignUpViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02D69DF7299934E500F5BBB7 /* SignUpViewController.storyboard */; };
@@ -170,8 +176,14 @@
 		0293DDC0299543290098FC0D /* Nunito-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-BlackItalic.ttf"; sourceTree = "<group>"; };
 		0293DDC1299543290098FC0D /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Bold.ttf"; sourceTree = "<group>"; };
 		0293DDC2299543290098FC0D /* Nunito-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Italic.ttf"; sourceTree = "<group>"; };
+		029432D6299E7DD000DA0C94 /* AuthCodeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCodeTableViewCell.swift; sourceTree = "<group>"; };
+		029432D7299E7DD000DA0C94 /* AuthCodeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthCodeTableViewCell.xib; sourceTree = "<group>"; };
 		02A2C77F2997B7E400316C82 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		02A2C7812997B7F700316C82 /* SignInViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignInViewController.storyboard; sourceTree = "<group>"; };
+		02A972B0299D285E0021229C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		02A972B2299D286A0021229C /* HomeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeViewController.storyboard; sourceTree = "<group>"; };
+		02A972B5299D2B7D0021229C /* MainTabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbarViewController.swift; sourceTree = "<group>"; };
+		02A972B7299D2DB30021229C /* MainTabbarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbarViewModel.swift; sourceTree = "<group>"; };
 		02D69DF32998DEDF00F5BBB7 /* UITextField+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Ex.swift"; sourceTree = "<group>"; };
 		02D69DF5299934DB00F5BBB7 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		02D69DF7299934E500F5BBB7 /* SignUpViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUpViewController.storyboard; sourceTree = "<group>"; };
@@ -474,12 +486,10 @@
 			children = (
 				024A724F2992A1A20053E369 /* ApplicationViewController.swift */,
 				024A72512992A1B50053E369 /* ApplicationViewController.storyboard */,
-				024A72532992A4140053E369 /* LoginViewController.swift */,
-				024A72552992A4270053E369 /* LoginViewController.storyboard */,
-				02A2C77F2997B7E400316C82 /* SignInViewController.swift */,
-				02A2C7812997B7F700316C82 /* SignInViewController.storyboard */,
-				02D69DF5299934DB00F5BBB7 /* SignUpViewController.swift */,
-				02D69DF7299934E500F5BBB7 /* SignUpViewController.storyboard */,
+				02A972B4299D297C0021229C /* Login */,
+				02A972AF299D282A0021229C /* Home */,
+				02A972B5299D2B7D0021229C /* MainTabbarViewController.swift */,
+				02A972B7299D2DB30021229C /* MainTabbarViewModel.swift */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -505,6 +515,38 @@
 				0293DDBC299543280098FC0D /* Nunito-SemiBoldItalic.ttf */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		029432D5299E799500DA0C94 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				029432D6299E7DD000DA0C94 /* AuthCodeTableViewCell.swift */,
+				029432D7299E7DD000DA0C94 /* AuthCodeTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		02A972AF299D282A0021229C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				029432D5299E799500DA0C94 /* Cell */,
+				02A972B0299D285E0021229C /* HomeViewController.swift */,
+				02A972B2299D286A0021229C /* HomeViewController.storyboard */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		02A972B4299D297C0021229C /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				024A72532992A4140053E369 /* LoginViewController.swift */,
+				024A72552992A4270053E369 /* LoginViewController.storyboard */,
+				02A2C77F2997B7E400316C82 /* SignInViewController.swift */,
+				02A2C7812997B7F700316C82 /* SignInViewController.storyboard */,
+				02D69DF5299934DB00F5BBB7 /* SignUpViewController.swift */,
+				02D69DF7299934E500F5BBB7 /* SignUpViewController.storyboard */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		07D4BA70527F4DA21BAC61D4 /* Pods */ = {
@@ -600,6 +642,8 @@
 				0201FCBC289CC0070030CE24 /* PickAnyView.xib in Resources */,
 				0201FCB1289CBC410030CE24 /* Staging.xcconfig in Resources */,
 				0293DDCD299543290098FC0D /* Nunito-ExtraLightItalic.ttf in Resources */,
+				02A972B3299D286A0021229C /* HomeViewController.storyboard in Resources */,
+				029432D9299E7DD000DA0C94 /* AuthCodeTableViewCell.xib in Resources */,
 				0201FC32289CB9530030CE24 /* Main.storyboard in Resources */,
 				0293DDCC299543290098FC0D /* Nunito-SemiBoldItalic.ttf in Resources */,
 				0293DDC5299543290098FC0D /* Nunito-Medium.ttf in Resources */,
@@ -680,6 +724,7 @@
 				0201FCBB289CC0070030CE24 /* PickAnyView.swift in Sources */,
 				0201FC52289CBC010030CE24 /* BaseViewModel.swift in Sources */,
 				0201FC93289CBC200030CE24 /* AlertManager.swift in Sources */,
+				02A972B6299D2B7D0021229C /* MainTabbarViewController.swift in Sources */,
 				0201FC86289CBC200030CE24 /* RX+Extension.swift in Sources */,
 				0201FC90289CBC200030CE24 /* UICollectionView+extensions.swift in Sources */,
 				0201FCA7289CBC2C0030CE24 /* Storage.swift in Sources */,
@@ -690,6 +735,7 @@
 				0201FCA2289CBC2C0030CE24 /* ApiRequest+Login+extension.swift in Sources */,
 				0201FC7C289CBC200030CE24 /* UIApplication+Extension.swift in Sources */,
 				0201FC7E289CBC200030CE24 /* UIViewController+Storyboard.swift in Sources */,
+				029432D8299E7DD000DA0C94 /* AuthCodeTableViewCell.swift in Sources */,
 				0201FCB0289CBC410030CE24 /* EnvirontmentConfigs.swift in Sources */,
 				0201FC94289CBC200030CE24 /* NotificationName.swift in Sources */,
 				0201FC8B289CBC200030CE24 /* UIScrollView+Extension.swift in Sources */,
@@ -698,11 +744,13 @@
 				024A72542992A4140053E369 /* LoginViewController.swift in Sources */,
 				0201FC59289CBC010030CE24 /* BaseTableViewCell.swift in Sources */,
 				0201FC80289CBC200030CE24 /* UIView+Constrain+Extension.swift in Sources */,
+				02A972B8299D2DB30021229C /* MainTabbarViewModel.swift in Sources */,
 				0201FC8A289CBC200030CE24 /* AppDelegate+extensions.swift in Sources */,
 				0201FC54289CBC010030CE24 /* BaseNavigationViewController.swift in Sources */,
 				0201FCA3289CBC2C0030CE24 /* APIErrors.swift in Sources */,
 				0201FC8F289CBC200030CE24 /* Double+extensions.swift in Sources */,
 				0201FCA5289CBC2C0030CE24 /* ApiInput.swift in Sources */,
+				02A972B1299D285E0021229C /* HomeViewController.swift in Sources */,
 				0201FC83289CBC200030CE24 /* UIFont+extensions.swift in Sources */,
 				0201FC85289CBC200030CE24 /* UIView+extentions.swift in Sources */,
 				0201FCB7289CBE1C0030CE24 /* AppDelegate.swift in Sources */,

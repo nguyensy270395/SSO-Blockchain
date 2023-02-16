@@ -88,7 +88,7 @@
                                                     <constraint firstAttribute="height" constant="56" id="YuJ-18-qzV"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="18"/>
-                                                <textInputTraits key="textInputTraits" textContentType="password"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="16"/>
@@ -107,24 +107,36 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V0Z-sX-lmM">
-                                                <rect key="frame" x="77" y="300" width="260" height="56"/>
-                                                <color key="backgroundColor" name="283442"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="260" id="Vun-Ko-qeX"/>
-                                                    <constraint firstAttribute="height" constant="56" id="xcK-fe-27w"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" title="Login">
-                                                    <color key="titleColor" name="FCFCFC"/>
-                                                </state>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <real key="value" value="28"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="fKt-ys-osu">
+                                                <rect key="frame" x="32" y="300" width="350" height="56"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V0Z-sX-lmM">
+                                                        <rect key="frame" x="0.0" y="0.0" width="274" height="56"/>
+                                                        <color key="backgroundColor" name="283442"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="56" id="xcK-fe-27w"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Login">
+                                                            <color key="titleColor" name="FCFCFC"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="28"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VAG-po-CBc">
+                                                        <rect key="frame" x="294" y="0.0" width="56" height="56"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="VAG-po-CBc" secondAttribute="height" multiplier="1:1" id="tPI-zN-3tE"/>
+                                                        </constraints>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="iconFinger"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hpp-b4-Kov">
                                                 <rect key="frame" x="260" y="218" width="122" height="30"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
@@ -136,17 +148,18 @@
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
+                                            <constraint firstItem="fKt-ys-osu" firstAttribute="centerX" secondItem="mZm-vo-S23" secondAttribute="centerX" id="66X-X9-a2L"/>
                                             <constraint firstItem="6KP-an-rcN" firstAttribute="width" secondItem="zRj-gC-KhC" secondAttribute="width" id="J0c-B2-rxf"/>
                                             <constraint firstItem="zRj-gC-KhC" firstAttribute="leading" secondItem="mZm-vo-S23" secondAttribute="leading" constant="32" id="Mgq-jJ-7RR"/>
                                             <constraint firstItem="6KP-an-rcN" firstAttribute="centerX" secondItem="zRj-gC-KhC" secondAttribute="centerX" id="N2c-t6-BRr"/>
+                                            <constraint firstItem="fKt-ys-osu" firstAttribute="leading" secondItem="mZm-vo-S23" secondAttribute="leading" constant="32" id="PFe-xo-kPQ"/>
                                             <constraint firstItem="hpp-b4-Kov" firstAttribute="trailing" secondItem="6KP-an-rcN" secondAttribute="trailing" id="RF6-kq-wC2"/>
-                                            <constraint firstItem="V0Z-sX-lmM" firstAttribute="centerX" secondItem="mZm-vo-S23" secondAttribute="centerX" id="TFW-b1-6sU"/>
                                             <constraint firstItem="6KP-an-rcN" firstAttribute="height" secondItem="zRj-gC-KhC" secondAttribute="height" id="YGH-MC-58q"/>
                                             <constraint firstItem="hpp-b4-Kov" firstAttribute="top" secondItem="6KP-an-rcN" secondAttribute="bottom" constant="16" id="dp8-nO-CbC"/>
                                             <constraint firstItem="zRj-gC-KhC" firstAttribute="centerX" secondItem="mZm-vo-S23" secondAttribute="centerX" id="hC0-dc-qYs"/>
                                             <constraint firstItem="6KP-an-rcN" firstAttribute="top" secondItem="zRj-gC-KhC" secondAttribute="bottom" constant="30" id="mcZ-u3-cdA"/>
+                                            <constraint firstItem="fKt-ys-osu" firstAttribute="top" secondItem="hpp-b4-Kov" secondAttribute="bottom" constant="52" id="mhV-hE-Tn7"/>
                                             <constraint firstItem="zRj-gC-KhC" firstAttribute="top" secondItem="mZm-vo-S23" secondAttribute="top" constant="60" id="nJE-in-zIf"/>
-                                            <constraint firstItem="V0Z-sX-lmM" firstAttribute="top" secondItem="6KP-an-rcN" secondAttribute="bottom" constant="98" id="tSQ-Pd-dQe"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -212,6 +225,7 @@
     </scenes>
     <resources>
         <image name="arrow.left" catalog="system" width="128" height="95"/>
+        <image name="iconFinger" width="100" height="100"/>
         <namedColor name="283442">
             <color red="0.15700000524520874" green="0.20399999618530273" blue="0.25900000333786011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

@@ -17,7 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         IQKeyboardManager.shared().shouldResignOnTouchOutside = true
         window = UIWindow()
         appNavigator = AppNavigator(window: window)
-        appNavigator?.start()
+//        appNavigator?.start()
+        appNavigator?.switchTo(viewController: MainTabbarViewController(viewModel: .init()))
         return true
     }
     
