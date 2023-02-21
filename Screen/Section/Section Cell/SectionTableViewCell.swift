@@ -1,13 +1,13 @@
 //
-//  AuthCodeTableViewCell.swift
+//  SectionTableViewCell.swift
 //  BaseSwift
 //
-//  Created by Nguyễn Thanh Sỹ on 16/02/2023.
+//  Created by Nguyễn Thanh Sỹ on 21/02/2023.
 //
 
 import UIKit
 
-class AuthCodeTableViewCell: UITableViewCell {
+class SectionTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()

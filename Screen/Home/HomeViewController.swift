@@ -9,25 +9,37 @@ import UIKit
 
 class HomeViewController: BaseViewController {
 
+    @IBOutlet weak var accountTableView: UITableView!
+
     required init?(coder: NSCoder) {
         super.init(coder: coder)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setupViews()
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func setupViews() {
+        setupTableView()
     }
-    */
 
+    func setupTableView() {
+        accountTableView.delegate = self
+        accountTableView.dataSource = self
+        accountTableView.registerNib(AuthCodeTableViewCell.self)
+        accountTableView.contentInset = UIEdgeInsets(top: 16, left: 0, bottom: 16, right: 0)
+    }
+}
+
+extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(AuthCodeTableViewCell.self, for: indexPath)
+        cell.contentView.backgroundColor = .clear
+        return cell
+    }
 }
