@@ -71,6 +71,7 @@
 		024A72522992A1B50053E369 /* ApplicationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 024A72512992A1B50053E369 /* ApplicationViewController.storyboard */; };
 		024A72542992A4140053E369 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024A72532992A4140053E369 /* LoginViewController.swift */; };
 		024A72562992A4270053E369 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 024A72552992A4270053E369 /* LoginViewController.storyboard */; };
+		02752A0429A90880008DBF77 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02752A0329A90880008DBF77 /* R.generated.swift */; };
 		0293DDC3299543290098FC0D /* Nunito-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0293DDB3299543270098FC0D /* Nunito-ExtraLight.ttf */; };
 		0293DDC4299543290098FC0D /* Nunito-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0293DDB4299543270098FC0D /* Nunito-Light.ttf */; };
 		0293DDC5299543290098FC0D /* Nunito-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0293DDB5299543270098FC0D /* Nunito-Medium.ttf */; };
@@ -168,6 +169,7 @@
 		024A72512992A1B50053E369 /* ApplicationViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ApplicationViewController.storyboard; sourceTree = "<group>"; };
 		024A72532992A4140053E369 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		024A72552992A4270053E369 /* LoginViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
+		02752A0329A90880008DBF77 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		0293DDB3299543270098FC0D /* Nunito-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraLight.ttf"; sourceTree = "<group>"; };
 		0293DDB4299543270098FC0D /* Nunito-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Light.ttf"; sourceTree = "<group>"; };
 		0293DDB5299543270098FC0D /* Nunito-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Medium.ttf"; sourceTree = "<group>"; };
@@ -215,6 +217,7 @@
 		0201FC1E289CB9530030CE24 = {
 			isa = PBXGroup;
 			children = (
+				02752A0329A90880008DBF77 /* R.generated.swift */,
 				024A723A299264C90053E369 /* Screen */,
 				0201FC29289CB9530030CE24 /* BaseSwift */,
 				0201FC28289CB9530030CE24 /* Products */,
@@ -602,6 +605,7 @@
 			buildConfigurationList = 0201FC3B289CB9540030CE24 /* Build configuration list for PBXNativeTarget "BaseSwift" */;
 			buildPhases = (
 				F6F4F351CA6C3576B4054E0B /* [CP] Check Pods Manifest.lock */,
+				02752A0229A90763008DBF77 /* ShellScript */,
 				0201FC23289CB9530030CE24 /* Sources */,
 				0201FC24289CB9530030CE24 /* Frameworks */,
 				0201FC25289CB9530030CE24 /* Resources */,
@@ -691,6 +695,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		02752A0229A90763008DBF77 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
 		7920BB6527B85D173FF6318B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -763,6 +786,7 @@
 				024A72502992A1A20053E369 /* ApplicationViewController.swift in Sources */,
 				0201FC95289CBC200030CE24 /* Consts.swift in Sources */,
 				0201FC92289CBC200030CE24 /* FileManager.swift in Sources */,
+				02752A0429A90880008DBF77 /* R.generated.swift in Sources */,
 				0201FCA2289CBC2C0030CE24 /* ApiRequest+Login+extension.swift in Sources */,
 				0201FC7C289CBC200030CE24 /* UIApplication+Extension.swift in Sources */,
 				0201FC7E289CBC200030CE24 /* UIViewController+Storyboard.swift in Sources */,

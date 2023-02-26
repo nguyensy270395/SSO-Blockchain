@@ -108,7 +108,9 @@ enum TabbarItem: Int, CaseIterable {
             }
             return BaseNavigationViewController(rootViewController: vc)
         case .section:
-            let vc = UIViewController()
+            let vc = SectionViewController.instantiate { coder in
+                return SectionViewController(coder: coder)
+            }
             return BaseNavigationViewController(rootViewController: vc)
         case .qr:
             let vc = UIViewController()
