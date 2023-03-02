@@ -29,6 +29,8 @@ target 'BaseSwift' do
   pod 'RealmSwift','10.15.1'
   ##Keyboard
   pod 'IQKeyboardManager'
+  ##SnapKit
+  pod 'SnapKit', '~> 5.6.0'
 end
 post_install do |installer|
   installer.pods_project.targets.each do |target|

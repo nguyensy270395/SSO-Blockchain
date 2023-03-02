@@ -28,7 +28,7 @@ class HomeViewController: BaseViewController {
         accountTableView.delegate = self
         accountTableView.dataSource = self
         accountTableView.registerNib(AuthCodeTableViewCell.self)
-        accountTableView.contentInset = UIEdgeInsets(top: 16, left: 0, bottom: 16, right: 0)
+        accountTableView.contentInset = UIEdgeInsets(top: 24, left: 0, bottom: 24, right: 0)
     }
 }
 

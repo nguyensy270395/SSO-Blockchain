@@ -7,6 +7,7 @@
 
 import UIKit
 import Rswift
+import SnapKit
 
 class SectionViewController: BaseViewController {
 
@@ -29,18 +30,20 @@ class SectionViewController: BaseViewController {
         sectionTableView.delegate = self
         sectionTableView.dataSource = self
         sectionTableView.registerNib(SectionTableViewCell.self)
-        sectionTableView.contentInset = UIEdgeInsets(top: 16, left: 0, bottom: 16, right: 0)
+        sectionTableView.registerHeaderFooterNib(SectionHeaderView.self)
+        sectionTableView.tableFooterView = nil
     }
 }
 
 extension SectionViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return 10
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(SectionTableViewCell.self, for: indexPath)
-        cell.setupCell(activeCell: indexPath.row % 2 == 0)
+        cell.setupCell(activeCell: indexPath.row % 3 == 0)
+
         cell.contentView.backgroundColor = .clear
         return cell
     }
@@ -50,13 +53,11 @@ extension SectionViewController: UITableViewDataSource, UITableViewDelegate {
     }
 
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let headerView = UIView()
-        let label = UILabel()
-        label.text = "Section"
-        label.textColor = .black
-        label.font = R.font.nunitoBold(size: 21)
-        headerView.addSubview(label)
-        label.snp
-        return headerView
+        let header = tableView.dequeueHeaderFooter(withType: SectionHeaderView.self)
+        return header
+    }
+
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 52
     }
 }

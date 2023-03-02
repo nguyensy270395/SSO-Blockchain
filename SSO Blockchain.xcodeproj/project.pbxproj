@@ -71,6 +71,8 @@
 		024A72522992A1B50053E369 /* ApplicationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 024A72512992A1B50053E369 /* ApplicationViewController.storyboard */; };
 		024A72542992A4140053E369 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024A72532992A4140053E369 /* LoginViewController.swift */; };
 		024A72562992A4270053E369 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 024A72552992A4270053E369 /* LoginViewController.storyboard */; };
+		025C8D9829AB039900D97D9B /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025C8D9729AB039900D97D9B /* SectionHeaderView.swift */; };
+		025C8D9A29AB03E400D97D9B /* SectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 025C8D9929AB03E400D97D9B /* SectionHeaderView.xib */; };
 		02752A0429A90880008DBF77 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02752A0329A90880008DBF77 /* R.generated.swift */; };
 		0293DDC3299543290098FC0D /* Nunito-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0293DDB3299543270098FC0D /* Nunito-ExtraLight.ttf */; };
 		0293DDC4299543290098FC0D /* Nunito-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0293DDB4299543270098FC0D /* Nunito-Light.ttf */; };
@@ -99,6 +101,10 @@
 		02D69DF42998DEDF00F5BBB7 /* UITextField+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D69DF32998DEDF00F5BBB7 /* UITextField+Ex.swift */; };
 		02D69DF6299934DB00F5BBB7 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D69DF5299934DB00F5BBB7 /* SignUpViewController.swift */; };
 		02D69DF8299934E500F5BBB7 /* SignUpViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02D69DF7299934E500F5BBB7 /* SignUpViewController.storyboard */; };
+		02E8DE9C29ACFA6D009B1A47 /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E8DE9B29ACFA6D009B1A47 /* QRViewController.swift */; };
+		02E8DE9E29ACFA7E009B1A47 /* QRViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02E8DE9D29ACFA7E009B1A47 /* QRViewController.storyboard */; };
+		02FBFBB629AE5CC800A70CDD /* QRScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FBFBB529AE5CC800A70CDD /* QRScanView.swift */; };
+		02FBFBB829AE5CDC00A70CDD /* QRScanView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02FBFBB729AE5CDC00A70CDD /* QRScanView.xib */; };
 		8F4658EDF896961459319B6B /* Pods_BaseSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43AFEA3736D1FDAA7A7486C2 /* Pods_BaseSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -169,6 +175,8 @@
 		024A72512992A1B50053E369 /* ApplicationViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ApplicationViewController.storyboard; sourceTree = "<group>"; };
 		024A72532992A4140053E369 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		024A72552992A4270053E369 /* LoginViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
+		025C8D9729AB039900D97D9B /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
+		025C8D9929AB03E400D97D9B /* SectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionHeaderView.xib; sourceTree = "<group>"; };
 		02752A0329A90880008DBF77 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		0293DDB3299543270098FC0D /* Nunito-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraLight.ttf"; sourceTree = "<group>"; };
 		0293DDB4299543270098FC0D /* Nunito-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Light.ttf"; sourceTree = "<group>"; };
@@ -197,6 +205,10 @@
 		02D69DF32998DEDF00F5BBB7 /* UITextField+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Ex.swift"; sourceTree = "<group>"; };
 		02D69DF5299934DB00F5BBB7 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		02D69DF7299934E500F5BBB7 /* SignUpViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUpViewController.storyboard; sourceTree = "<group>"; };
+		02E8DE9B29ACFA6D009B1A47 /* QRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
+		02E8DE9D29ACFA7E009B1A47 /* QRViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QRViewController.storyboard; sourceTree = "<group>"; };
+		02FBFBB529AE5CC800A70CDD /* QRScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScanView.swift; sourceTree = "<group>"; };
+		02FBFBB729AE5CDC00A70CDD /* QRScanView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QRScanView.xib; sourceTree = "<group>"; };
 		2A5AF832CCD0CDEC2B45B035 /* Pods-BaseSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseSwift.release.xcconfig"; path = "Target Support Files/Pods-BaseSwift/Pods-BaseSwift.release.xcconfig"; sourceTree = "<group>"; };
 		43AFEA3736D1FDAA7A7486C2 /* Pods_BaseSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaseSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D83524F9FAA0D46C7BBA1F88 /* Pods-BaseSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseSwift.debug.xcconfig"; path = "Target Support Files/Pods-BaseSwift/Pods-BaseSwift.debug.xcconfig"; sourceTree = "<group>"; };
@@ -487,6 +499,7 @@
 		0201FCBD289CC0110030CE24 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				02FBFBB429AE5C3500A70CDD /* QR Scan Success */,
 				0201FCB8289CC0070030CE24 /* PickAny */,
 			);
 			path = View;
@@ -507,6 +520,8 @@
 			children = (
 				0213D53929A517BC00542D9C /* SectionTableViewCell.swift */,
 				0213D53A29A517BC00542D9C /* SectionTableViewCell.xib */,
+				025C8D9729AB039900D97D9B /* SectionHeaderView.swift */,
+				025C8D9929AB03E400D97D9B /* SectionHeaderView.xib */,
 			);
 			path = "Section Cell";
 			sourceTree = "<group>";
@@ -519,6 +534,7 @@
 				02A972B4299D297C0021229C /* Login */,
 				02A972AF299D282A0021229C /* Home */,
 				0213D53329A510F800542D9C /* Section */,
+				02E8DE9A29ACFA22009B1A47 /* QR */,
 				02A972B5299D2B7D0021229C /* MainTabbarViewController.swift */,
 				02A972B7299D2DB30021229C /* MainTabbarViewModel.swift */,
 			);
@@ -578,6 +594,24 @@
 				02D69DF7299934E500F5BBB7 /* SignUpViewController.storyboard */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		02E8DE9A29ACFA22009B1A47 /* QR */ = {
+			isa = PBXGroup;
+			children = (
+				02E8DE9B29ACFA6D009B1A47 /* QRViewController.swift */,
+				02E8DE9D29ACFA7E009B1A47 /* QRViewController.storyboard */,
+			);
+			path = QR;
+			sourceTree = "<group>";
+		};
+		02FBFBB429AE5C3500A70CDD /* QR Scan Success */ = {
+			isa = PBXGroup;
+			children = (
+				02FBFBB529AE5CC800A70CDD /* QRScanView.swift */,
+				02FBFBB729AE5CDC00A70CDD /* QRScanView.xib */,
+			);
+			path = "QR Scan Success";
 			sourceTree = "<group>";
 		};
 		07D4BA70527F4DA21BAC61D4 /* Pods */ = {
@@ -666,6 +700,7 @@
 				0201FC37289CB9540030CE24 /* LaunchScreen.storyboard in Resources */,
 				0201FC34289CB9540030CE24 /* Assets.xcassets in Resources */,
 				0293DDC7299543290098FC0D /* Nunito-Regular.ttf in Resources */,
+				02E8DE9E29ACFA7E009B1A47 /* QRViewController.storyboard in Resources */,
 				0201FCAF289CBC410030CE24 /* Dev.xcconfig in Resources */,
 				0293DDCE299543290098FC0D /* Nunito-Black.ttf in Resources */,
 				0293DDC4299543290098FC0D /* Nunito-Light.ttf in Resources */,
@@ -678,10 +713,12 @@
 				02A972B3299D286A0021229C /* HomeViewController.storyboard in Resources */,
 				029432D9299E7DD000DA0C94 /* AuthCodeTableViewCell.xib in Resources */,
 				0201FC32289CB9530030CE24 /* Main.storyboard in Resources */,
+				025C8D9A29AB03E400D97D9B /* SectionHeaderView.xib in Resources */,
 				0293DDCC299543290098FC0D /* Nunito-SemiBoldItalic.ttf in Resources */,
 				0293DDC5299543290098FC0D /* Nunito-Medium.ttf in Resources */,
 				0293DDC8299543290098FC0D /* Nunito-ExtraBoldItalic.ttf in Resources */,
 				02D69DF8299934E500F5BBB7 /* SignUpViewController.storyboard in Resources */,
+				02FBFBB829AE5CDC00A70CDD /* QRScanView.xib in Resources */,
 				024A72522992A1B50053E369 /* ApplicationViewController.storyboard in Resources */,
 				0293DDCF299543290098FC0D /* Nunito-LightItalic.ttf in Resources */,
 				0201FCB2289CBC410030CE24 /* Production.xcconfig in Resources */,
@@ -771,6 +808,7 @@
 				0201FC8E289CBC200030CE24 /* UITableView+Rx.swift in Sources */,
 				0201FC2F289CB9530030CE24 /* ViewController.swift in Sources */,
 				0201FC57289CBC010030CE24 /* BaseCollectionViewCell.swift in Sources */,
+				025C8D9829AB039900D97D9B /* SectionHeaderView.swift in Sources */,
 				02D69DF42998DEDF00F5BBB7 /* UITextField+Ex.swift in Sources */,
 				0201FC87289CBC200030CE24 /* UICollectionViewCell+extensions.swift in Sources */,
 				0201FC8C289CBC200030CE24 /* UIViewController+RxLifeCycle.swift in Sources */,
@@ -805,6 +843,7 @@
 				0201FC54289CBC010030CE24 /* BaseNavigationViewController.swift in Sources */,
 				0201FCA3289CBC2C0030CE24 /* APIErrors.swift in Sources */,
 				0201FC8F289CBC200030CE24 /* Double+extensions.swift in Sources */,
+				02FBFBB629AE5CC800A70CDD /* QRScanView.swift in Sources */,
 				0201FCA5289CBC2C0030CE24 /* ApiInput.swift in Sources */,
 				02A972B1299D285E0021229C /* HomeViewController.swift in Sources */,
 				0201FC83289CBC200030CE24 /* UIFont+extensions.swift in Sources */,
@@ -818,6 +857,7 @@
 				0201FC56289CBC010030CE24 /* BaseLabel.swift in Sources */,
 				0201FCA8289CBC2C0030CE24 /* LGKeychainAccess.swift in Sources */,
 				0201FC5A289CBC010030CE24 /* BaseButton.swift in Sources */,
+				02E8DE9C29ACFA6D009B1A47 /* QRViewController.swift in Sources */,
 				0201FC88289CBC200030CE24 /* CALayer+extensions.swift in Sources */,
 				0201FC81289CBC200030CE24 /* Date+Extension.swift in Sources */,
 				0201FC55289CBC010030CE24 /* ShadowView.swift in Sources */,

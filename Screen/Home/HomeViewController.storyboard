@@ -18,47 +18,82 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" contentInsetAdjustmentBehavior="never" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" contentViewInsetsToSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6j3-ex-El7">
-                                <rect key="frame" x="0.0" y="138" width="414" height="724"/>
-                                <color key="backgroundColor" name="283442"/>
-                                <sections/>
-                            </tableView>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Tìm kiếm tài khoản" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FzZ-lr-FaJ">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vZV-Jo-9NK">
                                 <rect key="frame" x="24" y="72" width="366" height="42"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Tìm kiếm tài khoản" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FzZ-lr-FaJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="366" height="42"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="42" id="2kA-RR-FV1"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="paddingLeftCustom">
+                                                <real key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="paddingRightCustom">
+                                                <real key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.16078431369999999" green="0.37587791679999999" blue="0.42746073010000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                <size key="value" width="0.0" height="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="42" id="2kA-RR-FV1"/>
+                                    <constraint firstAttribute="bottom" secondItem="FzZ-lr-FaJ" secondAttribute="bottom" id="0uh-Eh-1M6"/>
+                                    <constraint firstItem="FzZ-lr-FaJ" firstAttribute="top" secondItem="vZV-Jo-9NK" secondAttribute="top" id="al3-qP-h41"/>
+                                    <constraint firstItem="FzZ-lr-FaJ" firstAttribute="leading" secondItem="vZV-Jo-9NK" secondAttribute="leading" id="dMf-GL-3sm"/>
+                                    <constraint firstAttribute="trailing" secondItem="FzZ-lr-FaJ" secondAttribute="trailing" id="kYm-0d-fzR"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingLeftCustom">
-                                        <real key="value" value="12"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" systemColor="opaqueSeparatorColor"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingRightCustom">
-                                        <real key="value" value="12"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.29999999999999999"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="3" height="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="8"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="8"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="0.16078431372549018" green="0.37647058823529411" blue="0.42745098039215684" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="value" name="29606D"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                         <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                            </textField>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" contentInsetAdjustmentBehavior="never" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" contentViewInsetsToSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6j3-ex-El7">
+                                <rect key="frame" x="0.0" y="138" width="414" height="724"/>
+                                <color key="backgroundColor" name="29606D"/>
+                                <sections/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6j3-ex-El7" firstAttribute="top" secondItem="FzZ-lr-FaJ" secondAttribute="bottom" constant="24" id="WY8-9W-Xy9"/>
+                            <constraint firstItem="vZV-Jo-9NK" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="24" id="OaE-Zw-h83"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="vZV-Jo-9NK" secondAttribute="trailing" constant="24" id="Oks-Nq-KPE"/>
+                            <constraint firstItem="vZV-Jo-9NK" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="Qo3-0F-M0U"/>
+                            <constraint firstItem="6j3-ex-El7" firstAttribute="top" secondItem="vZV-Jo-9NK" secondAttribute="bottom" constant="24" id="UXb-WJ-uIq"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="6j3-ex-El7" secondAttribute="bottom" id="Ye0-8m-wFW"/>
                             <constraint firstItem="6j3-ex-El7" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="aFk-B7-Urd"/>
-                            <constraint firstItem="FzZ-lr-FaJ" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="24" id="k7I-VP-OkS"/>
-                            <constraint firstItem="FzZ-lr-FaJ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="oEd-ID-mlS"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="6j3-ex-El7" secondAttribute="trailing" id="pAO-rg-mfV"/>
-                            <constraint firstItem="FzZ-lr-FaJ" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="vtI-9S-anh"/>
                         </constraints>
                     </view>
                     <connections>
@@ -67,13 +102,16 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="90.839694656488547" y="-27.464788732394368"/>
+            <point key="canvasLocation" x="89.855072463768124" y="-28.125"/>
         </scene>
     </scenes>
     <resources>
-        <namedColor name="283442">
-            <color red="0.15700000524520874" green="0.20399999618530273" blue="0.25900000333786011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="29606D">
+            <color red="0.16099999845027924" green="0.37599998712539673" blue="0.42699998617172241" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

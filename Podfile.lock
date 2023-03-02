@@ -47,6 +47,7 @@ PODS:
   - RxSwiftExt/RxCocoa (6.0.1):
     - RxCocoa (~> 6.0)
     - RxSwiftExt/Core
+  - SnapKit (5.6.0)
   - SwiftLint (0.47.1)
   - SwipeMenuViewController (4.1.0)
 
@@ -65,6 +66,7 @@ DEPENDENCIES:
   - RxReachability (= 1.2.1)
   - RxSwift (= 6.1.0)
   - RxSwiftExt (= 6.0.1)
+  - SnapKit (~> 5.6.0)
   - SwiftLint
   - SwipeMenuViewController
 
@@ -90,6 +92,7 @@ SPEC REPOS:
     - RxRelay
     - RxSwift
     - RxSwiftExt
+    - SnapKit
     - SwiftLint
     - SwipeMenuViewController
 
@@ -114,9 +117,10 @@ SPEC CHECKSUMS:
   RxRelay: 483e1a19fad961b41f0b0c0bee506f46c1ae14fe
   RxSwift: a834e5c538e89eca0cae86f403f4fbf0336786ce
   RxSwiftExt: d61c4b9b06e0a448041b1c659e0f1b5c5a035afc
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   SwiftLint: f80f1be7fa96d30e0aa68e58d45d4ea1ccaac519
   SwipeMenuViewController: 94fac81cc192d9f08f218fe4c0c853569b735e1f
 
-PODFILE CHECKSUM: 5010bc42bb89f84f9b24bf87022927fb94e33223
+PODFILE CHECKSUM: d95b8210cd3265ec32c5d640977b6266f46c58bd
 
 COCOAPODS: 1.11.3

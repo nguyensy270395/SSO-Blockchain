@@ -112,7 +112,7 @@ public extension UIView {
                        initialSpringVelocity: CGFloat(5.0),
                        options: [.curveEaseIn],
                        animations: {
-            animatedView.transform = CGAffineTransform.init(translationX: 0, y: animatedView.frame.height)
+            animatedView.transform = CGAffineTransform.init(translationX: 0, y: SCREEN_HEIGHT)
             
         }, completion: { status in
             if status {
