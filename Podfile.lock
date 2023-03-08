@@ -7,6 +7,7 @@ PODS:
   - IQKeyboardManager (6.5.10)
   - KeychainAccess (4.2.2)
   - Kingfisher (7.3.0)
+  - lottie-ios (4.1.3)
   - MercariQRScanner (1.9.0)
   - R.swift (6.1.0):
     - R.swift.Library (~> 5.3.0)
@@ -50,6 +51,7 @@ DEPENDENCIES:
   - IQKeyboardManager
   - KeychainAccess (= 4.2.2)
   - Kingfisher (~> 7.0)
+  - lottie-ios
   - MercariQRScanner
   - R.swift
   - RxAlamofire (= 6.1.1)
@@ -70,6 +72,7 @@ SPEC REPOS:
     - IQKeyboardManager
     - KeychainAccess
     - Kingfisher
+    - lottie-ios
     - MercariQRScanner
     - R.swift
     - R.swift.Library
@@ -92,6 +95,7 @@ SPEC CHECKSUMS:
   IQKeyboardManager: 45a1fa55c1a5b02c61ac0fd7fd5b62bb4ad20d97
   KeychainAccess: c0c4f7f38f6fc7bbe58f5702e25f7bd2f65abf51
   Kingfisher: cdb1189a9223b1bc028816bd47c8b8101a58831c
+  lottie-ios: d0954d3150061f662ed0adf96ef98d7421864c47
   MercariQRScanner: e5aea873969af59b09b4cc411fc1c5b6293dba44
   R.swift: ec98ff71c4ab2f6fd01dd077e5afd15e63a4834c
   R.swift.Library: 0fc583cb55a99e28901299cc451614cad1161962
@@ -107,6 +111,6 @@ SPEC CHECKSUMS:
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   SwiftLint: f80f1be7fa96d30e0aa68e58d45d4ea1ccaac519
 
-PODFILE CHECKSUM: 92af2b739c4ad90eedb2738f8907dc19e637c26e
+PODFILE CHECKSUM: 80ff6adad1d6a36486b0e716243e58d66d07cc40
 
 COCOAPODS: 1.11.3

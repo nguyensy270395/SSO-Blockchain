@@ -27,6 +27,8 @@ target 'BaseSwift' do
   pod 'SnapKit', '~> 5.6.0'
   ##QRReader
   pod 'MercariQRScanner'
+  ##Lotie
+  pod 'lottie-ios'
 end
 post_install do |installer|
   installer.pods_project.targets.each do |target|
