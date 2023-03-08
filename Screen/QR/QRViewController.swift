@@ -6,6 +6,7 @@
 //
 
 import UIKit
+//import MercariQRScanner
 import AVFoundation
 import RxRelay
 import RxSwift
@@ -26,7 +27,7 @@ class QRViewController: BaseViewController {
         super.viewDidLoad()
         scanQR()
         captureSession.startRunning()
-        setupRx()
+        setupRx() 
     }
 
     func setupRx() {
@@ -40,11 +41,9 @@ class QRViewController: BaseViewController {
     }
 }
 
-
 extension QRViewController: AVCaptureMetadataOutputObjectsDelegate {
 
     func scanQR() {
-
         AVCaptureDevice.requestAccess(for: AVMediaType.video) { response in
             if !response {
                 return

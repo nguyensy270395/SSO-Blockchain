@@ -4,19 +4,14 @@ PODS:
     - RxSwift (~> 6.0)
   - Alamofire (5.6.1)
   - Differentiator (5.0.0)
-  - FSCalendar (2.8.4)
   - IQKeyboardManager (6.5.10)
   - KeychainAccess (4.2.2)
   - Kingfisher (7.3.0)
+  - MercariQRScanner (1.9.0)
   - R.swift (6.1.0):
     - R.swift.Library (~> 5.3.0)
   - R.swift.Library (5.3.0)
   - ReachabilitySwift (5.0.0)
-  - Realm (10.15.1):
-    - Realm/Headers (= 10.15.1)
-  - Realm/Headers (10.15.1)
-  - RealmSwift (10.15.1):
-    - Realm (= 10.15.1)
   - RxAlamofire (6.1.1):
     - RxAlamofire/Core (= 6.1.1)
   - RxAlamofire/Core (6.1.1):
@@ -49,16 +44,14 @@ PODS:
     - RxSwiftExt/Core
   - SnapKit (5.6.0)
   - SwiftLint (0.47.1)
-  - SwipeMenuViewController (4.1.0)
 
 DEPENDENCIES:
   - Action (= 5.0.0)
-  - FSCalendar
   - IQKeyboardManager
   - KeychainAccess (= 4.2.2)
   - Kingfisher (~> 7.0)
+  - MercariQRScanner
   - R.swift
-  - RealmSwift (= 10.15.1)
   - RxAlamofire (= 6.1.1)
   - RxCocoa (= 6.1.0)
   - RxDataSources (= 5.0.0)
@@ -68,22 +61,19 @@ DEPENDENCIES:
   - RxSwiftExt (= 6.0.1)
   - SnapKit (~> 5.6.0)
   - SwiftLint
-  - SwipeMenuViewController
 
 SPEC REPOS:
   trunk:
     - Action
     - Alamofire
     - Differentiator
-    - FSCalendar
     - IQKeyboardManager
     - KeychainAccess
     - Kingfisher
+    - MercariQRScanner
     - R.swift
     - R.swift.Library
     - ReachabilitySwift
-    - Realm
-    - RealmSwift
     - RxAlamofire
     - RxCocoa
     - RxDataSources
@@ -94,21 +84,18 @@ SPEC REPOS:
     - RxSwiftExt
     - SnapKit
     - SwiftLint
-    - SwipeMenuViewController
 
 SPEC CHECKSUMS:
   Action: 47f1825511907b4fcd79dd7a7db9526c20f78018
   Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
   Differentiator: e8497ceab83c1b10ca233716d547b9af21b9344d
-  FSCalendar: 2d1d0d9398f12d439f55c1fe0f01525b151b8260
   IQKeyboardManager: 45a1fa55c1a5b02c61ac0fd7fd5b62bb4ad20d97
   KeychainAccess: c0c4f7f38f6fc7bbe58f5702e25f7bd2f65abf51
   Kingfisher: cdb1189a9223b1bc028816bd47c8b8101a58831c
+  MercariQRScanner: e5aea873969af59b09b4cc411fc1c5b6293dba44
   R.swift: ec98ff71c4ab2f6fd01dd077e5afd15e63a4834c
   R.swift.Library: 0fc583cb55a99e28901299cc451614cad1161962
   ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
-  Realm: fbcbde2620d51623cc5b18e28f5b165c39abef52
-  RealmSwift: e4bea8e42efad3d543aea23b56504069c6faaea2
   RxAlamofire: beb75a1c452d0de225651db4903f5d29d034a620
   RxCocoa: 5c51f02d562cbd94629f6c26cf0c80fe4ab8d343
   RxDataSources: aa47cc1ed6c500fa0dfecac5c979b723542d79cf
@@ -119,8 +106,7 @@ SPEC CHECKSUMS:
   RxSwiftExt: d61c4b9b06e0a448041b1c659e0f1b5c5a035afc
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   SwiftLint: f80f1be7fa96d30e0aa68e58d45d4ea1ccaac519
-  SwipeMenuViewController: 94fac81cc192d9f08f218fe4c0c853569b735e1f
 
-PODFILE CHECKSUM: d95b8210cd3265ec32c5d640977b6266f46c58bd
+PODFILE CHECKSUM: 92af2b739c4ad90eedb2738f8907dc19e637c26e
 
 COCOAPODS: 1.11.3

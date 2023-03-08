@@ -19,18 +19,14 @@ target 'BaseSwift' do
   pod 'Kingfisher', '~> 7.0'
   ##R.Swift
   pod 'R.swift'
-  ##FSCalendar
-  pod 'FSCalendar'
-  ##SwipeMenu
-  pod 'SwipeMenuViewController'
   ##Save data
   pod 'KeychainAccess','4.2.2'
-  ##local DB
-  pod 'RealmSwift','10.15.1'
   ##Keyboard
   pod 'IQKeyboardManager'
   ##SnapKit
   pod 'SnapKit', '~> 5.6.0'
+  ##QRReader
+  pod 'MercariQRScanner'
 end
 post_install do |installer|
   installer.pods_project.targets.each do |target|

@@ -101,6 +101,8 @@
 		02D69DF42998DEDF00F5BBB7 /* UITextField+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D69DF32998DEDF00F5BBB7 /* UITextField+Ex.swift */; };
 		02D69DF6299934DB00F5BBB7 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D69DF5299934DB00F5BBB7 /* SignUpViewController.swift */; };
 		02D69DF8299934E500F5BBB7 /* SignUpViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02D69DF7299934E500F5BBB7 /* SignUpViewController.storyboard */; };
+		02E85C6129B48EFC00D3FD35 /* QRScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E85C6029B48EFC00D3FD35 /* QRScanViewController.swift */; };
+		02E85C6329B48F0700D3FD35 /* QRScanViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02E85C6229B48F0700D3FD35 /* QRScanViewController.storyboard */; };
 		02E8DE9C29ACFA6D009B1A47 /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E8DE9B29ACFA6D009B1A47 /* QRViewController.swift */; };
 		02E8DE9E29ACFA7E009B1A47 /* QRViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02E8DE9D29ACFA7E009B1A47 /* QRViewController.storyboard */; };
 		02FBFBB629AE5CC800A70CDD /* QRScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FBFBB529AE5CC800A70CDD /* QRScanView.swift */; };
@@ -205,6 +207,8 @@
 		02D69DF32998DEDF00F5BBB7 /* UITextField+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Ex.swift"; sourceTree = "<group>"; };
 		02D69DF5299934DB00F5BBB7 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		02D69DF7299934E500F5BBB7 /* SignUpViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUpViewController.storyboard; sourceTree = "<group>"; };
+		02E85C6029B48EFC00D3FD35 /* QRScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScanViewController.swift; sourceTree = "<group>"; };
+		02E85C6229B48F0700D3FD35 /* QRScanViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QRScanViewController.storyboard; sourceTree = "<group>"; };
 		02E8DE9B29ACFA6D009B1A47 /* QRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
 		02E8DE9D29ACFA7E009B1A47 /* QRViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QRViewController.storyboard; sourceTree = "<group>"; };
 		02FBFBB529AE5CC800A70CDD /* QRScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScanView.swift; sourceTree = "<group>"; };
@@ -601,6 +605,8 @@
 			children = (
 				02E8DE9B29ACFA6D009B1A47 /* QRViewController.swift */,
 				02E8DE9D29ACFA7E009B1A47 /* QRViewController.storyboard */,
+				02E85C6029B48EFC00D3FD35 /* QRScanViewController.swift */,
+				02E85C6229B48F0700D3FD35 /* QRScanViewController.storyboard */,
 			);
 			path = QR;
 			sourceTree = "<group>";
@@ -700,6 +706,7 @@
 				0201FC37289CB9540030CE24 /* LaunchScreen.storyboard in Resources */,
 				0201FC34289CB9540030CE24 /* Assets.xcassets in Resources */,
 				0293DDC7299543290098FC0D /* Nunito-Regular.ttf in Resources */,
+				02E85C6329B48F0700D3FD35 /* QRScanViewController.storyboard in Resources */,
 				02E8DE9E29ACFA7E009B1A47 /* QRViewController.storyboard in Resources */,
 				0201FCAF289CBC410030CE24 /* Dev.xcconfig in Resources */,
 				0293DDCE299543290098FC0D /* Nunito-Black.ttf in Resources */,
@@ -810,6 +817,7 @@
 				0201FC57289CBC010030CE24 /* BaseCollectionViewCell.swift in Sources */,
 				025C8D9829AB039900D97D9B /* SectionHeaderView.swift in Sources */,
 				02D69DF42998DEDF00F5BBB7 /* UITextField+Ex.swift in Sources */,
+				02E85C6129B48EFC00D3FD35 /* QRScanViewController.swift in Sources */,
 				0201FC87289CBC200030CE24 /* UICollectionViewCell+extensions.swift in Sources */,
 				0201FC8C289CBC200030CE24 /* UIViewController+RxLifeCycle.swift in Sources */,
 				0201FCBB289CC0070030CE24 /* PickAnyView.swift in Sources */,
@@ -1012,11 +1020,12 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BaseSwift/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "SSO Blockchain";
+				INFOPLIST_KEY_NSCameraUsageDescription = NSPhotoLibraryUsageDescription;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1024,9 +1033,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ThankThank.BaseSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -1042,11 +1054,12 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BaseSwift/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "SSO Blockchain";
+				INFOPLIST_KEY_NSCameraUsageDescription = NSPhotoLibraryUsageDescription;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1054,9 +1067,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ThankThank.BaseSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
