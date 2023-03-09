@@ -103,8 +103,6 @@
 		02D69DF8299934E500F5BBB7 /* SignUpViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02D69DF7299934E500F5BBB7 /* SignUpViewController.storyboard */; };
 		02E85C6129B48EFC00D3FD35 /* QRScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E85C6029B48EFC00D3FD35 /* QRScanViewController.swift */; };
 		02E85C6329B48F0700D3FD35 /* QRScanViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02E85C6229B48F0700D3FD35 /* QRScanViewController.storyboard */; };
-		02E8DE9C29ACFA6D009B1A47 /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E8DE9B29ACFA6D009B1A47 /* QRViewController.swift */; };
-		02E8DE9E29ACFA7E009B1A47 /* QRViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02E8DE9D29ACFA7E009B1A47 /* QRViewController.storyboard */; };
 		02FBFBB629AE5CC800A70CDD /* QRScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FBFBB529AE5CC800A70CDD /* QRScanView.swift */; };
 		02FBFBB829AE5CDC00A70CDD /* QRScanView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02FBFBB729AE5CDC00A70CDD /* QRScanView.xib */; };
 		8F4658EDF896961459319B6B /* Pods_BaseSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43AFEA3736D1FDAA7A7486C2 /* Pods_BaseSwift.framework */; };
@@ -209,8 +207,6 @@
 		02D69DF7299934E500F5BBB7 /* SignUpViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUpViewController.storyboard; sourceTree = "<group>"; };
 		02E85C6029B48EFC00D3FD35 /* QRScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScanViewController.swift; sourceTree = "<group>"; };
 		02E85C6229B48F0700D3FD35 /* QRScanViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QRScanViewController.storyboard; sourceTree = "<group>"; };
-		02E8DE9B29ACFA6D009B1A47 /* QRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
-		02E8DE9D29ACFA7E009B1A47 /* QRViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QRViewController.storyboard; sourceTree = "<group>"; };
 		02FBFBB529AE5CC800A70CDD /* QRScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScanView.swift; sourceTree = "<group>"; };
 		02FBFBB729AE5CDC00A70CDD /* QRScanView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QRScanView.xib; sourceTree = "<group>"; };
 		2A5AF832CCD0CDEC2B45B035 /* Pods-BaseSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseSwift.release.xcconfig"; path = "Target Support Files/Pods-BaseSwift/Pods-BaseSwift.release.xcconfig"; sourceTree = "<group>"; };
@@ -603,8 +599,6 @@
 		02E8DE9A29ACFA22009B1A47 /* QR */ = {
 			isa = PBXGroup;
 			children = (
-				02E8DE9B29ACFA6D009B1A47 /* QRViewController.swift */,
-				02E8DE9D29ACFA7E009B1A47 /* QRViewController.storyboard */,
 				02E85C6029B48EFC00D3FD35 /* QRScanViewController.swift */,
 				02E85C6229B48F0700D3FD35 /* QRScanViewController.storyboard */,
 			);
@@ -707,7 +701,6 @@
 				0201FC34289CB9540030CE24 /* Assets.xcassets in Resources */,
 				0293DDC7299543290098FC0D /* Nunito-Regular.ttf in Resources */,
 				02E85C6329B48F0700D3FD35 /* QRScanViewController.storyboard in Resources */,
-				02E8DE9E29ACFA7E009B1A47 /* QRViewController.storyboard in Resources */,
 				0201FCAF289CBC410030CE24 /* Dev.xcconfig in Resources */,
 				0293DDCE299543290098FC0D /* Nunito-Black.ttf in Resources */,
 				0293DDC4299543290098FC0D /* Nunito-Light.ttf in Resources */,
@@ -865,7 +858,6 @@
 				0201FC56289CBC010030CE24 /* BaseLabel.swift in Sources */,
 				0201FCA8289CBC2C0030CE24 /* LGKeychainAccess.swift in Sources */,
 				0201FC5A289CBC010030CE24 /* BaseButton.swift in Sources */,
-				02E8DE9C29ACFA6D009B1A47 /* QRViewController.swift in Sources */,
 				0201FC88289CBC200030CE24 /* CALayer+extensions.swift in Sources */,
 				0201FC81289CBC200030CE24 /* Date+Extension.swift in Sources */,
 				0201FC55289CBC010030CE24 /* ShadowView.swift in Sources */,

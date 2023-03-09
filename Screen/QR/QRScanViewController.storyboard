@@ -17,25 +17,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rhr-PP-AgO" customClass="QRScannerView" customModule="MercariQRScanner">
-                                <rect key="frame" x="0.0" y="88" width="414" height="734"/>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rhr-PP-AgO" customClass="QRScannerView" customModule="MercariQRScanner">
+                                <rect key="frame" x="0.0" y="54" width="414" height="740"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBlurEffectEnabled" value="YES"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="animationDuration">
                                         <real key="value" value="0.0"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="focusImage" value="qrFrame"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Rhr-PP-AgO" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="40" id="M0f-3Z-xbM"/>
+                            <constraint firstItem="Rhr-PP-AgO" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="6" id="M0f-3Z-xbM"/>
                             <constraint firstItem="Rhr-PP-AgO" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="T27-qW-CiZ"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Rhr-PP-AgO" secondAttribute="trailing" id="Ugh-uc-IrF"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Rhr-PP-AgO" secondAttribute="bottom" constant="40" id="a5v-EW-Ipn"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Rhr-PP-AgO" secondAttribute="bottom" constant="68" id="a5v-EW-Ipn"/>
                         </constraints>
                     </view>
                     <connections>
@@ -48,7 +49,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="qrFrame" width="35280" height="35280"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

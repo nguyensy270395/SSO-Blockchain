@@ -41,13 +41,17 @@ class QRScanView: BaseView {
         hidenButton.rx.tap.subscribe(onNext: { [weak self] _ in
             guard let self = self else { return }
             self.hide()
-            self.completion?(.close)
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                self.completion?(.close)
+            }
         }).disposed(by: disposeBag)
 
         acceptButton.rx.tap.subscribe(onNext: {  [weak self] _ in
             guard let self = self else { return }
             self.hide()
-            self.completion?(.accept)
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                self.completion?(.accept)
+            }
         }).disposed(by: disposeBag)
 
     }
