@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import MercariQRScanner
 import RxRelay
 import RxSwift
 import RxCocoa
@@ -26,10 +25,17 @@ class QRScanViewController: BaseViewController {
         setupRx()
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        qrScanView.startRunning()
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        qrScanView.stopRunning()
+    }
     private func setupQRScannerView() {
         qrScanView.configure(delegate: self, input: .init())
-        qrScanView.startRunning()
-
     }
 
     func setupRx() {

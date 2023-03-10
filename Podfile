@@ -25,8 +25,6 @@ target 'BaseSwift' do
   pod 'IQKeyboardManager'
   ##SnapKit
   pod 'SnapKit', '~> 5.6.0'
-  ##QRReader
-  pod 'MercariQRScanner'
   ##Lotie
   pod 'lottie-ios'
 end

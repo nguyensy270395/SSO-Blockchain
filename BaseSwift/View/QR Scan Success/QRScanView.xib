@@ -19,6 +19,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QRScanView" customModule="BaseSwift" customModuleProvider="target">
             <connections>
                 <outlet property="acceptButton" destination="1eP-IH-ibS" id="d8E-Iu-j5u"/>
+                <outlet property="animationView" destination="BI4-rp-ROj" id="JUJ-KH-vdL"/>
                 <outlet property="contentView" destination="xAo-4h-xlO" id="8Uo-L8-ekQ"/>
                 <outlet property="hidenButton" destination="eN0-Ki-yzQ" id="cEi-Ye-SmD"/>
             </connections>
@@ -66,14 +67,27 @@
                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="bold"/>
                             </state>
                         </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BI4-rp-ROj">
+                            <rect key="frame" x="108" y="50" width="110" height="110"/>
+                            <color key="backgroundColor" name="FCFCFC"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="110" id="L9j-mu-maB"/>
+                                <constraint firstAttribute="width" secondItem="BI4-rp-ROj" secondAttribute="height" multiplier="1:1" id="uDn-9Z-vD2"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="done"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
                     </subviews>
                     <color key="backgroundColor" name="FCFCFC"/>
                     <constraints>
                         <constraint firstItem="eN0-Ki-yzQ" firstAttribute="top" secondItem="xAo-4h-xlO" secondAttribute="top" constant="10" id="I95-2R-Cq8"/>
+                        <constraint firstItem="1eP-IH-ibS" firstAttribute="top" secondItem="BI4-rp-ROj" secondAttribute="bottom" constant="40" id="L4y-52-Vvy"/>
                         <constraint firstItem="1eP-IH-ibS" firstAttribute="centerX" secondItem="xAo-4h-xlO" secondAttribute="centerX" id="NpS-YZ-Rgf"/>
                         <constraint firstAttribute="trailing" secondItem="eN0-Ki-yzQ" secondAttribute="trailing" constant="10" id="bb2-AB-ad6"/>
                         <constraint firstAttribute="width" secondItem="xAo-4h-xlO" secondAttribute="height" multiplier="163:140" id="dvg-Nk-Tpu"/>
                         <constraint firstAttribute="trailing" secondItem="1eP-IH-ibS" secondAttribute="trailing" constant="32" id="fIB-b4-XI2"/>
+                        <constraint firstItem="BI4-rp-ROj" firstAttribute="centerX" secondItem="xAo-4h-xlO" secondAttribute="centerX" id="re8-ls-SWx"/>
                         <constraint firstAttribute="bottom" secondItem="1eP-IH-ibS" secondAttribute="bottom" constant="32" id="wy4-m5-fxB"/>
                     </constraints>
                     <userDefinedRuntimeAttributes>
