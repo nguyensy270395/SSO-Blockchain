@@ -8,7 +8,15 @@
 import UIKit
 
 class SectionHeaderView: UITableViewHeaderFooterView {
+
+    @IBOutlet weak var headerLabel: UILabel!
+
     override func awakeFromNib() {
         super.awakeFromNib()
     }
+
+    func setupHeader(title: String) {
+        headerLabel.text = title
+    }
+
 }

@@ -23,7 +23,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="393" height="92"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Section" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cuf-3I-Hyi">
-                            <rect key="frame" x="16" y="27.000000000000004" width="97" height="38.333333333333343"/>
+                            <rect key="frame" x="16" y="29.666666666666668" width="95" height="32.666666666666657"/>
                             <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="28"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
@@ -45,6 +45,9 @@
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="dvv-Ku-lza" secondAttribute="trailing" id="w7V-QS-kUz"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="headerLabel" destination="cuf-3I-Hyi" id="cIS-XH-TZp"/>
+            </connections>
             <point key="canvasLocation" x="130.53435114503816" y="-278.87323943661971"/>
         </view>
     </objects>

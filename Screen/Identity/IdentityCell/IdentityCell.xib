@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nunito-Bold.ttf">
+            <string>Nunito-Bold</string>
+        </array>
+        <array key="Nunito-Regular.ttf">
+            <string>Nunito-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="130" id="KGk-i7-Jjw" customClass="IdentityCell" customModule="BaseSwift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="121"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="121"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yan-jb-tRc">
+                        <rect key="frame" x="16" y="5" width="288" height="111"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="YHF-zk-Xmm">
+                                <rect key="frame" x="16" y="16" width="256" height="79"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="App name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H9a-j3-ObN">
+                                        <rect key="frame" x="0.0" y="0.0" width="256" height="24.666666666666668"/>
+                                        <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="18"/>
+                                        <color key="textColor" name="color050C1E"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Last used 10 minutes ago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n66-KQ-FAr">
+                                        <rect key="frame" x="0.0" y="28.666666666666664" width="256" height="19.333333333333336"/>
+                                        <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="14"/>
+                                        <color key="textColor" name="color9A9BA2"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Figma, Uxwing, Adobe, Canva" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XEI-i6-qLA">
+                                        <rect key="frame" x="0.0" y="52" width="256" height="19.333333333333329"/>
+                                        <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="14"/>
+                                        <color key="textColor" name="color050C1E"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="2/4 is working" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vRD-jz-Yxc">
+                                        <rect key="frame" x="0.0" y="75.333333333333329" width="256" height="3.6666666666666714"/>
+                                        <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="15"/>
+                                        <color key="textColor" name="colorDD9F43"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" name="colorFCFCFC"/>
+                        <constraints>
+                            <constraint firstItem="YHF-zk-Xmm" firstAttribute="leading" secondItem="Yan-jb-tRc" secondAttribute="leading" constant="16" id="9WE-0y-UP7"/>
+                            <constraint firstAttribute="trailing" secondItem="YHF-zk-Xmm" secondAttribute="trailing" constant="16" id="HYk-pD-6B2"/>
+                            <constraint firstItem="YHF-zk-Xmm" firstAttribute="top" secondItem="Yan-jb-tRc" secondAttribute="top" constant="16" id="l4D-Bh-a6g"/>
+                            <constraint firstAttribute="bottom" secondItem="YHF-zk-Xmm" secondAttribute="bottom" constant="16" id="r4y-oD-6BW"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" name="color9A9BA2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" systemColor="opaqueSeparatorColor"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                <size key="value" width="3" height="3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="0.29999999999999999"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Yan-jb-tRc" secondAttribute="bottom" constant="5" id="GRF-2Y-s5N"/>
+                    <constraint firstAttribute="trailing" secondItem="Yan-jb-tRc" secondAttribute="trailing" constant="16" id="Xlr-Rv-eSW"/>
+                    <constraint firstItem="Yan-jb-tRc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="oVx-Lj-dLb"/>
+                    <constraint firstItem="Yan-jb-tRc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="oyx-NH-KFs"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="57" y="28"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="color050C1E">
+            <color red="0.019999999552965164" green="0.046999998390674591" blue="0.11800000071525574" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="color9A9BA2">
+            <color red="0.60399997234344482" green="0.60799998044967651" blue="0.63499999046325684" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="colorDD9F43">
+            <color red="0.86699998378753662" green="0.62400001287460327" blue="0.2630000114440918" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="colorFCFCFC">
+            <color red="0.98799997568130493" green="0.98799997568130493" blue="0.98799997568130493" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

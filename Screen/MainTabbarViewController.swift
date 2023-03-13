@@ -29,7 +29,7 @@ class MainTabbarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.viewControllers = TabbarItem.allCases.map { addTab(type: $0) }
-
+        self.tabBar.selectedImageTintColor = R.color.color29606D()
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -88,15 +88,15 @@ enum TabbarItem: Int, CaseIterable {
     var icon: UIImage? {
         switch self {
         case .home:
-            return UIImage()
+            return R.image.iconBlock()
         case .section:
-            return UIImage()
+            return R.image.iconSection()
         case .qr:
-            return UIImage()
+            return R.image.iconTabbarQR()
         case .identity:
-            return UIImage()
+            return R.image.iconIdentity()
         case .setting:
-            return UIImage()
+            return R.image.iconSetting()
         }
     }
 
@@ -118,7 +118,9 @@ enum TabbarItem: Int, CaseIterable {
             }
             return BaseNavigationViewController(rootViewController: vc)
         case .identity:
-            let vc = UIViewController()
+            let vc = IdentityViewController.instantiate { coder in
+                return IdentityViewController(coder: coder)
+            }
             return BaseNavigationViewController(rootViewController: vc)
         case .setting:
             let vc = UIViewController()

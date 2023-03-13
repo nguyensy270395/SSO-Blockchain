@@ -55,12 +55,10 @@ class QRScanViewController: BaseViewController {
 extension QRScanViewController: QRScannerViewDelegate {
     func qrScannerView(_ qrScannerView: QRScannerView, didFailure error: QRScannerError) {
         print(error)
-        messageFromQr.accept("error")
-
     }
 
     func qrScannerView(_ qrScannerView: QRScannerView, didSuccess code: String) {
-        print(code)
+        print("QRcode: \(code)")
         messageFromQr.accept(code)
 
     }

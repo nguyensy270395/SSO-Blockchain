@@ -67,6 +67,7 @@
 		0213D53729A5136500542D9C /* SectionViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0213D53629A5136500542D9C /* SectionViewController.storyboard */; };
 		0213D53B29A517BC00542D9C /* SectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0213D53929A517BC00542D9C /* SectionTableViewCell.swift */; };
 		0213D53C29A517BD00542D9C /* SectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0213D53A29A517BC00542D9C /* SectionTableViewCell.xib */; };
+		022A7E1129BCD9F30063F759 /* time.json in Resources */ = {isa = PBXBuildFile; fileRef = 022A7E1029BCD9F30063F759 /* time.json */; };
 		0233BC2929BAC22B009996EE /* done.json in Resources */ = {isa = PBXBuildFile; fileRef = 0233BC2829BAC22B009996EE /* done.json */; };
 		0233BC5C29BB2EBD009996EE /* QRScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0233BC5629BB2EBD009996EE /* QRScannerView.swift */; };
 		0233BC5D29BB2EBD009996EE /* Bundle+Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0233BC5729BB2EBD009996EE /* Bundle+Module.swift */; };
@@ -76,6 +77,11 @@
 		024A72522992A1B50053E369 /* ApplicationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 024A72512992A1B50053E369 /* ApplicationViewController.storyboard */; };
 		024A72542992A4140053E369 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024A72532992A4140053E369 /* LoginViewController.swift */; };
 		024A72562992A4270053E369 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 024A72552992A4270053E369 /* LoginViewController.storyboard */; };
+		024AF63429BD7F6D009F75A6 /* wait.json in Resources */ = {isa = PBXBuildFile; fileRef = 024AF63329BD7F6D009F75A6 /* wait.json */; };
+		024AF63729BDEFA9009F75A6 /* IdentityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024AF63629BDEFA9009F75A6 /* IdentityViewController.swift */; };
+		024AF63B29BDF0D2009F75A6 /* IdentityViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 024AF63A29BDF0D2009F75A6 /* IdentityViewController.storyboard */; };
+		024AF63F29BE20FE009F75A6 /* IdentityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024AF63D29BE20FE009F75A6 /* IdentityCell.swift */; };
+		024AF64029BE20FE009F75A6 /* IdentityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 024AF63E29BE20FE009F75A6 /* IdentityCell.xib */; };
 		025C8D9829AB039900D97D9B /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025C8D9729AB039900D97D9B /* SectionHeaderView.swift */; };
 		025C8D9A29AB03E400D97D9B /* SectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 025C8D9929AB03E400D97D9B /* SectionHeaderView.xib */; };
 		02752A0429A90880008DBF77 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02752A0329A90880008DBF77 /* R.generated.swift */; };
@@ -176,6 +182,7 @@
 		0213D53629A5136500542D9C /* SectionViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SectionViewController.storyboard; sourceTree = "<group>"; };
 		0213D53929A517BC00542D9C /* SectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTableViewCell.swift; sourceTree = "<group>"; };
 		0213D53A29A517BC00542D9C /* SectionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionTableViewCell.xib; sourceTree = "<group>"; };
+		022A7E1029BCD9F30063F759 /* time.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = time.json; sourceTree = "<group>"; };
 		0233BC2829BAC22B009996EE /* done.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = done.json; sourceTree = "<group>"; };
 		0233BC5629BB2EBD009996EE /* QRScannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRScannerView.swift; sourceTree = "<group>"; };
 		0233BC5729BB2EBD009996EE /* Bundle+Module.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Module.swift"; sourceTree = "<group>"; };
@@ -186,6 +193,11 @@
 		024A72512992A1B50053E369 /* ApplicationViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ApplicationViewController.storyboard; sourceTree = "<group>"; };
 		024A72532992A4140053E369 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		024A72552992A4270053E369 /* LoginViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
+		024AF63329BD7F6D009F75A6 /* wait.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = wait.json; sourceTree = "<group>"; };
+		024AF63629BDEFA9009F75A6 /* IdentityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentityViewController.swift; sourceTree = "<group>"; };
+		024AF63A29BDF0D2009F75A6 /* IdentityViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = IdentityViewController.storyboard; sourceTree = "<group>"; };
+		024AF63D29BE20FE009F75A6 /* IdentityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentityCell.swift; sourceTree = "<group>"; };
+		024AF63E29BE20FE009F75A6 /* IdentityCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IdentityCell.xib; sourceTree = "<group>"; };
 		025C8D9729AB039900D97D9B /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
 		025C8D9929AB03E400D97D9B /* SectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionHeaderView.xib; sourceTree = "<group>"; };
 		02752A0329A90880008DBF77 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
@@ -542,6 +554,8 @@
 		0233BC2729BAC208009996EE /* Animation */ = {
 			isa = PBXGroup;
 			children = (
+				024AF63329BD7F6D009F75A6 /* wait.json */,
+				022A7E1029BCD9F30063F759 /* time.json */,
 				0233BC2829BAC22B009996EE /* done.json */,
 			);
 			path = Animation;
@@ -569,10 +583,30 @@
 				02A972AF299D282A0021229C /* Home */,
 				0213D53329A510F800542D9C /* Section */,
 				02E8DE9A29ACFA22009B1A47 /* QR */,
+				024AF63529BDEF4B009F75A6 /* Identity */,
 				02A972B5299D2B7D0021229C /* MainTabbarViewController.swift */,
 				02A972B7299D2DB30021229C /* MainTabbarViewModel.swift */,
 			);
 			path = Screen;
+			sourceTree = "<group>";
+		};
+		024AF63529BDEF4B009F75A6 /* Identity */ = {
+			isa = PBXGroup;
+			children = (
+				024AF63C29BDF1D2009F75A6 /* IdentityCell */,
+				024AF63629BDEFA9009F75A6 /* IdentityViewController.swift */,
+				024AF63A29BDF0D2009F75A6 /* IdentityViewController.storyboard */,
+			);
+			path = Identity;
+			sourceTree = "<group>";
+		};
+		024AF63C29BDF1D2009F75A6 /* IdentityCell */ = {
+			isa = PBXGroup;
+			children = (
+				024AF63D29BE20FE009F75A6 /* IdentityCell.swift */,
+				024AF63E29BE20FE009F75A6 /* IdentityCell.xib */,
+			);
+			path = IdentityCell;
 			sourceTree = "<group>";
 		};
 		0293DDB2299543110098FC0D /* Font */ = {
@@ -737,10 +771,13 @@
 				0293DDC7299543290098FC0D /* Nunito-Regular.ttf in Resources */,
 				0233BC5F29BB2EBD009996EE /* Images.xcassets in Resources */,
 				02E85C6329B48F0700D3FD35 /* QRScanViewController.storyboard in Resources */,
+				024AF64029BE20FE009F75A6 /* IdentityCell.xib in Resources */,
 				0201FCAF289CBC410030CE24 /* Dev.xcconfig in Resources */,
+				024AF63B29BDF0D2009F75A6 /* IdentityViewController.storyboard in Resources */,
 				0293DDCE299543290098FC0D /* Nunito-Black.ttf in Resources */,
 				0293DDC4299543290098FC0D /* Nunito-Light.ttf in Resources */,
 				02A2C7822997B7F700316C82 /* SignInViewController.storyboard in Resources */,
+				022A7E1129BCD9F30063F759 /* time.json in Resources */,
 				0293DDD2299543290098FC0D /* Nunito-Italic.ttf in Resources */,
 				0201FCBC289CC0070030CE24 /* PickAnyView.xib in Resources */,
 				0213D53C29A517BD00542D9C /* SectionTableViewCell.xib in Resources */,
@@ -757,6 +794,7 @@
 				02FBFBB829AE5CDC00A70CDD /* QRScanView.xib in Resources */,
 				024A72522992A1B50053E369 /* ApplicationViewController.storyboard in Resources */,
 				0293DDCF299543290098FC0D /* Nunito-LightItalic.ttf in Resources */,
+				024AF63429BD7F6D009F75A6 /* wait.json in Resources */,
 				0201FCB2289CBC410030CE24 /* Production.xcconfig in Resources */,
 				0293DDCA299543290098FC0D /* Nunito-MediumItalic.ttf in Resources */,
 				0293DDD1299543290098FC0D /* Nunito-Bold.ttf in Resources */,
@@ -849,6 +887,7 @@
 				02E85C6129B48EFC00D3FD35 /* QRScanViewController.swift in Sources */,
 				0201FC87289CBC200030CE24 /* UICollectionViewCell+extensions.swift in Sources */,
 				0201FC8C289CBC200030CE24 /* UIViewController+RxLifeCycle.swift in Sources */,
+				024AF63729BDEFA9009F75A6 /* IdentityViewController.swift in Sources */,
 				0201FCBB289CC0070030CE24 /* PickAnyView.swift in Sources */,
 				0201FC52289CBC010030CE24 /* BaseViewModel.swift in Sources */,
 				0213D53529A5134A00542D9C /* SectionViewController.swift in Sources */,
@@ -871,6 +910,7 @@
 				0233BC5D29BB2EBD009996EE /* Bundle+Module.swift in Sources */,
 				0201FC94289CBC200030CE24 /* NotificationName.swift in Sources */,
 				0201FC8B289CBC200030CE24 /* UIScrollView+Extension.swift in Sources */,
+				024AF63F29BE20FE009F75A6 /* IdentityCell.swift in Sources */,
 				0213D53B29A517BC00542D9C /* SectionTableViewCell.swift in Sources */,
 				0201FCA6289CBC2C0030CE24 /* ApiRequest.swift in Sources */,
 				0201FC96289CBC200030CE24 /* Enums.swift in Sources */,

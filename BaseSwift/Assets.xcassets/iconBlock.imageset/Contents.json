@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "335887564_157827850474103_117736787839082364_n.png",
+      "filename" : "icons8-module-100.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "335887564_157827850474103_117736787839082364_n@2x.png",
+      "filename" : "icons8-module-100@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "335887564_157827850474103_117736787839082364_n@3x.png",
+      "filename" : "icons8-module-100@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
