@@ -59,14 +59,14 @@
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V1c-R3-h4R">
                                 <rect key="frame" x="243" y="16" width="26" height="26"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="26" id="BWo-A6-zQz"/>
                                     <constraint firstAttribute="width" secondItem="V1c-R3-h4R" secondAttribute="height" multiplier="1:1" id="Ygk-Nu-xl2"/>
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="colorCDDAF3"/>
                         <constraints>
                             <constraint firstItem="Qtn-gw-BqS" firstAttribute="top" secondItem="1Hn-YV-1EA" secondAttribute="bottom" constant="4" id="5Ua-Pi-vR6"/>
                             <constraint firstItem="1Hn-YV-1EA" firstAttribute="top" secondItem="M3f-Pf-WZV" secondAttribute="bottom" constant="4" id="7mY-TY-iNr"/>
@@ -85,7 +85,7 @@
                                 <real key="value" value="10"/>
                             </userDefinedRuntimeAttribute>
                             <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                <color key="value" name="29606D"/>
+                                <color key="value" name="color29606D"/>
                             </userDefinedRuntimeAttribute>
                             <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                 <real key="value" value="1"/>
@@ -137,11 +137,14 @@
         <namedColor name="DD9F43">
             <color red="0.86699998378753662" green="0.62400001287460327" blue="0.2630000114440918" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <namedColor name="color29606D">
+            <color red="0.16099999845027924" green="0.37599998712539673" blue="0.42699998617172241" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="colorCDDAF3">
+            <color red="0.95294117647058818" green="0.98039215686274506" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>

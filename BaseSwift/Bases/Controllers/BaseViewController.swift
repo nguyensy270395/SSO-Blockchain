@@ -22,10 +22,12 @@ class BaseViewController: UIViewController, UIGestureRecognizerDelegate {
     
     var disposeBag = DisposeBag()
     var interactivePopGestureRecognizer = true
+    var isShowBackButton = false
+    var isShowNavigationBar = false
  
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.hidesBackButton = true
+        self.navigationItem.hidesBackButton = !isShowBackButton
         self.navigationController?.interactivePopGestureRecognizer?.isEnabled = true
         self.navigationController?.interactivePopGestureRecognizer?.delegate = self
         overrideUserInterfaceStyle = .light
@@ -33,7 +35,7 @@ class BaseViewController: UIViewController, UIGestureRecognizerDelegate {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.navigationController?.isNavigationBarHidden = true
+        self.navigationController?.isNavigationBarHidden = !isShowNavigationBar
     }
     
     override func viewWillLayoutSubviews() {
@@ -58,10 +60,12 @@ class BaseViewController: UIViewController, UIGestureRecognizerDelegate {
 class BaseTableViewController: UITableViewController, UIGestureRecognizerDelegate {
     var disposeBag = DisposeBag()
     var interactivePopGestureRecognizer = true
+    var isShowBackButton = false
+    var isShowNavigationBar = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.hidesBackButton = true
+        self.navigationItem.hidesBackButton = !isShowBackButton
         self.navigationController?.interactivePopGestureRecognizer?.isEnabled = true
         self.navigationController?.interactivePopGestureRecognizer?.delegate = self
         overrideUserInterfaceStyle = .light
@@ -69,7 +73,7 @@ class BaseTableViewController: UITableViewController, UIGestureRecognizerDelegat
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.navigationController?.isNavigationBarHidden = true
+        self.navigationController?.isNavigationBarHidden = !isShowNavigationBar
     }
     
     override func viewWillLayoutSubviews() {
