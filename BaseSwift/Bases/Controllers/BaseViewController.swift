@@ -27,7 +27,6 @@ class BaseViewController: UIViewController, UIGestureRecognizerDelegate {
  
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.hidesBackButton = !isShowBackButton
         self.navigationController?.interactivePopGestureRecognizer?.isEnabled = true
         self.navigationController?.interactivePopGestureRecognizer?.delegate = self
         overrideUserInterfaceStyle = .light
@@ -35,8 +34,23 @@ class BaseViewController: UIViewController, UIGestureRecognizerDelegate {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        navigationItem.hidesBackButton = true
+        let newBackButton = UIBarButtonItem(
+            image: R.image.iconBack()?.withRenderingMode(.alwaysOriginal),
+            style: .done,
+            target: self,
+            action: #selector(backButtonTouchUpInside)
+        )
+        newBackButton.imageInsets = .init(top: 0, left: -12, bottom: 0, right: 0)
+        navigationItem.leftBarButtonItem = newBackButton
+        self.navigationItem.hidesBackButton = !isShowBackButton
         self.navigationController?.isNavigationBarHidden = !isShowNavigationBar
     }
+
+@objc
+private func backButtonTouchUpInside() {
+    self.navigationController?.popViewController(animated: true)
+}
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()

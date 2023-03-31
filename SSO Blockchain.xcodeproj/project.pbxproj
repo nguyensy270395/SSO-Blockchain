@@ -85,8 +85,8 @@
 		025C8D9829AB039900D97D9B /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025C8D9729AB039900D97D9B /* SectionHeaderView.swift */; };
 		025C8D9A29AB03E400D97D9B /* SectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 025C8D9929AB03E400D97D9B /* SectionHeaderView.xib */; };
 		02752A0429A90880008DBF77 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02752A0329A90880008DBF77 /* R.generated.swift */; };
-		0281C05029C9AF91007C2189 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0281C04F29C9AF91007C2189 /* ResetPasswordViewController.swift */; };
-		0281C05229C9AF9D007C2189 /* ResetPasswordViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0281C05129C9AF9D007C2189 /* ResetPasswordViewController.storyboard */; };
+		0281C05029C9AF91007C2189 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0281C04F29C9AF91007C2189 /* ChangePasswordViewController.swift */; };
+		0281C05229C9AF9D007C2189 /* ChangePasswordViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0281C05129C9AF9D007C2189 /* ChangePasswordViewController.storyboard */; };
 		0293DDC3299543290098FC0D /* Nunito-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0293DDB3299543270098FC0D /* Nunito-ExtraLight.ttf */; };
 		0293DDC4299543290098FC0D /* Nunito-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0293DDB4299543270098FC0D /* Nunito-Light.ttf */; };
 		0293DDC5299543290098FC0D /* Nunito-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0293DDB5299543270098FC0D /* Nunito-Medium.ttf */; };
@@ -205,8 +205,8 @@
 		025C8D9729AB039900D97D9B /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
 		025C8D9929AB03E400D97D9B /* SectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionHeaderView.xib; sourceTree = "<group>"; };
 		02752A0329A90880008DBF77 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
-		0281C04F29C9AF91007C2189 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
-		0281C05129C9AF9D007C2189 /* ResetPasswordViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ResetPasswordViewController.storyboard; sourceTree = "<group>"; };
+		0281C04F29C9AF91007C2189 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
+		0281C05129C9AF9D007C2189 /* ChangePasswordViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChangePasswordViewController.storyboard; sourceTree = "<group>"; };
 		0293DDB3299543270098FC0D /* Nunito-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraLight.ttf"; sourceTree = "<group>"; };
 		0293DDB4299543270098FC0D /* Nunito-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Light.ttf"; sourceTree = "<group>"; };
 		0293DDB5299543270098FC0D /* Nunito-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Medium.ttf"; sourceTree = "<group>"; };
@@ -621,8 +621,8 @@
 		0281C04E29C9AF64007C2189 /* SettingKey */ = {
 			isa = PBXGroup;
 			children = (
-				0281C04F29C9AF91007C2189 /* ResetPasswordViewController.swift */,
-				0281C05129C9AF9D007C2189 /* ResetPasswordViewController.storyboard */,
+				0281C04F29C9AF91007C2189 /* ChangePasswordViewController.swift */,
+				0281C05129C9AF9D007C2189 /* ChangePasswordViewController.storyboard */,
 			);
 			path = SettingKey;
 			sourceTree = "<group>";
@@ -810,7 +810,7 @@
 				0201FCBC289CC0070030CE24 /* PickAnyView.xib in Resources */,
 				0213D53C29A517BD00542D9C /* SectionTableViewCell.xib in Resources */,
 				0201FCB1289CBC410030CE24 /* Staging.xcconfig in Resources */,
-				0281C05229C9AF9D007C2189 /* ResetPasswordViewController.storyboard in Resources */,
+				0281C05229C9AF9D007C2189 /* ChangePasswordViewController.storyboard in Resources */,
 				0293DDCD299543290098FC0D /* Nunito-ExtraLightItalic.ttf in Resources */,
 				02A972B3299D286A0021229C /* HomeViewController.storyboard in Resources */,
 				029432D9299E7DD000DA0C94 /* AuthCodeTableViewCell.xib in Resources */,
@@ -939,7 +939,7 @@
 				0201FCB0289CBC410030CE24 /* EnvirontmentConfigs.swift in Sources */,
 				0233BC5C29BB2EBD009996EE /* QRScannerView.swift in Sources */,
 				0233BC5D29BB2EBD009996EE /* Bundle+Module.swift in Sources */,
-				0281C05029C9AF91007C2189 /* ResetPasswordViewController.swift in Sources */,
+				0281C05029C9AF91007C2189 /* ChangePasswordViewController.swift in Sources */,
 				0201FC94289CBC200030CE24 /* NotificationName.swift in Sources */,
 				0201FC8B289CBC200030CE24 /* UIScrollView+Extension.swift in Sources */,
 				024AF63F29BE20FE009F75A6 /* IdentityCell.swift in Sources */,

@@ -32,12 +32,12 @@ class SettingViewController: BaseTableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch SettingCase(rawValue: indexPath.row) {
         case .settingKey: break
+        case .biometric: break
         case .resetPassword:
-            let vc = ResetPasswordViewController.instantiate { coder in
-                return ResetPasswordViewController(coder: coder)
+            let vc = ChangePasswordViewController.instantiate { coder in
+                return ChangePasswordViewController(coder: coder)
             }
             self.navigationController?.pushViewController(vc, animated: true)
-        case .biometric: break
         case .information: break
         case .logout: break
         default:
@@ -48,8 +48,8 @@ class SettingViewController: BaseTableViewController {
 
 public enum SettingCase: Int {
     case settingKey = 0
-    case resetPassword
     case biometric
+    case resetPassword
     case information
     case logout
 }
