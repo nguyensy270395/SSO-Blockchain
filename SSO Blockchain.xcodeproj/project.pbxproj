@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0200D62129DB19240034B161 /* BiometricViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0200D62029DB19240034B161 /* BiometricViewController.swift */; };
+		0200D62329DB192E0034B161 /* BiometricViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0200D62229DB192E0034B161 /* BiometricViewController.storyboard */; };
+		0200D62529DB33C20034B161 /* UISwitch+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0200D62429DB33C20034B161 /* UISwitch+Ex.swift */; };
+		0200D62829DB3CB90034B161 /* SettingKeyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0200D62729DB3CB90034B161 /* SettingKeyViewController.swift */; };
+		0200D62A29DB3CC40034B161 /* SettingKeyViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0200D62929DB3CC30034B161 /* SettingKeyViewController.storyboard */; };
 		0201FC2F289CB9530030CE24 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0201FC2E289CB9530030CE24 /* ViewController.swift */; };
 		0201FC32289CB9530030CE24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0201FC30289CB9530030CE24 /* Main.storyboard */; };
 		0201FC34289CB9540030CE24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0201FC33289CB9540030CE24 /* Assets.xcassets */; };
@@ -124,6 +129,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0200D62029DB19240034B161 /* BiometricViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricViewController.swift; sourceTree = "<group>"; };
+		0200D62229DB192E0034B161 /* BiometricViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BiometricViewController.storyboard; sourceTree = "<group>"; };
+		0200D62429DB33C20034B161 /* UISwitch+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISwitch+Ex.swift"; sourceTree = "<group>"; };
+		0200D62729DB3CB90034B161 /* SettingKeyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingKeyViewController.swift; sourceTree = "<group>"; };
+		0200D62929DB3CC30034B161 /* SettingKeyViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingKeyViewController.storyboard; sourceTree = "<group>"; };
 		0201FC27289CB9530030CE24 /* BaseSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0201FC2E289CB9530030CE24 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0201FC31289CB9530030CE24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -257,6 +267,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0200D61F29DB18980034B161 /* Biometric */ = {
+			isa = PBXGroup;
+			children = (
+				0200D62029DB19240034B161 /* BiometricViewController.swift */,
+				0200D62229DB192E0034B161 /* BiometricViewController.storyboard */,
+			);
+			path = Biometric;
+			sourceTree = "<group>";
+		};
+		0200D62629DB3C9D0034B161 /* SettingKey */ = {
+			isa = PBXGroup;
+			children = (
+				0200D62729DB3CB90034B161 /* SettingKeyViewController.swift */,
+				0200D62929DB3CC30034B161 /* SettingKeyViewController.storyboard */,
+			);
+			path = SettingKey;
+			sourceTree = "<group>";
+		};
 		0201FC1E289CB9530030CE24 = {
 			isa = PBXGroup;
 			children = (
@@ -421,6 +449,7 @@
 				0201FC73289CBC200030CE24 /* UICollectionView+extensions.swift */,
 				0201FC74289CBC200030CE24 /* UITableView+Extension.swift */,
 				02D69DF32998DEDF00F5BBB7 /* UITextField+Ex.swift */,
+				0200D62429DB33C20034B161 /* UISwitch+Ex.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -618,13 +647,13 @@
 			path = IdentityCell;
 			sourceTree = "<group>";
 		};
-		0281C04E29C9AF64007C2189 /* SettingKey */ = {
+		0281C04E29C9AF64007C2189 /* ChangePassword */ = {
 			isa = PBXGroup;
 			children = (
 				0281C04F29C9AF91007C2189 /* ChangePasswordViewController.swift */,
 				0281C05129C9AF9D007C2189 /* ChangePasswordViewController.storyboard */,
 			);
-			path = SettingKey;
+			path = ChangePassword;
 			sourceTree = "<group>";
 		};
 		0293DDB2299543110098FC0D /* Font */ = {
@@ -685,7 +714,9 @@
 		02D7833629C21E0F00F48775 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
-				0281C04E29C9AF64007C2189 /* SettingKey */,
+				0200D62629DB3C9D0034B161 /* SettingKey */,
+				0200D61F29DB18980034B161 /* Biometric */,
+				0281C04E29C9AF64007C2189 /* ChangePassword */,
 				02D7833729C21ECE00F48775 /* SettingViewController.swift */,
 				02D7833929C21EE100F48775 /* SettingViewController.storyboard */,
 			);
@@ -788,6 +819,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0200D62A29DB3CC40034B161 /* SettingKeyViewController.storyboard in Resources */,
 				0293DDC6299543290098FC0D /* Nunito-SemiBold.ttf in Resources */,
 				024A72562992A4270053E369 /* LoginViewController.storyboard in Resources */,
 				0293DDC9299543290098FC0D /* Nunito-BoldItalic.ttf in Resources */,
@@ -815,6 +847,7 @@
 				02A972B3299D286A0021229C /* HomeViewController.storyboard in Resources */,
 				029432D9299E7DD000DA0C94 /* AuthCodeTableViewCell.xib in Resources */,
 				0201FC32289CB9530030CE24 /* Main.storyboard in Resources */,
+				0200D62329DB192E0034B161 /* BiometricViewController.storyboard in Resources */,
 				025C8D9A29AB03E400D97D9B /* SectionHeaderView.xib in Resources */,
 				0293DDCC299543290098FC0D /* Nunito-SemiBoldItalic.ttf in Resources */,
 				0293DDC5299543290098FC0D /* Nunito-Medium.ttf in Resources */,
@@ -906,6 +939,7 @@
 				0201FCB6289CBE1C0030CE24 /* AppNavigator.swift in Sources */,
 				0201FC91289CBC200030CE24 /* UITableView+Extension.swift in Sources */,
 				0201FC5B289CBC010030CE24 /* BaseView.swift in Sources */,
+				0200D62829DB3CB90034B161 /* SettingKeyViewController.swift in Sources */,
 				02D7833829C21ECE00F48775 /* SettingViewController.swift in Sources */,
 				0201FC53289CBC010030CE24 /* BaseViewController.swift in Sources */,
 				02D69DF6299934DB00F5BBB7 /* SignUpViewController.swift in Sources */,
@@ -946,6 +980,7 @@
 				0213D53B29A517BC00542D9C /* SectionTableViewCell.swift in Sources */,
 				0201FCA6289CBC2C0030CE24 /* ApiRequest.swift in Sources */,
 				0201FC96289CBC200030CE24 /* Enums.swift in Sources */,
+				0200D62129DB19240034B161 /* BiometricViewController.swift in Sources */,
 				024A72542992A4140053E369 /* LoginViewController.swift in Sources */,
 				0201FC59289CBC010030CE24 /* BaseTableViewCell.swift in Sources */,
 				0201FC80289CBC200030CE24 /* UIView+Constrain+Extension.swift in Sources */,
@@ -970,6 +1005,7 @@
 				0201FCA8289CBC2C0030CE24 /* LGKeychainAccess.swift in Sources */,
 				0201FC5A289CBC010030CE24 /* BaseButton.swift in Sources */,
 				0201FC88289CBC200030CE24 /* CALayer+extensions.swift in Sources */,
+				0200D62529DB33C20034B161 /* UISwitch+Ex.swift in Sources */,
 				0201FC81289CBC200030CE24 /* Date+Extension.swift in Sources */,
 				0201FC55289CBC010030CE24 /* ShadowView.swift in Sources */,
 			);
