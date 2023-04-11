@@ -9,6 +9,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
     var appNavigator: AppNavigatorType?
+    var appViewModel: AppViewModel?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -17,8 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         IQKeyboardManager.shared().shouldResignOnTouchOutside = true
         window = UIWindow()
         appNavigator = AppNavigator(window: window)
-//        appNavigator?.start()
-        appNavigator?.switchTo(viewController: MainTabbarViewController(viewModel: .init()))
+        appViewModel = AppViewModel()
+        appNavigator?.start()
+//        appNavigator?.switchToMain()
         return true
     }
     

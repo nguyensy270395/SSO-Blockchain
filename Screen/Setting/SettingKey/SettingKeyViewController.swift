@@ -6,24 +6,33 @@
 //
 
 import UIKit
+import RxCocoa
+import RxRelay
+import RxSwift
 
-class SettingKeyViewController: UIViewController {
+class SettingKeyViewController: BaseViewController {
+
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+    }
+
+    @IBOutlet weak var newKeyButton: UIButton!
+    @IBOutlet weak var generateButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.title = "Setting Key"
+        isShowBackButton = true
+        isShowNavigationBar = true
+        setupRx()
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func setupRx() {
+        generateButton.rx.tap.subscribe(onNext: { [weak self]_ in
+            let vc = GenerateKeyViewController.instantiate { coder in
+                return GenerateKeyViewController(coder: coder)
+            }
+            self?.navigationController?.pushViewController(vc, animated: true)
+        }).disposed(by: disposeBag)
     }
-    */
-
 }

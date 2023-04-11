@@ -13,6 +13,7 @@ protocol AppNavigatorType: class {
     var window: UIWindow? { get }
     func start()
     func switchTo(viewController: UIViewController)
+    func switchToMain()
     func handleUrl(url: URL)
 }
 
@@ -32,6 +33,10 @@ final class AppNavigator: AppNavigatorType {
     }
     
     func handleUrl(url: URL) {
+    }
+
+    func switchToMain() {
+        switchTo(viewController: MainTabbarViewController(viewModel: .init()))
     }
     
     func switchTo(viewController: UIViewController) {

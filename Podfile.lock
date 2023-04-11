@@ -44,6 +44,7 @@ PODS:
     - RxSwiftExt/Core
   - SnapKit (5.6.0)
   - SwiftLint (0.47.1)
+  - SwiftOTP (3.0.0)
 
 DEPENDENCIES:
   - Action (= 5.0.0)
@@ -61,6 +62,7 @@ DEPENDENCIES:
   - RxSwiftExt (= 6.0.1)
   - SnapKit (~> 5.6.0)
   - SwiftLint
+  - SwiftOTP
 
 SPEC REPOS:
   trunk:
@@ -84,6 +86,7 @@ SPEC REPOS:
     - RxSwiftExt
     - SnapKit
     - SwiftLint
+    - SwiftOTP
 
 SPEC CHECKSUMS:
   Action: 47f1825511907b4fcd79dd7a7db9526c20f78018
@@ -106,7 +109,8 @@ SPEC CHECKSUMS:
   RxSwiftExt: d61c4b9b06e0a448041b1c659e0f1b5c5a035afc
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   SwiftLint: f80f1be7fa96d30e0aa68e58d45d4ea1ccaac519
+  SwiftOTP: ec3848f12a4541f29d96f6a0fe63dcbb8448d96f
 
-PODFILE CHECKSUM: 19be494a06c16b224ab333f81280bc45099d32c9
+PODFILE CHECKSUM: 39fae5ecf79c91c64a85921b8adb4a6ba719595e
 
 COCOAPODS: 1.11.3

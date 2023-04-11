@@ -6,33 +6,40 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nunito-Bold.ttf">
+            <string>Nunito-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Setting Key View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="SettingKeyViewController" id="Y6W-OH-hqX" customClass="SettingKeyViewController" customModule="BaseSwift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SettingKeyViewController" hidesBottomBarWhenPushed="YES" id="Y6W-OH-hqX" customClass="SettingKeyViewController" customModule="BaseSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Q85-Nr-SUg">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Q85-Nr-SUg">
                                 <rect key="frame" x="0.0" y="47" width="375" height="731"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <color key="sectionIndexBackgroundColor" name="color29606D"/>
+                                <color key="backgroundColor" name="color29606D"/>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6jR-Gy-pXR">
-                                <rect key="frame" x="0.0" y="624" width="375" height="154"/>
+                                <rect key="frame" x="0.0" y="624" width="375" height="188"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Pir-fg-y79">
                                         <rect key="frame" x="16" y="16" width="343" height="122"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rMR-dE-HxW">
                                                 <rect key="frame" x="0.0" y="0.0" width="343" height="56"/>
+                                                <color key="backgroundColor" name="color29606D"/>
+                                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="21"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" title="Add new key"/>
+                                                <state key="normal" title="Add new key">
+                                                    <color key="titleColor" name="colorFCFCFC"/>
+                                                </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="8"/>
@@ -41,14 +48,24 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cVT-X9-Abe">
                                                 <rect key="frame" x="0.0" y="66" width="343" height="56"/>
+                                                <color key="backgroundColor" name="colorFCFCFC"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="56" id="EBy-LM-Oah"/>
                                                 </constraints>
+                                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="21"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" title="Generate key"/>
+                                                <state key="normal" title="Generate key">
+                                                    <color key="titleColor" name="color29606D"/>
+                                                </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="color29606D"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </button>
@@ -58,9 +75,9 @@
                                 <color key="backgroundColor" white="1" alpha="0.6961403145695364" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="Pir-fg-y79" firstAttribute="leading" secondItem="6jR-Gy-pXR" secondAttribute="leading" constant="16" id="Ak0-hr-Vod"/>
+                                    <constraint firstAttribute="bottom" secondItem="Pir-fg-y79" secondAttribute="bottom" constant="50" id="NIN-ch-rKm"/>
                                     <constraint firstItem="Pir-fg-y79" firstAttribute="top" secondItem="6jR-Gy-pXR" secondAttribute="top" constant="16" id="dUJ-kd-513"/>
                                     <constraint firstAttribute="trailing" secondItem="Pir-fg-y79" secondAttribute="trailing" constant="16" id="p8i-1J-9FE"/>
-                                    <constraint firstAttribute="bottom" secondItem="Pir-fg-y79" secondAttribute="bottom" constant="16" id="v6a-en-REK"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -70,17 +87,21 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="color29606D"/>
                         <constraints>
                             <constraint firstItem="Q85-Nr-SUg" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="26c-Z4-dam"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Q85-Nr-SUg" secondAttribute="bottom" id="44s-pd-PF4"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Q85-Nr-SUg" secondAttribute="trailing" id="4US-Ko-MnX"/>
                             <constraint firstItem="6jR-Gy-pXR" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="7Hr-UE-TU0"/>
+                            <constraint firstAttribute="bottom" secondItem="6jR-Gy-pXR" secondAttribute="bottom" id="N3Z-uv-b63"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="6jR-Gy-pXR" secondAttribute="trailing" id="dTn-5t-u7u"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="6jR-Gy-pXR" secondAttribute="bottom" id="pL4-UW-3fz"/>
                             <constraint firstItem="Q85-Nr-SUg" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="s6P-a6-gsu"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="generateButton" destination="cVT-X9-Abe" id="X40-hb-Tx6"/>
+                        <outlet property="newKeyButton" destination="rMR-dE-HxW" id="QWH-Pz-gSz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -91,8 +112,8 @@
         <namedColor name="color29606D">
             <color red="0.16099999845027924" green="0.37599998712539673" blue="0.42699998617172241" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <namedColor name="colorFCFCFC">
+            <color red="0.98799997568130493" green="0.98799997568130493" blue="0.98799997568130493" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

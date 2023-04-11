@@ -31,7 +31,11 @@ class SettingViewController: BaseTableViewController {
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch SettingCase(rawValue: indexPath.row) {
-        case .settingKey: break
+        case .settingKey:
+            let vc = SettingKeyViewController.instantiate { coder in
+                return SettingKeyViewController(coder: coder)
+            }
+            self.navigationController?.pushViewController(vc, animated: true)
         case .biometric:
             let vc = BiometricViewController.instantiate { coder in
                 return BiometricViewController(coder: coder)
@@ -42,7 +46,11 @@ class SettingViewController: BaseTableViewController {
                 return ChangePasswordViewController(coder: coder)
             }
             self.navigationController?.pushViewController(vc, animated: true)
-        case .information: break
+        case .information:
+            let vc = InformationViewController.instantiate { coder in
+                return InformationViewController(coder: coder)
+            }
+            self.navigationController?.pushViewController(vc, animated: true)
         case .logout: break
         default:
             break

@@ -9,6 +9,7 @@ import UIKit
 import RxRelay
 import RxSwift
 import RxCocoa
+import LocalAuthentication
 
 class SignInViewController: BaseViewController {
 
@@ -18,6 +19,7 @@ class SignInViewController: BaseViewController {
     @IBOutlet weak var registerButton: UIButton!
     @IBOutlet weak var forgotPassButton: UIButton!
     @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var biometricButton: UIButton!
 
     required init?(coder: NSCoder) {
         super.init(coder: coder)
@@ -46,6 +48,27 @@ class SignInViewController: BaseViewController {
 
         loginButton.rx.tap.subscribe(onNext: { [weak self] _ in
             //TODO: login
+        }).disposed(by: disposeBag)
+
+        biometricButton.rx.tap.subscribe(onNext: { _ in
+            let context = LAContext()
+               var error: NSError?
+
+               if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
+                   let reason = "Identify yourself!"
+
+                   context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) { success, authenticationError in
+                       DispatchQueue.main.async {
+                           if success {
+                               APP_DELEGATE?.appNavigator?.switchToMain()
+                           } else {
+                               // error
+                           }
+                       }
+                   }
+               } else {
+                   // no biometry
+               }
         }).disposed(by: disposeBag)
 
     }

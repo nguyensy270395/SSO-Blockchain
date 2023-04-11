@@ -27,6 +27,8 @@ target 'BaseSwift' do
   pod 'SnapKit', '~> 5.6.0'
   ##Lotie
   pod 'lottie-ios'
+  ##SwipOTP
+  pod 'SwiftOTP'
 end
 post_install do |installer|
   installer.pods_project.targets.each do |target|
