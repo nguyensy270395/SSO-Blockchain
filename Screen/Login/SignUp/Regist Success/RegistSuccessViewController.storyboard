@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nunito-Black.ttf">
+            <string>Nunito-Black</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Regist Success View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="RegistSuccessViewController" id="Y6W-OH-hqX" customClass="RegistSuccessViewController" customModule="SSO_Blockchain" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9WC-F7-Pga">
+                                <rect key="frame" x="68" y="95" width="239" height="239"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="9WC-F7-Pga" secondAttribute="height" multiplier="1:1" id="I7u-te-3Jj"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to SSO-Blockchain" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fEw-ym-Wa7">
+                                <rect key="frame" x="24" y="366" width="327" height="30.333333333333314"/>
+                                <fontDescription key="fontDescription" name="Nunito-Black" family="Nunito" pointSize="22"/>
+                                <color key="textColor" name="colorFCFCFC"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" name="color283442"/>
+                        <constraints>
+                            <constraint firstItem="fEw-ym-Wa7" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="Fwe-3P-0DX"/>
+                            <constraint firstItem="fEw-ym-Wa7" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="SPc-cc-SoE"/>
+                            <constraint firstItem="9WC-F7-Pga" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="68" id="WOE-WP-Cs4"/>
+                            <constraint firstItem="fEw-ym-Wa7" firstAttribute="top" secondItem="9WC-F7-Pga" secondAttribute="bottom" constant="32" id="cyO-As-BXr"/>
+                            <constraint firstItem="9WC-F7-Pga" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="gaM-W7-mOF"/>
+                            <constraint firstItem="9WC-F7-Pga" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="48" id="xl9-lN-BZI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="animationView" destination="9WC-F7-Pga" id="eio-1N-WWl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131" y="-27"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="color283442">
+            <color red="0.15700000524520874" green="0.20399999618530273" blue="0.25900000333786011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="colorFCFCFC">
+            <color red="0.98799997568130493" green="0.98799997568130493" blue="0.98799997568130493" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

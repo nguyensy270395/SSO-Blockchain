@@ -40,7 +40,7 @@ class SignInViewController: BaseViewController, BaseViewControllerProtocol {
     }
 
     func setupViews() {
-
+        biometricButton.isEnabled = viewModel.checkToken
     }
 
     func setupRx() {
@@ -65,39 +65,19 @@ class SignInViewController: BaseViewController, BaseViewControllerProtocol {
         forgotPassButton.rx.tap.subscribe(onNext: { [weak self] _ in
             //TODO: forgot password
         }).disposed(by: disposeBag)
-
-        biometricButton.rx.tap.subscribe(onNext: { _ in
-            let context = LAContext()
-               var error: NSError?
-
-               if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
-                   let reason = "Identify yourself!"
-
-                   context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) { success, authenticationError in
-                       DispatchQueue.main.async {
-                           if success {
-                               APP_DELEGATE?.appNavigator?.switchToMain()
-                           } else {
-                               // error
-                           }
-                       }
-                   }
-               } else {
-                   // no biometry
-               }
-        }).disposed(by: disposeBag)
-
     }
 
     func bindingViewModels() {
         let input = SignInViewModel.Input(actionLogin: loginButton.rx.tap.map{ [weak self] in
             (self?.userNameText.text ?? "", self?.passWordText.text ?? "")
-        })
+        }, actionBiometric: biometricButton.rx.tap.asObservable())
         let output = viewModel.transfrom(from: input)
         output.loginSuccess.drive(onNext: {[weak self] login in
             UIApplication.shared.hideProgress()
             if login {
-                APP_DELEGATE?.appNavigator?.switchToMain()
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                    APP_DELEGATE?.appNavigator?.switchToMain()
+                }
             } else {
                 let alert = UIAlertController(title: "Đăng nhập thất bại", message: "Tài khoản hoặc mật khẩu bạn nhập không chính xác", preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: "OK", style: .cancel))

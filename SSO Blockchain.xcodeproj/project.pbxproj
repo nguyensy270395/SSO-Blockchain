@@ -85,6 +85,10 @@
 		023E133529E7235D00C81553 /* ApolloAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023E133129E7235D00C81553 /* ApolloAPI.swift */; };
 		023E133729E7235D00C81553 /* ApolloNetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023E133329E7235D00C81553 /* ApolloNetworkHelper.swift */; };
 		023E133829E7235D00C81553 /* ApolloAPI.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 023E133429E7235D00C81553 /* ApolloAPI.graphql */; };
+		024958BD29EBDCC30058158A /* RegistSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024958BC29EBDCC30058158A /* RegistSuccessViewController.swift */; };
+		024958BF29EBDCD80058158A /* RegistSuccessViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 024958BE29EBDCD80058158A /* RegistSuccessViewController.storyboard */; };
+		024958C329EBE4A90058158A /* success.json in Resources */ = {isa = PBXBuildFile; fileRef = 024958C229EBE4A90058158A /* success.json */; };
+		024958C529EBF1FE0058158A /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024958C429EBF1FE0058158A /* String+Extension.swift */; };
 		024A72502992A1A20053E369 /* ApplicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024A724F2992A1A20053E369 /* ApplicationViewController.swift */; };
 		024A72522992A1B50053E369 /* ApplicationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 024A72512992A1B50053E369 /* ApplicationViewController.storyboard */; };
 		024A72542992A4140053E369 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024A72532992A4140053E369 /* StartViewController.swift */; };
@@ -232,6 +236,10 @@
 		023E133129E7235D00C81553 /* ApolloAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApolloAPI.swift; sourceTree = "<group>"; };
 		023E133329E7235D00C81553 /* ApolloNetworkHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApolloNetworkHelper.swift; sourceTree = "<group>"; };
 		023E133429E7235D00C81553 /* ApolloAPI.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ApolloAPI.graphql; sourceTree = "<group>"; };
+		024958BC29EBDCC30058158A /* RegistSuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistSuccessViewController.swift; sourceTree = "<group>"; };
+		024958BE29EBDCD80058158A /* RegistSuccessViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegistSuccessViewController.storyboard; sourceTree = "<group>"; };
+		024958C229EBE4A90058158A /* success.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = success.json; sourceTree = "<group>"; };
+		024958C429EBF1FE0058158A /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		024A724F2992A1A20053E369 /* ApplicationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationViewController.swift; sourceTree = "<group>"; };
 		024A72512992A1B50053E369 /* ApplicationViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ApplicationViewController.storyboard; sourceTree = "<group>"; };
 		024A72532992A4140053E369 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
@@ -509,6 +517,7 @@
 				0201FC74289CBC200030CE24 /* UITableView+Extension.swift */,
 				02D69DF32998DEDF00F5BBB7 /* UITextField+Ex.swift */,
 				0200D62429DB33C20034B161 /* UISwitch+Ex.swift */,
+				024958C429EBF1FE0058158A /* String+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -663,6 +672,7 @@
 				024AF63329BD7F6D009F75A6 /* wait.json */,
 				022A7E1029BCD9F30063F759 /* time.json */,
 				0233BC2829BAC22B009996EE /* done.json */,
+				024958C229EBE4A90058158A /* success.json */,
 			);
 			path = Animation;
 			sourceTree = "<group>";
@@ -678,6 +688,15 @@
 			);
 			name = QRScanner;
 			path = BaseSwift/QRScanner;
+			sourceTree = "<group>";
+		};
+		024958BB29EBDC880058158A /* Regist Success */ = {
+			isa = PBXGroup;
+			children = (
+				024958BC29EBDCC30058158A /* RegistSuccessViewController.swift */,
+				024958BE29EBDCD80058158A /* RegistSuccessViewController.storyboard */,
+			);
+			path = "Regist Success";
 			sourceTree = "<group>";
 		};
 		024A723A299264C90053E369 /* Screen */ = {
@@ -798,6 +817,7 @@
 				02D69DF5299934DB00F5BBB7 /* SignUpViewController.swift */,
 				02D69DF7299934E500F5BBB7 /* SignUpViewController.storyboard */,
 				025D6D8229EAB87E00EA6D5D /* SignUpViewModel.swift */,
+				024958BB29EBDC880058158A /* Regist Success */,
 			);
 			path = SignUp;
 			sourceTree = "<group>";
@@ -991,6 +1011,7 @@
 				0207122E29E5B04A00407DBD /* InformationViewController.storyboard in Resources */,
 				023E133829E7235D00C81553 /* ApolloAPI.graphql in Resources */,
 				0201FCAF289CBC410030CE24 /* Dev.xcconfig in Resources */,
+				024958BF29EBDCD80058158A /* RegistSuccessViewController.storyboard in Resources */,
 				024AF63B29BDF0D2009F75A6 /* IdentityViewController.storyboard in Resources */,
 				0293DDCE299543290098FC0D /* Nunito-Black.ttf in Resources */,
 				0293DDC4299543290098FC0D /* Nunito-Light.ttf in Resources */,
@@ -1020,6 +1041,7 @@
 				0293DDCA299543290098FC0D /* Nunito-MediumItalic.ttf in Resources */,
 				0293DDD1299543290098FC0D /* Nunito-Bold.ttf in Resources */,
 				0213D53729A5136500542D9C /* SectionViewController.storyboard in Resources */,
+				024958C329EBE4A90058158A /* success.json in Resources */,
 				0293DDC3299543290098FC0D /* Nunito-ExtraLight.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1129,6 +1151,7 @@
 				0201FC90289CBC200030CE24 /* UICollectionView+extensions.swift in Sources */,
 				0201FCA7289CBC2C0030CE24 /* Storage.swift in Sources */,
 				0201FC7F289CBC200030CE24 /* UIImage+Dowsampling+Extension.swift in Sources */,
+				024958BD29EBDCC30058158A /* RegistSuccessViewController.swift in Sources */,
 				024A72502992A1A20053E369 /* ApplicationViewController.swift in Sources */,
 				025D6D7A29EAB38400EA6D5D /* Mutation.graphql.swift in Sources */,
 				0201FC95289CBC200030CE24 /* Consts.swift in Sources */,
@@ -1177,6 +1200,7 @@
 				025D6D8329EAB87E00EA6D5D /* SignUpViewModel.swift in Sources */,
 				0201FC89289CBC200030CE24 /* NSObject+extensions.swift in Sources */,
 				0201FC56289CBC010030CE24 /* BaseLabel.swift in Sources */,
+				024958C529EBF1FE0058158A /* String+Extension.swift in Sources */,
 				0201FCA8289CBC2C0030CE24 /* LGKeychainAccess.swift in Sources */,
 				025D6D7B29EAB38400EA6D5D /* AuthorizableObject.graphql.swift in Sources */,
 				0201FC5A289CBC010030CE24 /* BaseButton.swift in Sources */,

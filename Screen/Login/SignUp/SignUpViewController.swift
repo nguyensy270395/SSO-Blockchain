@@ -36,6 +36,7 @@ class SignUpViewController: BaseViewController, BaseViewControllerProtocol {
         super.viewDidLoad()
         setupViews()
         setupRx()
+        bindingViewModels()
     }
 
     func setupViews() {
@@ -44,13 +45,30 @@ class SignUpViewController: BaseViewController, BaseViewControllerProtocol {
     }
 
     func setupRx() {
-        let obser = Observable.combineLatest(passWordText.rx.text.orEmpty.asObservable(),
+        let obser = Observable.combineLatest(userNameText.rx.text.orEmpty.asObservable(),
+                                             passWordText.rx.text.orEmpty.asObservable(),
                                              rePassWordText.rx.text.orEmpty.asObservable())
 
-        obser.skip(1).subscribe(onNext: {[weak self] pass, repass in
+        obser.skip(1).subscribe(onNext: {[weak self] user, pass, repass in
             guard let self = self else { return }
-            self.registerButton.isEnabled = (pass == repass && !pass.isEmpty)
+            self.registerButton.isEnabled = (pass == repass
+                                             && !pass.isEmpty
+                                             && pass.isValidPassWord()
+                                             && !user.isEmpty
+                                             && user.isValidEmail())
             self.registerButton.alpha = (self.registerButton.isEnabled ? 1.0 : 0.5)
+        }).disposed(by: disposeBag)
+
+        userNameText.rx.text.orEmpty.subscribe(onNext: {[weak self] user in
+            self?.userNameText.borderColor = user.isValidEmail() ? R.color.color283442() ?? .black : R.color.color852814() ?? .red
+        }).disposed(by: disposeBag)
+
+        passWordText.rx.text.orEmpty.subscribe(onNext: {[weak self] pass in
+            self?.passWordText.borderColor = pass.isValidPassWord() ? R.color.color283442() ?? .black : R.color.color852814() ?? .red
+        }).disposed(by: disposeBag)
+
+        rePassWordText.rx.text.orEmpty.subscribe(onNext: {[weak self] pass in
+            self?.rePassWordText.borderColor = pass.isValidPassWord() ? R.color.color283442() ?? .black : R.color.color852814() ?? .red
         }).disposed(by: disposeBag)
 
         blindPassword.rx.tap.subscribe(onNext: {[weak self] _ in
@@ -62,7 +80,7 @@ class SignUpViewController: BaseViewController, BaseViewControllerProtocol {
         blindRepassWord.rx.tap.subscribe(onNext: {[weak self] _ in
             guard let self = self else { return }
             self.rePassWordText.isSecureTextEntry.toggle()
-            self.blindRepassWord.setImage(self.passWordText.isSecureTextEntry ? R.image.iconEye() : R.image.iconBlind() , for: .normal)
+            self.blindRepassWord.setImage(self.rePassWordText.isSecureTextEntry ? R.image.iconEye() : R.image.iconBlind() , for: .normal)
         }).disposed(by: disposeBag)
 
         backButton.rx.tap.subscribe(onNext: { [weak self] _ in
@@ -73,14 +91,26 @@ class SignUpViewController: BaseViewController, BaseViewControllerProtocol {
                 self.dismiss(animated: true)
             }
         }).disposed(by: disposeBag)
-        
-        registerButton.rx.tap.subscribe(onNext: { [weak self] _ in
-            //TODO: register
-        }).disposed(by: disposeBag)
     }
 
     func bindingViewModels() {
-
+        let input = SignUpViewModel.Input(actionRegist: registerButton.rx.tap.map{ [weak self] in
+            (self?.userNameText.text ?? "", self?.passWordText.text ?? "")
+        })
+        let output = viewModel.transfrom(from: input)
+        output.registSuccess.drive(onNext: {[weak self] regist in
+            UIApplication.shared.hideProgress()
+            if regist {
+                let vc = RegistSuccessViewController.instantiate { coder in
+                    return RegistSuccessViewController(coder: coder)
+                }
+                vc.modalPresentationStyle = .fullScreen
+                self?.present(vc, animated: true)
+            } else {
+                let alert = UIAlertController(title: "Đăng kí thất bại", message: "Tài khoản hoặc mật khẩu bạn nhập không chính xác", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .cancel))
+                self?.present(alert, animated: true)
+            }
+        }).disposed(by: disposeBag)
     }
-
 }

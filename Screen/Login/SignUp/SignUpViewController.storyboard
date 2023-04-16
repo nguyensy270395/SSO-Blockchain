@@ -86,6 +86,9 @@
                                                             <userDefinedRuntimeAttribute type="number" keyPath="paddingRightCustom">
                                                                 <real key="value" value="16"/>
                                                             </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                                <real key="value" value="16"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </textField>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pya-Q4-VkK">
@@ -132,6 +135,11 @@
                                                             <constraint firstItem="sgE-xF-GYU" firstAttribute="centerY" secondItem="pya-Q4-VkK" secondAttribute="centerY" id="dgr-Cv-2kt"/>
                                                             <constraint firstAttribute="bottom" secondItem="0tm-bC-xeR" secondAttribute="bottom" id="zTb-Xz-EvS"/>
                                                         </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="16"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9XD-1y-x57">
                                                         <rect key="frame" x="0.0" y="152" width="350" height="56"/>
@@ -198,7 +206,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mật khẩu phải bao gồm cả số, chữ in hoa và chữ in thường" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9p6-cT-mPn">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mật khẩu phải có độ dài ít nhất 8 kí tự bao gồm chữ in hoa, chữ in thường và số" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9p6-cT-mPn">
                                                 <rect key="frame" x="32" y="284" width="350" height="38.5"/>
                                                 <fontDescription key="fontDescription" name="Nunito-Italic" family="Nunito" pointSize="14"/>
                                                 <nil key="textColor"/>
@@ -246,7 +254,7 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" name="283442"/>
+                        <color key="backgroundColor" name="color283442"/>
                         <constraints>
                             <constraint firstItem="LlK-4J-YV1" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="5UV-Ww-QKc"/>
                             <constraint firstAttribute="trailing" secondItem="LlK-4J-YV1" secondAttribute="trailing" id="HnF-sH-zrK"/>
