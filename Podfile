@@ -29,6 +29,8 @@ target 'BaseSwift' do
   pod 'lottie-ios'
   ##SwipOTP
   pod 'SwiftOTP'
+  ##Apollo
+  pod "Apollo"
 end
 post_install do |installer|
   installer.pods_project.targets.each do |target|

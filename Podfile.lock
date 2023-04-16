@@ -3,6 +3,9 @@ PODS:
     - RxCocoa (~> 6.0)
     - RxSwift (~> 6.0)
   - Alamofire (5.6.1)
+  - Apollo (1.1.1):
+    - Apollo/Core (= 1.1.1)
+  - Apollo/Core (1.1.1)
   - Differentiator (5.0.0)
   - IQKeyboardManager (6.5.10)
   - KeychainAccess (4.2.2)
@@ -48,6 +51,7 @@ PODS:
 
 DEPENDENCIES:
   - Action (= 5.0.0)
+  - Apollo
   - IQKeyboardManager
   - KeychainAccess (= 4.2.2)
   - Kingfisher (~> 7.0)
@@ -68,6 +72,7 @@ SPEC REPOS:
   trunk:
     - Action
     - Alamofire
+    - Apollo
     - Differentiator
     - IQKeyboardManager
     - KeychainAccess
@@ -91,6 +96,7 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Action: 47f1825511907b4fcd79dd7a7db9526c20f78018
   Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
+  Apollo: cc43fcd0a820613f0825728315b79a8387eb208c
   Differentiator: e8497ceab83c1b10ca233716d547b9af21b9344d
   IQKeyboardManager: 45a1fa55c1a5b02c61ac0fd7fd5b62bb4ad20d97
   KeychainAccess: c0c4f7f38f6fc7bbe58f5702e25f7bd2f65abf51
@@ -111,6 +117,6 @@ SPEC CHECKSUMS:
   SwiftLint: f80f1be7fa96d30e0aa68e58d45d4ea1ccaac519
   SwiftOTP: ec3848f12a4541f29d96f6a0fe63dcbb8448d96f
 
-PODFILE CHECKSUM: 39fae5ecf79c91c64a85921b8adb4a6ba719595e
+PODFILE CHECKSUM: 934c65442057b5de7fea6bcd7207df07c504dd7b
 
 COCOAPODS: 1.11.3

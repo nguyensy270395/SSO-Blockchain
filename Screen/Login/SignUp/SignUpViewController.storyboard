@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nunito-Bold.ttf">
+            <string>Nunito-Bold</string>
+        </array>
+        <array key="Nunito-Italic.ttf">
+            <string>Nunito-Italic</string>
+        </array>
+        <array key="Nunito-Regular.ttf">
+            <string>Nunito-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Sign Up View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="SignUpViewController" id="Y6W-OH-hqX" customClass="SignUpViewController" customModule="SSO_Blockchain" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LlK-4J-YV1">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w7L-Zu-wnR">
+                                        <rect key="frame" x="16" y="52" width="36" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="36" id="haH-Sp-6h0"/>
+                                            <constraint firstAttribute="height" constant="36" id="jkw-ur-fWw"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal">
+                                            <imageReference key="image" image="arrow.left" catalog="system" renderingMode="hierarchical-single">
+                                                <hierarchicalColors>
+                                                    <color name="colorFCFCFC"/>
+                                                    <color systemColor="secondaryLabelColor"/>
+                                                    <color systemColor="tertiaryLabelColor"/>
+                                                </hierarchicalColors>
+                                            </imageReference>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="bold"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KDa-Oh-TV3">
+                                        <rect key="frame" x="16" y="108" width="118" height="44"/>
+                                        <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="32"/>
+                                        <color key="textColor" name="colorFCFCFC"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="peY-UK-dhM">
+                                        <rect key="frame" x="0.0" y="304.5" width="414" height="591.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ozx-Uj-d9T">
+                                                <rect key="frame" x="32" y="60" width="350" height="208"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cPc-4p-1K6">
+                                                        <rect key="frame" x="0.0" y="0.0" width="350" height="56"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="56" id="Vhd-CS-Rgo"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="18"/>
+                                                        <textInputTraits key="textInputTraits" textContentType="username"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="16"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" name="color283442"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="paddingLeftCustom">
+                                                                <real key="value" value="16"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="paddingRightCustom">
+                                                                <real key="value" value="16"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pya-Q4-VkK">
+                                                        <rect key="frame" x="0.0" y="76" width="350" height="56"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0tm-bC-xeR">
+                                                                <rect key="frame" x="0.0" y="0.0" width="350" height="56"/>
+                                                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="18"/>
+                                                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="16"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" name="color283442"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="1"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingLeftCustom">
+                                                                        <real key="value" value="16"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingRightCustom">
+                                                                        <real key="value" value="56"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </textField>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sgE-xF-GYU">
+                                                                <rect key="frame" x="310" y="16" width="24" height="24"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="sgE-xF-GYU" secondAttribute="height" multiplier="1:1" id="BJD-Hi-Ogd"/>
+                                                                    <constraint firstAttribute="height" constant="24" id="LoO-aH-6o4"/>
+                                                                </constraints>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" image="iconEye"/>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="sgE-xF-GYU" secondAttribute="trailing" constant="16" id="1FQ-yH-kmd"/>
+                                                            <constraint firstItem="0tm-bC-xeR" firstAttribute="top" secondItem="pya-Q4-VkK" secondAttribute="top" id="CUA-B8-uTS"/>
+                                                            <constraint firstItem="0tm-bC-xeR" firstAttribute="leading" secondItem="pya-Q4-VkK" secondAttribute="leading" id="Pei-pE-epO"/>
+                                                            <constraint firstAttribute="trailing" secondItem="0tm-bC-xeR" secondAttribute="trailing" id="ck7-aF-TvC"/>
+                                                            <constraint firstItem="sgE-xF-GYU" firstAttribute="centerY" secondItem="pya-Q4-VkK" secondAttribute="centerY" id="dgr-Cv-2kt"/>
+                                                            <constraint firstAttribute="bottom" secondItem="0tm-bC-xeR" secondAttribute="bottom" id="zTb-Xz-EvS"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9XD-1y-x57">
+                                                        <rect key="frame" x="0.0" y="152" width="350" height="56"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Re-password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CvJ-VC-9JH">
+                                                                <rect key="frame" x="0.0" y="0.0" width="350" height="56"/>
+                                                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="18"/>
+                                                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="16"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" name="color283442"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="1"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingLeftCustom">
+                                                                        <real key="value" value="16"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingRightCustom">
+                                                                        <real key="value" value="56"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </textField>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ndj-2L-U0u">
+                                                                <rect key="frame" x="310" y="16" width="24" height="24"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="24" id="Vww-7T-g4E"/>
+                                                                    <constraint firstAttribute="width" secondItem="Ndj-2L-U0u" secondAttribute="height" multiplier="1:1" id="fqm-1B-OKs"/>
+                                                                </constraints>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" image="iconEye"/>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstItem="Ndj-2L-U0u" firstAttribute="centerY" secondItem="9XD-1y-x57" secondAttribute="centerY" id="7uT-81-65I"/>
+                                                            <constraint firstAttribute="trailing" secondItem="CvJ-VC-9JH" secondAttribute="trailing" id="HsA-bM-USP"/>
+                                                            <constraint firstAttribute="trailing" secondItem="Ndj-2L-U0u" secondAttribute="trailing" constant="16" id="TV9-TZ-kej"/>
+                                                            <constraint firstItem="CvJ-VC-9JH" firstAttribute="top" secondItem="9XD-1y-x57" secondAttribute="top" id="dNn-ZH-OVX"/>
+                                                            <constraint firstItem="CvJ-VC-9JH" firstAttribute="leading" secondItem="9XD-1y-x57" secondAttribute="leading" id="leN-gL-ZE8"/>
+                                                            <constraint firstAttribute="bottom" secondItem="CvJ-VC-9JH" secondAttribute="bottom" id="x2Q-2v-bNZ"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kgQ-bQ-B0c">
+                                                <rect key="frame" x="77" y="350.5" width="260" height="56"/>
+                                                <color key="backgroundColor" name="283442"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="56" id="3tA-hD-jPm"/>
+                                                    <constraint firstAttribute="width" constant="260" id="6tY-a0-gAz"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="18"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Register">
+                                                    <color key="titleColor" name="colorFCFCFC"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="28"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mật khẩu phải bao gồm cả số, chữ in hoa và chữ in thường" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9p6-cT-mPn">
+                                                <rect key="frame" x="32" y="284" width="350" height="38.5"/>
+                                                <fontDescription key="fontDescription" name="Nunito-Italic" family="Nunito" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="ozx-Uj-d9T" firstAttribute="top" secondItem="peY-UK-dhM" secondAttribute="top" constant="60" id="2oo-YU-eaZ"/>
+                                            <constraint firstItem="kgQ-bQ-B0c" firstAttribute="top" secondItem="9p6-cT-mPn" secondAttribute="bottom" constant="28" id="5ov-CJ-8kB"/>
+                                            <constraint firstAttribute="trailing" secondItem="9p6-cT-mPn" secondAttribute="trailing" constant="32" id="8sy-PN-hHl"/>
+                                            <constraint firstItem="ozx-Uj-d9T" firstAttribute="centerX" secondItem="peY-UK-dhM" secondAttribute="centerX" id="V2V-Zc-fly"/>
+                                            <constraint firstItem="kgQ-bQ-B0c" firstAttribute="centerX" secondItem="peY-UK-dhM" secondAttribute="centerX" id="hwg-1y-lAL"/>
+                                            <constraint firstItem="ozx-Uj-d9T" firstAttribute="leading" secondItem="peY-UK-dhM" secondAttribute="leading" constant="32" id="ou2-dR-cVW"/>
+                                            <constraint firstItem="9p6-cT-mPn" firstAttribute="leading" secondItem="peY-UK-dhM" secondAttribute="leading" constant="32" id="uIy-SN-3Yr"/>
+                                            <constraint firstItem="9p6-cT-mPn" firstAttribute="top" secondItem="ozx-Uj-d9T" secondAttribute="bottom" constant="16" id="uZE-B2-p6a"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="36"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Chat bots like GPT are powered by large amounts of data and computing techniques to make predictions to string words together " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n78-aF-HcD">
+                                        <rect key="frame" x="16" y="168" width="382" height="74"/>
+                                        <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="18"/>
+                                        <color key="textColor" name="colorFCFCFC"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="peY-UK-dhM" firstAttribute="top" relation="lessThanOrEqual" secondItem="n78-aF-HcD" secondAttribute="bottom" constant="79" id="6QC-qM-Gxu"/>
+                                    <constraint firstItem="w7L-Zu-wnR" firstAttribute="top" secondItem="LlK-4J-YV1" secondAttribute="top" constant="52" id="6xt-3i-kSA"/>
+                                    <constraint firstItem="peY-UK-dhM" firstAttribute="leading" secondItem="LlK-4J-YV1" secondAttribute="leading" id="8U7-sr-sKg"/>
+                                    <constraint firstItem="KDa-Oh-TV3" firstAttribute="top" secondItem="w7L-Zu-wnR" secondAttribute="bottom" constant="20" id="DOn-I1-hqJ"/>
+                                    <constraint firstItem="n78-aF-HcD" firstAttribute="top" secondItem="KDa-Oh-TV3" secondAttribute="bottom" constant="16" id="GPg-Sf-dwd"/>
+                                    <constraint firstItem="KDa-Oh-TV3" firstAttribute="leading" secondItem="LlK-4J-YV1" secondAttribute="leading" constant="16" id="JAT-cN-XSe"/>
+                                    <constraint firstAttribute="bottom" secondItem="peY-UK-dhM" secondAttribute="bottom" id="MJ0-9V-dkq"/>
+                                    <constraint firstItem="n78-aF-HcD" firstAttribute="leading" secondItem="LlK-4J-YV1" secondAttribute="leading" constant="16" id="RqF-B7-041"/>
+                                    <constraint firstItem="w7L-Zu-wnR" firstAttribute="leading" secondItem="LlK-4J-YV1" secondAttribute="leading" constant="16" id="WFG-rj-M1I"/>
+                                    <constraint firstItem="peY-UK-dhM" firstAttribute="top" secondItem="LlK-4J-YV1" secondAttribute="centerY" multiplier="0.68" id="WyI-1R-w3g"/>
+                                    <constraint firstItem="n78-aF-HcD" firstAttribute="centerX" secondItem="LlK-4J-YV1" secondAttribute="centerX" id="X25-Sb-v42"/>
+                                    <constraint firstAttribute="trailing" secondItem="peY-UK-dhM" secondAttribute="trailing" id="yay-Gc-JLE"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" name="283442"/>
+                        <constraints>
+                            <constraint firstItem="LlK-4J-YV1" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="5UV-Ww-QKc"/>
+                            <constraint firstAttribute="trailing" secondItem="LlK-4J-YV1" secondAttribute="trailing" id="HnF-sH-zrK"/>
+                            <constraint firstItem="LlK-4J-YV1" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="tR7-YD-jXB"/>
+                            <constraint firstAttribute="bottom" secondItem="LlK-4J-YV1" secondAttribute="bottom" id="wjs-7d-XsN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="w7L-Zu-wnR" id="9H0-P2-YR3"/>
+                        <outlet property="blindPassword" destination="sgE-xF-GYU" id="fc1-jI-2z5"/>
+                        <outlet property="blindRepassWord" destination="Ndj-2L-U0u" id="UO2-4a-SUi"/>
+                        <outlet property="passWordText" destination="0tm-bC-xeR" id="s9B-MQ-t2L"/>
+                        <outlet property="rePassWordText" destination="CvJ-VC-9JH" id="iBd-cF-k2X"/>
+                        <outlet property="registerButton" destination="kgQ-bQ-B0c" id="zJt-U1-s7C"/>
+                        <outlet property="userNameText" destination="cPc-4p-1K6" id="jTp-MA-zdp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-16" y="-27"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.left" catalog="system" width="128" height="95"/>
+        <image name="iconEye" width="30" height="30"/>
+        <namedColor name="283442">
+            <color red="0.15700000524520874" green="0.20399999618530273" blue="0.25900000333786011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="color283442">
+            <color red="0.15700000524520874" green="0.20399999618530273" blue="0.25900000333786011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="colorFCFCFC">
+            <color red="0.98799997568130493" green="0.98799997568130493" blue="0.98799997568130493" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tertiaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29803921568627451" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

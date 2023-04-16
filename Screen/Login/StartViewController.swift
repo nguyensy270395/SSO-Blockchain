@@ -1,5 +1,5 @@
 //
-//  LoginViewController.swift
+//  StartViewController.swift
 //  BaseSwift
 //
 //  Created by Nguyễn Thanh Sỹ on 07/02/2023.
@@ -10,7 +10,7 @@ import RxCocoa
 import RxSwift
 import RxRelay
 
-class LoginViewController: BaseViewController {
+class StartViewController: BaseViewController {
 
     required init?(coder: NSCoder) {
         super.init(coder: coder)
@@ -40,7 +40,7 @@ class LoginViewController: BaseViewController {
     func setupRx() {
         signInButton.rx.tap.subscribe(onNext: {[weak self] _ in
             let vc = SignInViewController.instantiate { coder in
-                return SignInViewController(coder: coder)
+                return SignInViewController(coder: coder, viewModel: .init())
             }
             let nav = BaseNavigationViewController(rootViewController: vc)
             nav.modalPresentationStyle = .fullScreen
@@ -49,7 +49,7 @@ class LoginViewController: BaseViewController {
 
         signUpButton.rx.tap.subscribe(onNext: {[weak self] _ in
             let vc = SignUpViewController.instantiate { coder in
-                return SignUpViewController(coder: coder)
+                return SignUpViewController(coder: coder, viewModel: .init())
             }
             vc.present.toggle()
             let nav = BaseNavigationViewController(rootViewController: vc)

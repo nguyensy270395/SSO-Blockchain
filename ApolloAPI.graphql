@@ -1,0 +1,21 @@
+mutation Login($data: LoginInput!) {
+  login(data: $data) {
+    accessToken
+    wallet {
+      email
+      id
+      role
+    }
+  }
+}
+
+mutation Register($data: RegisterInput!) {
+  register(data: $data) {
+    accessToken
+    wallet {
+      email
+      id
+      role
+    }
+  }
+}

@@ -22,7 +22,7 @@
         <!--Sign In View Controller-->
         <scene sceneID="fsM-Wq-7sQ">
             <objects>
-                <viewController storyboardIdentifier="SignInViewController" id="vqu-Fq-3dX" customClass="SignInViewController" customModule="BaseSwift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignInViewController" id="vqu-Fq-3dX" customClass="SignInViewController" customModule="SSO_Blockchain" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9PS-TH-yJc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -57,56 +57,81 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mZm-vo-S23">
                                         <rect key="frame" x="0.0" y="304.5" width="414" height="591.5"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zRj-gC-KhC">
-                                                <rect key="frame" x="32" y="60" width="350" height="56"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="56" id="1oe-Zn-RKj"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="18"/>
-                                                <textInputTraits key="textInputTraits" textContentType="username"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <real key="value" value="16"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                        <color key="value" name="283442"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                        <real key="value" value="1"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingLeftCustom">
-                                                        <real key="value" value="16"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingRightCustom">
-                                                        <real key="value" value="16"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6KP-an-rcN">
-                                                <rect key="frame" x="32" y="146" width="350" height="56"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="56" id="YuJ-18-qzV"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="18"/>
-                                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <real key="value" value="16"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                        <color key="value" name="283442"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                        <real key="value" value="1"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingLeftCustom">
-                                                        <real key="value" value="16"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingRightCustom">
-                                                        <real key="value" value="16"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </textField>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="SUO-td-ps3">
+                                                <rect key="frame" x="32" y="60" width="350" height="142"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zRj-gC-KhC">
+                                                        <rect key="frame" x="0.0" y="0.0" width="350" height="56"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="56" id="1oe-Zn-RKj"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="18"/>
+                                                        <textInputTraits key="textInputTraits" textContentType="username"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="16"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" name="283442"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="paddingLeftCustom">
+                                                                <real key="value" value="16"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="paddingRightCustom">
+                                                                <real key="value" value="16"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7uM-Wr-HkT">
+                                                        <rect key="frame" x="0.0" y="86" width="350" height="56"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="edf-ZN-Tzp">
+                                                                <rect key="frame" x="0.0" y="0.0" width="350" height="56"/>
+                                                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="18"/>
+                                                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="16"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" name="color283442"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="1"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingLeftCustom">
+                                                                        <real key="value" value="16"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingRightCustom">
+                                                                        <real key="value" value="56"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </textField>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vEG-bu-R3a">
+                                                                <rect key="frame" x="310" y="16" width="24" height="24"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="24" id="atl-u4-OL9"/>
+                                                                    <constraint firstAttribute="width" secondItem="vEG-bu-R3a" secondAttribute="height" multiplier="1:1" id="qT3-Bf-3qt"/>
+                                                                </constraints>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" image="iconEye"/>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstItem="edf-ZN-Tzp" firstAttribute="top" secondItem="7uM-Wr-HkT" secondAttribute="top" id="2co-nu-wPK"/>
+                                                            <constraint firstAttribute="bottom" secondItem="edf-ZN-Tzp" secondAttribute="bottom" id="Hd0-S0-QL1"/>
+                                                            <constraint firstAttribute="trailing" secondItem="edf-ZN-Tzp" secondAttribute="trailing" id="Qgn-Ib-43p"/>
+                                                            <constraint firstItem="edf-ZN-Tzp" firstAttribute="leading" secondItem="7uM-Wr-HkT" secondAttribute="leading" id="QxA-fG-nvk"/>
+                                                            <constraint firstAttribute="trailing" secondItem="vEG-bu-R3a" secondAttribute="trailing" constant="16" id="iXx-8c-VjJ"/>
+                                                            <constraint firstItem="vEG-bu-R3a" firstAttribute="centerY" secondItem="7uM-Wr-HkT" secondAttribute="centerY" id="pBk-mP-bAI"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="fKt-ys-osu">
                                                 <rect key="frame" x="32" y="300" width="350" height="56"/>
                                                 <subviews>
@@ -149,17 +174,13 @@
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="fKt-ys-osu" firstAttribute="centerX" secondItem="mZm-vo-S23" secondAttribute="centerX" id="66X-X9-a2L"/>
-                                            <constraint firstItem="6KP-an-rcN" firstAttribute="width" secondItem="zRj-gC-KhC" secondAttribute="width" id="J0c-B2-rxf"/>
-                                            <constraint firstItem="zRj-gC-KhC" firstAttribute="leading" secondItem="mZm-vo-S23" secondAttribute="leading" constant="32" id="Mgq-jJ-7RR"/>
-                                            <constraint firstItem="6KP-an-rcN" firstAttribute="centerX" secondItem="zRj-gC-KhC" secondAttribute="centerX" id="N2c-t6-BRr"/>
+                                            <constraint firstItem="SUO-td-ps3" firstAttribute="top" secondItem="mZm-vo-S23" secondAttribute="top" constant="60" id="Kop-uU-TWe"/>
+                                            <constraint firstItem="SUO-td-ps3" firstAttribute="centerX" secondItem="mZm-vo-S23" secondAttribute="centerX" id="NgP-Fu-YcN"/>
                                             <constraint firstItem="fKt-ys-osu" firstAttribute="leading" secondItem="mZm-vo-S23" secondAttribute="leading" constant="32" id="PFe-xo-kPQ"/>
-                                            <constraint firstItem="hpp-b4-Kov" firstAttribute="trailing" secondItem="6KP-an-rcN" secondAttribute="trailing" id="RF6-kq-wC2"/>
-                                            <constraint firstItem="6KP-an-rcN" firstAttribute="height" secondItem="zRj-gC-KhC" secondAttribute="height" id="YGH-MC-58q"/>
-                                            <constraint firstItem="hpp-b4-Kov" firstAttribute="top" secondItem="6KP-an-rcN" secondAttribute="bottom" constant="16" id="dp8-nO-CbC"/>
-                                            <constraint firstItem="zRj-gC-KhC" firstAttribute="centerX" secondItem="mZm-vo-S23" secondAttribute="centerX" id="hC0-dc-qYs"/>
-                                            <constraint firstItem="6KP-an-rcN" firstAttribute="top" secondItem="zRj-gC-KhC" secondAttribute="bottom" constant="30" id="mcZ-u3-cdA"/>
+                                            <constraint firstAttribute="trailing" secondItem="hpp-b4-Kov" secondAttribute="trailing" constant="32" id="YQD-Y5-RG4"/>
+                                            <constraint firstItem="hpp-b4-Kov" firstAttribute="top" secondItem="SUO-td-ps3" secondAttribute="bottom" constant="16" id="jPP-Qz-9pC"/>
+                                            <constraint firstItem="SUO-td-ps3" firstAttribute="leading" secondItem="mZm-vo-S23" secondAttribute="leading" constant="32" id="m8w-Gl-cgs"/>
                                             <constraint firstItem="fKt-ys-osu" firstAttribute="top" secondItem="hpp-b4-Kov" secondAttribute="bottom" constant="52" id="mhV-hE-Tn7"/>
-                                            <constraint firstItem="zRj-gC-KhC" firstAttribute="top" secondItem="mZm-vo-S23" secondAttribute="top" constant="60" id="nJE-in-zIf"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -212,9 +233,10 @@
                     <connections>
                         <outlet property="backButton" destination="MrN-bc-qho" id="TDJ-2h-dtY"/>
                         <outlet property="biometricButton" destination="VAG-po-CBc" id="tx5-Rd-2dy"/>
+                        <outlet property="blindPassword" destination="vEG-bu-R3a" id="BId-WL-xQs"/>
                         <outlet property="forgotPassButton" destination="hpp-b4-Kov" id="DbL-d6-HVL"/>
                         <outlet property="loginButton" destination="V0Z-sX-lmM" id="QrP-xx-ENY"/>
-                        <outlet property="passWordText" destination="6KP-an-rcN" id="uJ8-ZZ-ckz"/>
+                        <outlet property="passWordText" destination="edf-ZN-Tzp" id="udT-W5-qW6"/>
                         <outlet property="registerButton" destination="daF-Zb-9hU" id="920-3E-9Nf"/>
                         <outlet property="userNameText" destination="zRj-gC-KhC" id="xpK-2y-aIm"/>
                     </connections>
@@ -226,12 +248,16 @@
     </scenes>
     <resources>
         <image name="arrow.left" catalog="system" width="128" height="95"/>
+        <image name="iconEye" width="30" height="30"/>
         <image name="iconFaceID" width="100" height="100"/>
         <namedColor name="283442">
             <color red="0.15700000524520874" green="0.20399999618530273" blue="0.25900000333786011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="FCFCFC">
             <color red="0.98799997568130493" green="0.98799997568130493" blue="0.98799997568130493" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="color283442">
+            <color red="0.15700000524520874" green="0.20399999618530273" blue="0.25900000333786011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>

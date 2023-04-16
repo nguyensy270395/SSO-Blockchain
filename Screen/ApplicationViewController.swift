@@ -17,8 +17,8 @@ class ApplicationViewController: BaseViewController {
         super.viewDidLoad()
 
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-            let vc = LoginViewController.instantiate { coder in
-                return LoginViewController(coder: coder)
+            let vc = StartViewController.instantiate { coder in
+                return StartViewController(coder: coder)
             }
             self.navigationController?.pushViewController(vc, animated: false)
         }

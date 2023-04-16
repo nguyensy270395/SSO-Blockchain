@@ -19,7 +19,7 @@
 		<string>Nunito-Regular.ttf</string>
 		<string>Nunito-Black.ttf</string>
 	</array>
-    <key>NSFaceIDUsageDescription</key>
-    <string></string>
+	<key>NSFaceIDUsageDescription</key>
+	<string></string>
 </dict>
 </plist>

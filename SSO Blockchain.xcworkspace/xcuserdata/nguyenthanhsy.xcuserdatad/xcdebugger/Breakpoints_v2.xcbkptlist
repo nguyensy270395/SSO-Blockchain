@@ -228,5 +228,357 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "18D85091-DE1F-4CA7-98C6-F772183E2D6C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Screen/Login/LoginViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "setupRx()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6E4AA89A-40A0-42C7-A98B-B65D6CF697CE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Screen/Login/LoginViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "setupRx()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "602FE3AC-5FB7-45D5-ACFB-841FEAFB6723"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Screen/Login/LoginViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "setupRx()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "28707E37-0147-4675-9A49-CF11A673C6F2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Screen/Login/LoginViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "setupRx()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1FA030C2-E871-4816-9F5B-5D49E55DA91E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Screen/Login/LoginViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "setupRx()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1FA030C2-E871-4816-9F5B-5D49E55DA91E - b92c4601e69e49ed"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Apollo.GraphQLResult&lt;SSO_Blockchain.MySchema.LoginMutation.Data&gt;, Swift.Error&gt;) -&gt; () in SSO_Blockchain.LoginViewController.setupRx() -&gt; ()"
+                  moduleName = "SSO Blockchain"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nguyenthanhsy/Desktop/SSO-Blockchain/Screen/Login/LoginViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "70"
+                  endingLineNumber = "70"
+                  offsetFromSymbolStart = "1817">
+               </Location>
+               <Location
+                  uuid = "1FA030C2-E871-4816-9F5B-5D49E55DA91E - b92c4601e69e49ed"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Apollo.GraphQLResult&lt;SSO_Blockchain.MySchema.LoginMutation.Data&gt;, Swift.Error&gt;) -&gt; () in SSO_Blockchain.LoginViewController.setupRx() -&gt; ()"
+                  moduleName = "SSO Blockchain"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nguyenthanhsy/Desktop/SSO-Blockchain/Screen/Login/LoginViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "70"
+                  endingLineNumber = "70"
+                  offsetFromSymbolStart = "1881">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "446BFDB0-9260-4CE8-BF39-346EB7CFCF42"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Screen/Login/SignIn/SignInViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "transfrom(from:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "34150875-0EA1-4AB8-BC96-743526879017"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Screen/Login/SignIn/SignInViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "transfrom(from:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1F938FFC-B625-4D4F-A12C-166E0B4E7ADD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Screen/Login/SignIn/SignInViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "transfrom(from:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1F938FFC-B625-4D4F-A12C-166E0B4E7ADD - 9e863302d16224d1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Apollo.GraphQLResult&lt;SSO_Blockchain.MySchema.LoginMutation.Data&gt;, Swift.Error&gt;) -&gt; () in closure #1 (Swift.String, Swift.String) -&gt; () in SSO_Blockchain.SignInViewModel.transfrom(from: SSO_Blockchain.SignInViewModel.Input) -&gt; SSO_Blockchain.SignInViewModel.Output"
+                  moduleName = "SSO Blockchain"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nguyenthanhsy/Desktop/SSO-Blockchain/Screen/Login/SignIn/SignInViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "1772">
+               </Location>
+               <Location
+                  uuid = "1F938FFC-B625-4D4F-A12C-166E0B4E7ADD - 9e863302d16224d1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Apollo.GraphQLResult&lt;SSO_Blockchain.MySchema.LoginMutation.Data&gt;, Swift.Error&gt;) -&gt; () in closure #1 (Swift.String, Swift.String) -&gt; () in SSO_Blockchain.SignInViewModel.transfrom(from: SSO_Blockchain.SignInViewModel.Input) -&gt; SSO_Blockchain.SignInViewModel.Output"
+                  moduleName = "SSO Blockchain"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nguyenthanhsy/Desktop/SSO-Blockchain/Screen/Login/SignIn/SignInViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "1852">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2E916A36-1C6B-4966-A088-EC39BB5D5D0F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Screen/Login/SignIn/SignInViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "transfrom(from:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2E916A36-1C6B-4966-A088-EC39BB5D5D0F - b59caa5061d166b6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SSO_Blockchain.SignInViewModel.transfrom(from: SSO_Blockchain.SignInViewModel.Input) -&gt; SSO_Blockchain.SignInViewModel.Output"
+                  moduleName = "SSO Blockchain"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nguyenthanhsy/Desktop/SSO-Blockchain/Screen/Login/SignIn/SignInViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "120">
+               </Location>
+               <Location
+                  uuid = "2E916A36-1C6B-4966-A088-EC39BB5D5D0F - a8ac4384559a9303"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.String, Swift.String) -&gt; () in SSO_Blockchain.SignInViewModel.transfrom(from: SSO_Blockchain.SignInViewModel.Input) -&gt; SSO_Blockchain.SignInViewModel.Output"
+                  moduleName = "SSO Blockchain"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nguyenthanhsy/Desktop/SSO-Blockchain/Screen/Login/SignIn/SignInViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "149">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BF5E0412-5DB8-46B1-84EB-0F9F4085E3CE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Screen/Login/SignIn/SignInViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "transfrom(from:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "665C4C71-371E-452D-8481-C1CF04581B12"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Screen/Login/SignIn/SignInViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "102"
+            endingLineNumber = "102"
+            landmarkName = "bindingViewModels()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CE15D2FA-5DB0-43BD-A2F6-5A6C0735F514"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Screen/Login/SignIn/SignInViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
+            landmarkName = "bindingViewModels()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "109EE4DC-8610-4BCB-9BE0-7ACAE345114E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ApolloNetworkHelper.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "ApolloNetwork"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "109EE4DC-8610-4BCB-9BE0-7ACAE345114E - 11699eb6da5aefa7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; Apollo.ApolloClient in SSO_Blockchain.ApolloNetwork.apollo.getter : Apollo.ApolloClient"
+                  moduleName = "SSO Blockchain"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nguyenthanhsy/Desktop/SSO-Blockchain/ApolloNetworkHelper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "476">
+               </Location>
+               <Location
+                  uuid = "109EE4DC-8610-4BCB-9BE0-7ACAE345114E - 11699eb6da5aefa7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; Apollo.ApolloClient in SSO_Blockchain.ApolloNetwork.apollo.getter : Apollo.ApolloClient"
+                  moduleName = "SSO Blockchain"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nguyenthanhsy/Desktop/SSO-Blockchain/ApolloNetworkHelper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "656">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9F208352-762A-4C5D-973D-9AA2961857D1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Screen/Login/SignUp/SignUpViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "setupRx()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
