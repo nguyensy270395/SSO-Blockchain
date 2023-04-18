@@ -41,6 +41,7 @@ class SignInViewController: BaseViewController, BaseViewControllerProtocol {
 
     func setupViews() {
         biometricButton.isEnabled = viewModel.checkToken
+        backButton.isHidden = !isShowBackButton
     }
 
     func setupRx() {

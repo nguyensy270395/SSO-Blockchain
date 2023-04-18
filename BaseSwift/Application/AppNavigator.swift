@@ -26,10 +26,17 @@ final class AppNavigator: AppNavigatorType {
     
     func start() {
         if let timeLogin = UserDefaults.standard.object(forKey: "timeLogin") as? Date {
-            if timeLogin.add(minutes: 30) > Date() {
+            if timeLogin.add(minutes: 0) > Date() {
                 switchToMain()
-                return
+            } else {
+                let vc = SignInViewController.instantiate { coder in
+                    return SignInViewController(coder: coder, viewModel: .init())
+                }
+                vc.isShowBackButton = false
+                let nav = UINavigationController(rootViewController: vc)
+                switchTo(viewController: nav)
             }
+            return
         }
         let vc = ApplicationViewController.instantiate { coder in
             return ApplicationViewController(coder: coder)

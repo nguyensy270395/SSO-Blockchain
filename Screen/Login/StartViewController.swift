@@ -42,6 +42,7 @@ class StartViewController: BaseViewController {
             let vc = SignInViewController.instantiate { coder in
                 return SignInViewController(coder: coder, viewModel: .init())
             }
+            vc.isShowBackButton = true
             let nav = BaseNavigationViewController(rootViewController: vc)
             nav.modalPresentationStyle = .fullScreen
             self?.present(nav, animated: true)
