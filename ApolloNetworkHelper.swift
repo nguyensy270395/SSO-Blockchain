@@ -13,7 +13,7 @@ class ApolloNetwork {
         let cache = InMemoryNormalizedCache()
         let store = ApolloStore(cache: cache)
         let token = UserDefaults.standard.string(forKey: "token") ?? ""
-        let authPayloads = ["Authorization": token]
+        let authPayloads = ["Authorization": "Bearer \(token)"]
         let configuration = URLSessionConfiguration.default
         configuration.httpAdditionalHeaders = authPayloads
         let client = URLSessionClient(sessionConfiguration: configuration)

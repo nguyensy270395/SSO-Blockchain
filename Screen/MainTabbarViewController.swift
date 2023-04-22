@@ -29,7 +29,7 @@ class MainTabbarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.viewControllers = TabbarItem.allCases.map { addTab(type: $0) }
-        self.tabBar.selectedImageTintColor = R.color.color29606D()
+        self.tabBar.selectedImageTintColor = R.color.color283442()
     }
 
     override func viewDidAppear(_ animated: Bool) {

@@ -184,16 +184,48 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "494E635E-8485-49FF-9E4B-25CAA8BC89F4"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Screen/Home/HomeViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
             landmarkName = "setupViews()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "494E635E-8485-49FF-9E4B-25CAA8BC89F4 - 34d23bdb81e17d39"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SSO_Blockchain.HomeViewController.setupViews() -&gt; ()"
+                  moduleName = "SSO Blockchain"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nguyenthanhsy/Desktop/SSO-Blockchain/Screen/Home/HomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "67">
+               </Location>
+               <Location
+                  uuid = "494E635E-8485-49FF-9E4B-25CAA8BC89F4 - c2858411594aa40a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (RxSwift.Event&lt;()&gt;) -&gt; () in SSO_Blockchain.HomeViewController.setupViews() -&gt; ()"
+                  moduleName = "SSO Blockchain"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nguyenthanhsy/Desktop/SSO-Blockchain/Screen/Home/HomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "61">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -206,8 +238,8 @@
             filePath = "Screen/Home/HomeViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
             landmarkName = "startTime()"
             landmarkType = "7">
          </BreakpointContent>
@@ -334,8 +366,8 @@
             filePath = "Screen/Login/SignIn/SignInViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
             landmarkName = "transfrom(from:)"
             landmarkType = "7">
             <Locations>
@@ -375,49 +407,145 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "109EE4DC-8610-4BCB-9BE0-7ACAE345114E"
-            shouldBeEnabled = "Yes"
+            uuid = "D3E81F69-5E54-4F4D-AD24-F0B75590C5AE"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ApolloNetworkHelper.swift"
+            filePath = "Screen/Home/HomeViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "15"
-            endingLineNumber = "15"
-            landmarkName = "ApolloNetwork"
-            landmarkType = "3">
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "getDeeflink()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "18994717-3424-4D07-A82E-121DCCE8D10D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Screen/Home/HomeViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "getDeeflink()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E135AC9D-858B-4DE0-B9F8-4D62FCC3D79B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Screen/Home/HomeViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "getDeeflink()"
+            landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "109EE4DC-8610-4BCB-9BE0-7ACAE345114E - 11699eb6da5aefa7"
+                  uuid = "E135AC9D-858B-4DE0-B9F8-4D62FCC3D79B - 8dfd5902ad032be8"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; Apollo.ApolloClient in SSO_Blockchain.ApolloNetwork.apollo.getter : Apollo.ApolloClient"
+                  symbolName = "closure #1 (Swift.Result&lt;Apollo.GraphQLResult&lt;SSO_Blockchain.MySchema.HandleDeepLinkMutation.Data&gt;, Swift.Error&gt;) -&gt; () in SSO_Blockchain.HomeViewController.getDeeflink() -&gt; ()"
                   moduleName = "SSO Blockchain"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/nguyenthanhsy/Desktop/SSO-Blockchain/ApolloNetworkHelper.swift"
+                  urlString = "file:///Users/nguyenthanhsy/Desktop/SSO-Blockchain/Screen/Home/HomeViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "302">
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "1662">
                </Location>
                <Location
-                  uuid = "109EE4DC-8610-4BCB-9BE0-7ACAE345114E - 11699eb6da5aefa7"
+                  uuid = "E135AC9D-858B-4DE0-B9F8-4D62FCC3D79B - 8dfd5902ad032be8"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; Apollo.ApolloClient in SSO_Blockchain.ApolloNetwork.apollo.getter : Apollo.ApolloClient"
+                  symbolName = "closure #1 (Swift.Result&lt;Apollo.GraphQLResult&lt;SSO_Blockchain.MySchema.HandleDeepLinkMutation.Data&gt;, Swift.Error&gt;) -&gt; () in SSO_Blockchain.HomeViewController.getDeeflink() -&gt; ()"
                   moduleName = "SSO Blockchain"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/nguyenthanhsy/Desktop/SSO-Blockchain/ApolloNetworkHelper.swift"
+                  urlString = "file:///Users/nguyenthanhsy/Desktop/SSO-Blockchain/Screen/Home/HomeViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "511">
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "1726">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E170F47D-1DE7-4867-85F2-C951E10BA239"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Screen/Home/HomeViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "getDeeflink()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "69AB7630-117B-460C-A5AC-1876DDC6349E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Screen/Setting/Biometric/BiometricViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "setupRx()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0C7F75E1-A01E-4307-AB2C-A12B15A8C53E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Screen/Setting/Biometric/BiometricViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "setupRx()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BA7508A7-D952-4DB4-AA5E-A69782888AA3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Screen/Setting/Biometric/BiometricViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "setupRx()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

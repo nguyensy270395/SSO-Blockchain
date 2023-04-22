@@ -1,8 +1,8 @@
 //
-//  SignInViewModel.swift
+//  BiometricViewModel.swift
 //  SSO Blockchain
 //
-//  Created by Nguyễn Thanh Sỹ on 15/04/2023.
+//  Created by Nguyễn Thanh Sỹ on 19/04/2023.
 //
 
 import Foundation
@@ -11,14 +11,9 @@ import RxCocoa
 import RxRelay
 import LocalAuthentication
 
-class SignInViewModel: BaseViewModel, BaseViewModelProtocol {
-    let checkBiommetric: Bool = {
-        UserDefaults.standard.bool(forKey: "biometric")
-    }()
-
+class BiometricViewModel: BaseViewModel, BaseViewModelProtocol {
     struct Input {
         let actionLogin: Observable<(String, String)>
-        let actionBiometric: Observable<Void>
     }
 
     struct Output {
@@ -63,10 +58,7 @@ class SignInViewModel: BaseViewModel, BaseViewModelProtocol {
                     }
                     if let data = queryResult.data?.login.accessToken {
                         UserDefaults.standard.set(data, forKey: "token")
-                        let userEncrypt = userName.desEncrypt(key: passWord)
-                        UserDefaults.standard.set(userEncrypt, forKey: "user")
                         UserDefaults.standard.set(Date(), forKey: "timeLogin")
-
                         loginSuccess.onNext(true)
                         print("Success accessToken: \(data)")
                     }
@@ -77,25 +69,6 @@ class SignInViewModel: BaseViewModel, BaseViewModelProtocol {
 
             }
         }).disposed(by: disposeBag)
-
-        input.actionBiometric.subscribe(onNext: {_ in
-            let context = LAContext()
-            var error: NSError?
-
-            if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
-                let reason = "Identify yourself!"
-
-                context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) { success, authenticationError in
-                    DispatchQueue.main.async {
-                        if success {
-                            UserDefaults.standard.set(Date(), forKey: "timeLogin")
-                            loginSuccess.onNext(true)
-                        }
-                    }
-                }
-            } 
-        }).disposed(by: disposeBag)
         return Output(loginSuccess: loginSuccess.asDriver(onErrorJustReturn: false))
     }
-
 }

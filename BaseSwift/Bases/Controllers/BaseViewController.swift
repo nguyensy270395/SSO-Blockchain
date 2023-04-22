@@ -24,7 +24,10 @@ class BaseViewController: UIViewController, UIGestureRecognizerDelegate {
     var interactivePopGestureRecognizer = true
     var isShowBackButton = false
     var isShowNavigationBar = false
- 
+    var tabbar: MainTabbarViewController {
+        self.tabBarController as! MainTabbarViewController
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.interactivePopGestureRecognizer?.isEnabled = true
@@ -47,10 +50,10 @@ class BaseViewController: UIViewController, UIGestureRecognizerDelegate {
         self.navigationController?.isNavigationBarHidden = !isShowNavigationBar
     }
 
-@objc
-private func backButtonTouchUpInside() {
-    self.navigationController?.popViewController(animated: true)
-}
+    @objc
+    private func backButtonTouchUpInside() {
+        self.navigationController?.popViewController(animated: true)
+    }
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
@@ -62,12 +65,21 @@ private func backButtonTouchUpInside() {
         }
         return true
     }
+
+    func showCheckPassword() -> Observable<Bool>? {
+        let vc = CheckPasswordViewController.instantiate { coder in
+            return CheckPasswordViewController(coder: coder, viewModel: .init())
+        }
+        vc.modalPresentationStyle = .fullScreen
+        navigationController?.present(vc, animated: true)
+        return vc.passWordCheck
+    }
     
     deinit {
         NotificationCenter.default.removeObserver(self)
-#if DEBUG
+    #if DEBUG
         print("Deinit:\(self.className)")
-#endif
+    #endif
     }
 }
 

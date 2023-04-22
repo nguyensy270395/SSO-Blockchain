@@ -19,3 +19,7 @@ mutation Register($data: RegisterInput!) {
     }
   }
 }
+
+mutation HandleDeepLink($url: String!) {
+  handleDeepLink(url: $url)
+}
