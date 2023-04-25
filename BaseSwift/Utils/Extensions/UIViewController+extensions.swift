@@ -89,6 +89,7 @@ extension UIViewController{
             })
         }
     }
+    
     func showNeedAccessMessage() {
         let alert = UIAlertController(title: "Image picker", message: "App need get access to photos", preferredStyle: .alert)
         

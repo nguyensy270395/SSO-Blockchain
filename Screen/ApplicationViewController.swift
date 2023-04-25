@@ -17,10 +17,7 @@ class ApplicationViewController: BaseViewController {
         super.viewDidLoad()
 
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-            let vc = StartViewController.instantiate { coder in
-                return StartViewController(coder: coder)
-            }
-            self.navigationController?.pushViewController(vc, animated: false)
+            APP_DELEGATE?.appNavigator?.start()
         }
     }
 }

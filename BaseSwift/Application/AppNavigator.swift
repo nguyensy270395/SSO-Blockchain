@@ -15,6 +15,7 @@ protocol AppNavigatorType: class {
     func switchTo(viewController: UIViewController)
     func switchToMain()
     func handleUrl(url: URL)
+    func loadFirstView()
 }
 
 final class AppNavigator: AppNavigatorType {
@@ -38,6 +39,14 @@ final class AppNavigator: AppNavigatorType {
             }
             return
         }
+        let vc = StartViewController.instantiate { coder in
+            return StartViewController(coder: coder)
+        }
+        let nav = UINavigationController(rootViewController: vc)
+        switchTo(viewController: nav)
+    }
+
+    func loadFirstView() {
         let vc = ApplicationViewController.instantiate { coder in
             return ApplicationViewController(coder: coder)
         }

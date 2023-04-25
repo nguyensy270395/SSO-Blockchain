@@ -24,6 +24,7 @@ class StartViewController: BaseViewController {
         super.viewDidLoad()
         setupAnimation()
         setupRx()
+        navigationController?.interactivePopGestureRecognizer?.isEnabled = false
     }
 
     func setupAnimation() {

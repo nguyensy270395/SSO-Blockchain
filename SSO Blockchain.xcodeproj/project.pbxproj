@@ -76,6 +76,8 @@
 		0213D53729A5136500542D9C /* SectionViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0213D53629A5136500542D9C /* SectionViewController.storyboard */; };
 		0213D53B29A517BC00542D9C /* SectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0213D53929A517BC00542D9C /* SectionTableViewCell.swift */; };
 		0213D53C29A517BD00542D9C /* SectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0213D53A29A517BC00542D9C /* SectionTableViewCell.xib */; };
+		021696F529F6D76200054091 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021696F429F6D76200054091 /* ProfileViewController.swift */; };
+		021696F729F6D76E00054091 /* ProfileViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 021696F629F6D76E00054091 /* ProfileViewController.storyboard */; };
 		022A7E1129BCD9F30063F759 /* time.json in Resources */ = {isa = PBXBuildFile; fileRef = 022A7E1029BCD9F30063F759 /* time.json */; };
 		0233BC2929BAC22B009996EE /* done.json in Resources */ = {isa = PBXBuildFile; fileRef = 0233BC2829BAC22B009996EE /* done.json */; };
 		0233BC5C29BB2EBD009996EE /* QRScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0233BC5629BB2EBD009996EE /* QRScannerView.swift */; };
@@ -231,6 +233,8 @@
 		0213D53629A5136500542D9C /* SectionViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SectionViewController.storyboard; sourceTree = "<group>"; };
 		0213D53929A517BC00542D9C /* SectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTableViewCell.swift; sourceTree = "<group>"; };
 		0213D53A29A517BC00542D9C /* SectionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionTableViewCell.xib; sourceTree = "<group>"; };
+		021696F429F6D76200054091 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		021696F629F6D76E00054091 /* ProfileViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileViewController.storyboard; sourceTree = "<group>"; };
 		022A7E1029BCD9F30063F759 /* time.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = time.json; sourceTree = "<group>"; };
 		0233BC2829BAC22B009996EE /* done.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = done.json; sourceTree = "<group>"; };
 		0233BC5629BB2EBD009996EE /* QRScannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRScannerView.swift; sourceTree = "<group>"; };
@@ -677,6 +681,15 @@
 			path = "Section Cell";
 			sourceTree = "<group>";
 		};
+		021696F329F6D73D00054091 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				021696F429F6D76200054091 /* ProfileViewController.swift */,
+				021696F629F6D76E00054091 /* ProfileViewController.storyboard */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		0233BC2729BAC208009996EE /* Animation */ = {
 			isa = PBXGroup;
 			children = (
@@ -732,6 +745,7 @@
 			isa = PBXGroup;
 			children = (
 				024AF63C29BDF1D2009F75A6 /* IdentityCell */,
+				021696F329F6D73D00054091 /* Profile */,
 				024AF63629BDEFA9009F75A6 /* IdentityViewController.swift */,
 				024AF63A29BDF0D2009F75A6 /* IdentityViewController.storyboard */,
 			);
@@ -1054,6 +1068,7 @@
 				025C8D9A29AB03E400D97D9B /* SectionHeaderView.xib in Resources */,
 				0293DDCC299543290098FC0D /* Nunito-SemiBoldItalic.ttf in Resources */,
 				0293DDC5299543290098FC0D /* Nunito-Medium.ttf in Resources */,
+				021696F729F6D76E00054091 /* ProfileViewController.storyboard in Resources */,
 				0293DDC8299543290098FC0D /* Nunito-ExtraBoldItalic.ttf in Resources */,
 				02D69DF8299934E500F5BBB7 /* SignUpViewController.storyboard in Resources */,
 				02FBFBB829AE5CDC00A70CDD /* QRScanView.xib in Resources */,
@@ -1144,6 +1159,7 @@
 				02F8C59B29E46F0A002D8501 /* AppViewModel.swift in Sources */,
 				0201FCB6289CBE1C0030CE24 /* AppNavigator.swift in Sources */,
 				02BD97AB29EEE19700913FCA /* SchemaConfiguration.swift in Sources */,
+				021696F529F6D76200054091 /* ProfileViewController.swift in Sources */,
 				0201FC91289CBC200030CE24 /* UITableView+Extension.swift in Sources */,
 				0201FC5B289CBC010030CE24 /* BaseView.swift in Sources */,
 				0200D62829DB3CB90034B161 /* SettingKeyViewController.swift in Sources */,

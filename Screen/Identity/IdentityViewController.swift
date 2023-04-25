@@ -61,4 +61,11 @@ extension IdentityViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 52
     }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = ProfileViewController.instantiate { coder in
+            return ProfileViewController(coder: coder)
+        }
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }

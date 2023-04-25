@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow()
         appNavigator = AppNavigator(window: window)
         appViewModel = AppViewModel()
-        appNavigator?.start()
+        appNavigator?.loadFirstView()
 //        appNavigator?.switchToMain()
         return true
     }

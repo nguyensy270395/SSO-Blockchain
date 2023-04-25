@@ -15,9 +15,6 @@ class SettingViewController: BaseTableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.isShowNavigationBar = false
-        title = "Setting"
-        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: R.font.nunitoBold(size: 21)!, NSAttributedString.Key.foregroundColor: R.color.colorFCFCFC()]
 
     }
 
@@ -51,10 +48,28 @@ class SettingViewController: BaseTableViewController {
                 return InformationViewController(coder: coder)
             }
             self.navigationController?.pushViewController(vc, animated: true)
-        case .logout: break
+        case .logout:
+            showSignoutMessage()
         default:
             break
         }
+    }
+
+    func showSignoutMessage() {
+        let alert = UIAlertController(title: "Đăng xuất", message: "Bạn có muốn đăng xuất khỏi SSO-Blockchain?", preferredStyle: .alert)
+
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (action: UIAlertAction) -> Void in
+            self.dismiss(animated: true, completion: nil)
+        }))
+
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action: UIAlertAction) -> Void in
+            let domain = Bundle.main.bundleIdentifier!
+            UserDefaults.standard.removePersistentDomain(forName: domain)
+            UserDefaults.standard.synchronize()
+            APP_DELEGATE?.appNavigator?.start()
+        }))
+
+        present(alert, animated: true, completion: nil)
     }
 }
 

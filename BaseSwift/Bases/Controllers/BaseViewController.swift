@@ -33,6 +33,7 @@ class BaseViewController: UIViewController, UIGestureRecognizerDelegate {
         self.navigationController?.interactivePopGestureRecognizer?.isEnabled = true
         self.navigationController?.interactivePopGestureRecognizer?.delegate = self
         overrideUserInterfaceStyle = .light
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: R.font.nunitoBold(size: 21)!, NSAttributedString.Key.foregroundColor: R.color.colorFCFCFC()]
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -95,6 +96,7 @@ class BaseTableViewController: UITableViewController, UIGestureRecognizerDelegat
         self.navigationController?.interactivePopGestureRecognizer?.isEnabled = true
         self.navigationController?.interactivePopGestureRecognizer?.delegate = self
         overrideUserInterfaceStyle = .light
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: R.font.nunitoBold(size: 21)!, NSAttributedString.Key.foregroundColor: R.color.colorFCFCFC()]
     }
     
     override func viewWillAppear(_ animated: Bool) {
