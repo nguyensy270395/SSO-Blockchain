@@ -23,3 +23,12 @@ mutation Register($data: RegisterInput!) {
 mutation HandleDeepLink($url: String!) {
   handleDeepLink(url: $url)
 }
+
+query Credentials {
+  credentials {
+    attrs
+    cred_def_id
+    referent
+    schema_id
+  }
+}

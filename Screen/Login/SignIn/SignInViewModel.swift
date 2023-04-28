@@ -63,10 +63,8 @@ class SignInViewModel: BaseViewModel, BaseViewModelProtocol {
                     }
                     if let data = queryResult.data?.login.accessToken {
                         UserDefaults.standard.set(data, forKey: "token")
-                        let userEncrypt = userName.desEncrypt(key: passWord)
-                        UserDefaults.standard.set(userEncrypt, forKey: "user")
+                        UserDefaults.standard.set(userName, forKey: "user")
                         UserDefaults.standard.set(Date(), forKey: "timeLogin")
-
                         loginSuccess.onNext(true)
                         print("Success accessToken: \(data)")
                     }

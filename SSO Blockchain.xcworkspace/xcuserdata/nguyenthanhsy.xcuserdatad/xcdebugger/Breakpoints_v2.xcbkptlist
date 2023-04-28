@@ -158,8 +158,8 @@
             filePath = "Screen/Setting/ChangePassword/ChangePasswordViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
             landmarkName = "ChangePasswordViewController"
             landmarkType = "3">
          </BreakpointContent>
@@ -545,6 +545,198 @@
             startingLineNumber = "34"
             endingLineNumber = "34"
             landmarkName = "setupRx()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4225BAC5-BA96-4BB8-B580-5E3D7B287BCD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Screen/Identity/IdentityViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "transfrom(from:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DA2CFA49-62B9-4C43-93BB-11E1EED90FBC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Screen/Identity/IdentityViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "transfrom(from:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DA2CFA49-62B9-4C43-93BB-11E1EED90FBC - 748cbfb7c682ac46"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Apollo.GraphQLResult&lt;SSO_Blockchain.MySchema.CredentialsQuery.Data&gt;, Swift.Error&gt;) -&gt; () in closure #1 (()) -&gt; () in SSO_Blockchain.IdentityViewModel.transfrom(from: SSO_Blockchain.IdentityViewModel.Input) -&gt; SSO_Blockchain.IdentityViewModel.Output"
+                  moduleName = "SSO Blockchain"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nguyenthanhsy/Desktop/SSO-Blockchain/Screen/Identity/IdentityViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "297">
+               </Location>
+               <Location
+                  uuid = "DA2CFA49-62B9-4C43-93BB-11E1EED90FBC - a5efb8d18ad4093d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Apollo.GraphQLError) -&gt; Swift.String in closure #1 (Swift.Result&lt;Apollo.GraphQLResult&lt;SSO_Blockchain.MySchema.CredentialsQuery.Data&gt;, Swift.Error&gt;) -&gt; () in closure #1 (()) -&gt; () in SSO_Blockchain.IdentityViewModel.transfrom(from: SSO_Blockchain.IdentityViewModel.Input) -&gt; SSO_Blockchain.IdentityViewModel.Output"
+                  moduleName = "SSO Blockchain"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nguyenthanhsy/Desktop/SSO-Blockchain/Screen/Identity/IdentityViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "33">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8BFB42CA-DEA5-47D1-8C90-62076C9B33DF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Screen/Identity/IdentityViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "transfrom(from:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "451C720E-227C-4955-B916-AE6CFC0A7AC5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Screen/Identity/IdentityViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "transfrom(from:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "451C720E-227C-4955-B916-AE6CFC0A7AC5 - 748cbfb7c682ad4e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Apollo.GraphQLResult&lt;SSO_Blockchain.MySchema.CredentialsQuery.Data&gt;, Swift.Error&gt;) -&gt; () in closure #1 (()) -&gt; () in SSO_Blockchain.IdentityViewModel.transfrom(from: SSO_Blockchain.IdentityViewModel.Input) -&gt; SSO_Blockchain.IdentityViewModel.Output"
+                  moduleName = "SSO Blockchain"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nguyenthanhsy/Desktop/SSO-Blockchain/Screen/Identity/IdentityViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "1721">
+               </Location>
+               <Location
+                  uuid = "451C720E-227C-4955-B916-AE6CFC0A7AC5 - 748cbfb7c682ad4e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Apollo.GraphQLResult&lt;SSO_Blockchain.MySchema.CredentialsQuery.Data&gt;, Swift.Error&gt;) -&gt; () in closure #1 (()) -&gt; () in SSO_Blockchain.IdentityViewModel.transfrom(from: SSO_Blockchain.IdentityViewModel.Input) -&gt; SSO_Blockchain.IdentityViewModel.Output"
+                  moduleName = "SSO Blockchain"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nguyenthanhsy/Desktop/SSO-Blockchain/Screen/Identity/IdentityViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "1785">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DD699601-B47C-4325-981F-FC18244511F5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Screen/Identity/IdentityViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "transfrom(from:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DD699601-B47C-4325-981F-FC18244511F5 - 96751d043ca8ebb5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SSO_Blockchain.IdentityViewModel.transfrom(from: SSO_Blockchain.IdentityViewModel.Input) -&gt; SSO_Blockchain.IdentityViewModel.Output"
+                  moduleName = "SSO Blockchain"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nguyenthanhsy/Desktop/SSO-Blockchain/Screen/Identity/IdentityViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "65">
+               </Location>
+               <Location
+                  uuid = "DD699601-B47C-4325-981F-FC18244511F5 - d8cf75ff908a7f9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (()) -&gt; () in SSO_Blockchain.IdentityViewModel.transfrom(from: SSO_Blockchain.IdentityViewModel.Input) -&gt; SSO_Blockchain.IdentityViewModel.Output"
+                  moduleName = "SSO Blockchain"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nguyenthanhsy/Desktop/SSO-Blockchain/Screen/Identity/IdentityViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "51">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1C8142CF-09C6-4B54-964C-F5396C7AD0F5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Screen/Identity/IdentityViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "transfrom(from:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

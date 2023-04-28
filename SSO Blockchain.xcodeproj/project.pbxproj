@@ -135,18 +135,6 @@
 		02A972B3299D286A0021229C /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02A972B2299D286A0021229C /* HomeViewController.storyboard */; };
 		02A972B6299D2B7D0021229C /* MainTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A972B5299D2B7D0021229C /* MainTabbarViewController.swift */; };
 		02A972B8299D2DB30021229C /* MainTabbarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A972B7299D2DB30021229C /* MainTabbarViewModel.swift */; };
-		02BD97A329EEE19700913FCA /* MySchema.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BD979129EEE19600913FCA /* MySchema.graphql.swift */; };
-		02BD97A429EEE19700913FCA /* HandleDeepLinkMutation.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BD979429EEE19600913FCA /* HandleDeepLinkMutation.graphql.swift */; };
-		02BD97A529EEE19700913FCA /* LoginMutation.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BD979529EEE19600913FCA /* LoginMutation.graphql.swift */; };
-		02BD97A629EEE19700913FCA /* RegisterMutation.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BD979629EEE19600913FCA /* RegisterMutation.graphql.swift */; };
-		02BD97A729EEE19700913FCA /* WalletRole.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BD979929EEE19600913FCA /* WalletRole.graphql.swift */; };
-		02BD97A829EEE19700913FCA /* Mutation.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BD979B29EEE19600913FCA /* Mutation.graphql.swift */; };
-		02BD97A929EEE19700913FCA /* AuthorizableObject.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BD979C29EEE19600913FCA /* AuthorizableObject.graphql.swift */; };
-		02BD97AA29EEE19700913FCA /* Wallet.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BD979D29EEE19600913FCA /* Wallet.graphql.swift */; };
-		02BD97AB29EEE19700913FCA /* SchemaConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BD979E29EEE19600913FCA /* SchemaConfiguration.swift */; };
-		02BD97AC29EEE19700913FCA /* LoginInput.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BD97A029EEE19600913FCA /* LoginInput.graphql.swift */; };
-		02BD97AD29EEE19700913FCA /* RegisterInput.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BD97A129EEE19600913FCA /* RegisterInput.graphql.swift */; };
-		02BD97AE29EEE19700913FCA /* SchemaMetadata.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BD97A229EEE19600913FCA /* SchemaMetadata.graphql.swift */; };
 		02C900E329F12322004C3174 /* CheckPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C900E229F12322004C3174 /* CheckPasswordViewController.swift */; };
 		02C900E529F1232B004C3174 /* CheckPasswordViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02C900E429F1232B004C3174 /* CheckPasswordViewController.storyboard */; };
 		02C900E729F1260B004C3174 /* CheckPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C900E629F1260B004C3174 /* CheckPasswordViewModel.swift */; };
@@ -157,6 +145,24 @@
 		02D7833A29C21EE100F48775 /* SettingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02D7833929C21EE100F48775 /* SettingViewController.storyboard */; };
 		02E85C6129B48EFC00D3FD35 /* QRScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E85C6029B48EFC00D3FD35 /* QRScanViewController.swift */; };
 		02E85C6329B48F0700D3FD35 /* QRScanViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02E85C6229B48F0700D3FD35 /* QRScanViewController.storyboard */; };
+		02E9AD6E29FA747700048B48 /* ChangePasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E9AD6D29FA747700048B48 /* ChangePasswordViewModel.swift */; };
+		02E9AD8829FABDCF00048B48 /* MySchema.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E9AD7029FABDCE00048B48 /* MySchema.graphql.swift */; };
+		02E9AD8929FABDCF00048B48 /* HandleDeepLinkMutation.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E9AD7329FABDCE00048B48 /* HandleDeepLinkMutation.graphql.swift */; };
+		02E9AD8A29FABDCF00048B48 /* LoginMutation.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E9AD7429FABDCE00048B48 /* LoginMutation.graphql.swift */; };
+		02E9AD8B29FABDCF00048B48 /* RegisterMutation.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E9AD7529FABDCE00048B48 /* RegisterMutation.graphql.swift */; };
+		02E9AD8C29FABDCF00048B48 /* CredentialsQuery.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E9AD7729FABDCE00048B48 /* CredentialsQuery.graphql.swift */; };
+		02E9AD8D29FABDCF00048B48 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E9AD7A29FABDCE00048B48 /* JSON.swift */; };
+		02E9AD8E29FABDCF00048B48 /* WalletRole.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E9AD7C29FABDCE00048B48 /* WalletRole.graphql.swift */; };
+		02E9AD8F29FABDCF00048B48 /* IndyCredentialObject.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E9AD7E29FABDCE00048B48 /* IndyCredentialObject.graphql.swift */; };
+		02E9AD9029FABDCF00048B48 /* Mutation.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E9AD7F29FABDCE00048B48 /* Mutation.graphql.swift */; };
+		02E9AD9129FABDCF00048B48 /* AuthorizableObject.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E9AD8029FABDCE00048B48 /* AuthorizableObject.graphql.swift */; };
+		02E9AD9229FABDCF00048B48 /* Query.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E9AD8129FABDCE00048B48 /* Query.graphql.swift */; };
+		02E9AD9329FABDCF00048B48 /* Wallet.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E9AD8229FABDCE00048B48 /* Wallet.graphql.swift */; };
+		02E9AD9429FABDCF00048B48 /* SchemaConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E9AD8329FABDCE00048B48 /* SchemaConfiguration.swift */; };
+		02E9AD9529FABDCF00048B48 /* LoginInput.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E9AD8529FABDCE00048B48 /* LoginInput.graphql.swift */; };
+		02E9AD9629FABDCF00048B48 /* RegisterInput.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E9AD8629FABDCE00048B48 /* RegisterInput.graphql.swift */; };
+		02E9AD9729FABDCF00048B48 /* SchemaMetadata.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E9AD8729FABDCE00048B48 /* SchemaMetadata.graphql.swift */; };
+		02E9AD9929FABE0D00048B48 /* IdentityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E9AD9829FABE0D00048B48 /* IdentityViewModel.swift */; };
 		02F8C59B29E46F0A002D8501 /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F8C59A29E46F09002D8501 /* AppViewModel.swift */; };
 		02FBFBB629AE5CC800A70CDD /* QRScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FBFBB529AE5CC800A70CDD /* QRScanView.swift */; };
 		02FBFBB829AE5CDC00A70CDD /* QRScanView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02FBFBB729AE5CDC00A70CDD /* QRScanView.xib */; };
@@ -295,18 +301,6 @@
 		02A972B2299D286A0021229C /* HomeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeViewController.storyboard; sourceTree = "<group>"; };
 		02A972B5299D2B7D0021229C /* MainTabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbarViewController.swift; sourceTree = "<group>"; };
 		02A972B7299D2DB30021229C /* MainTabbarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbarViewModel.swift; sourceTree = "<group>"; };
-		02BD979129EEE19600913FCA /* MySchema.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySchema.graphql.swift; sourceTree = "<group>"; };
-		02BD979429EEE19600913FCA /* HandleDeepLinkMutation.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HandleDeepLinkMutation.graphql.swift; sourceTree = "<group>"; };
-		02BD979529EEE19600913FCA /* LoginMutation.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginMutation.graphql.swift; sourceTree = "<group>"; };
-		02BD979629EEE19600913FCA /* RegisterMutation.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterMutation.graphql.swift; sourceTree = "<group>"; };
-		02BD979929EEE19600913FCA /* WalletRole.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletRole.graphql.swift; sourceTree = "<group>"; };
-		02BD979B29EEE19600913FCA /* Mutation.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mutation.graphql.swift; sourceTree = "<group>"; };
-		02BD979C29EEE19600913FCA /* AuthorizableObject.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizableObject.graphql.swift; sourceTree = "<group>"; };
-		02BD979D29EEE19600913FCA /* Wallet.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wallet.graphql.swift; sourceTree = "<group>"; };
-		02BD979E29EEE19600913FCA /* SchemaConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchemaConfiguration.swift; sourceTree = "<group>"; };
-		02BD97A029EEE19600913FCA /* LoginInput.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginInput.graphql.swift; sourceTree = "<group>"; };
-		02BD97A129EEE19600913FCA /* RegisterInput.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterInput.graphql.swift; sourceTree = "<group>"; };
-		02BD97A229EEE19600913FCA /* SchemaMetadata.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchemaMetadata.graphql.swift; sourceTree = "<group>"; };
 		02C900E229F12322004C3174 /* CheckPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckPasswordViewController.swift; sourceTree = "<group>"; };
 		02C900E429F1232B004C3174 /* CheckPasswordViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CheckPasswordViewController.storyboard; sourceTree = "<group>"; };
 		02C900E629F1260B004C3174 /* CheckPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckPasswordViewModel.swift; sourceTree = "<group>"; };
@@ -317,6 +311,24 @@
 		02D7833929C21EE100F48775 /* SettingViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingViewController.storyboard; sourceTree = "<group>"; };
 		02E85C6029B48EFC00D3FD35 /* QRScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScanViewController.swift; sourceTree = "<group>"; };
 		02E85C6229B48F0700D3FD35 /* QRScanViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QRScanViewController.storyboard; sourceTree = "<group>"; };
+		02E9AD6D29FA747700048B48 /* ChangePasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewModel.swift; sourceTree = "<group>"; };
+		02E9AD7029FABDCE00048B48 /* MySchema.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySchema.graphql.swift; sourceTree = "<group>"; };
+		02E9AD7329FABDCE00048B48 /* HandleDeepLinkMutation.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HandleDeepLinkMutation.graphql.swift; sourceTree = "<group>"; };
+		02E9AD7429FABDCE00048B48 /* LoginMutation.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginMutation.graphql.swift; sourceTree = "<group>"; };
+		02E9AD7529FABDCE00048B48 /* RegisterMutation.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterMutation.graphql.swift; sourceTree = "<group>"; };
+		02E9AD7729FABDCE00048B48 /* CredentialsQuery.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CredentialsQuery.graphql.swift; sourceTree = "<group>"; };
+		02E9AD7A29FABDCE00048B48 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
+		02E9AD7C29FABDCE00048B48 /* WalletRole.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletRole.graphql.swift; sourceTree = "<group>"; };
+		02E9AD7E29FABDCE00048B48 /* IndyCredentialObject.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndyCredentialObject.graphql.swift; sourceTree = "<group>"; };
+		02E9AD7F29FABDCE00048B48 /* Mutation.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mutation.graphql.swift; sourceTree = "<group>"; };
+		02E9AD8029FABDCE00048B48 /* AuthorizableObject.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizableObject.graphql.swift; sourceTree = "<group>"; };
+		02E9AD8129FABDCE00048B48 /* Query.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Query.graphql.swift; sourceTree = "<group>"; };
+		02E9AD8229FABDCE00048B48 /* Wallet.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wallet.graphql.swift; sourceTree = "<group>"; };
+		02E9AD8329FABDCE00048B48 /* SchemaConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchemaConfiguration.swift; sourceTree = "<group>"; };
+		02E9AD8529FABDCE00048B48 /* LoginInput.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginInput.graphql.swift; sourceTree = "<group>"; };
+		02E9AD8629FABDCE00048B48 /* RegisterInput.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterInput.graphql.swift; sourceTree = "<group>"; };
+		02E9AD8729FABDCE00048B48 /* SchemaMetadata.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchemaMetadata.graphql.swift; sourceTree = "<group>"; };
+		02E9AD9829FABE0D00048B48 /* IdentityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentityViewModel.swift; sourceTree = "<group>"; };
 		02F8C59A29E46F09002D8501 /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
 		02FBFBB529AE5CC800A70CDD /* QRScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScanView.swift; sourceTree = "<group>"; };
 		02FBFBB729AE5CDC00A70CDD /* QRScanView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QRScanView.xib; sourceTree = "<group>"; };
@@ -370,7 +382,7 @@
 		0201FC1E289CB9530030CE24 = {
 			isa = PBXGroup;
 			children = (
-				02BD979029EEE19600913FCA /* MySchema */,
+				02E9AD6F29FABDCE00048B48 /* MySchema */,
 				024C76AB29E806AA002F6B44 /* schema.json */,
 				023E133129E7235D00C81553 /* ApolloAPI.swift */,
 				023E133329E7235D00C81553 /* ApolloNetworkHelper.swift */,
@@ -762,6 +774,7 @@
 				021696F329F6D73D00054091 /* Profile */,
 				024AF63629BDEFA9009F75A6 /* IdentityViewController.swift */,
 				024AF63A29BDF0D2009F75A6 /* IdentityViewController.storyboard */,
+				02E9AD9829FABE0D00048B48 /* IdentityViewModel.swift */,
 			);
 			path = Identity;
 			sourceTree = "<group>";
@@ -801,6 +814,7 @@
 			children = (
 				0281C04F29C9AF91007C2189 /* ChangePasswordViewController.swift */,
 				0281C05129C9AF9D007C2189 /* ChangePasswordViewController.storyboard */,
+				02E9AD6D29FA747700048B48 /* ChangePasswordViewModel.swift */,
 			);
 			path = ChangePassword;
 			sourceTree = "<group>";
@@ -858,73 +872,6 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
-		02BD979029EEE19600913FCA /* MySchema */ = {
-			isa = PBXGroup;
-			children = (
-				02BD979129EEE19600913FCA /* MySchema.graphql.swift */,
-				02BD979229EEE19600913FCA /* Operations */,
-				02BD979729EEE19600913FCA /* Schema */,
-			);
-			path = MySchema;
-			sourceTree = "<group>";
-		};
-		02BD979229EEE19600913FCA /* Operations */ = {
-			isa = PBXGroup;
-			children = (
-				02BD979329EEE19600913FCA /* Mutations */,
-			);
-			path = Operations;
-			sourceTree = "<group>";
-		};
-		02BD979329EEE19600913FCA /* Mutations */ = {
-			isa = PBXGroup;
-			children = (
-				02BD979429EEE19600913FCA /* HandleDeepLinkMutation.graphql.swift */,
-				02BD979529EEE19600913FCA /* LoginMutation.graphql.swift */,
-				02BD979629EEE19600913FCA /* RegisterMutation.graphql.swift */,
-			);
-			path = Mutations;
-			sourceTree = "<group>";
-		};
-		02BD979729EEE19600913FCA /* Schema */ = {
-			isa = PBXGroup;
-			children = (
-				02BD979829EEE19600913FCA /* Enums */,
-				02BD979A29EEE19600913FCA /* Objects */,
-				02BD979E29EEE19600913FCA /* SchemaConfiguration.swift */,
-				02BD979F29EEE19600913FCA /* InputObjects */,
-				02BD97A229EEE19600913FCA /* SchemaMetadata.graphql.swift */,
-			);
-			path = Schema;
-			sourceTree = "<group>";
-		};
-		02BD979829EEE19600913FCA /* Enums */ = {
-			isa = PBXGroup;
-			children = (
-				02BD979929EEE19600913FCA /* WalletRole.graphql.swift */,
-			);
-			path = Enums;
-			sourceTree = "<group>";
-		};
-		02BD979A29EEE19600913FCA /* Objects */ = {
-			isa = PBXGroup;
-			children = (
-				02BD979B29EEE19600913FCA /* Mutation.graphql.swift */,
-				02BD979C29EEE19600913FCA /* AuthorizableObject.graphql.swift */,
-				02BD979D29EEE19600913FCA /* Wallet.graphql.swift */,
-			);
-			path = Objects;
-			sourceTree = "<group>";
-		};
-		02BD979F29EEE19600913FCA /* InputObjects */ = {
-			isa = PBXGroup;
-			children = (
-				02BD97A029EEE19600913FCA /* LoginInput.graphql.swift */,
-				02BD97A129EEE19600913FCA /* RegisterInput.graphql.swift */,
-			);
-			path = InputObjects;
-			sourceTree = "<group>";
-		};
 		02C900E129F122F4004C3174 /* CheckPassword */ = {
 			isa = PBXGroup;
 			children = (
@@ -955,6 +902,93 @@
 				02E85C6229B48F0700D3FD35 /* QRScanViewController.storyboard */,
 			);
 			path = QR;
+			sourceTree = "<group>";
+		};
+		02E9AD6F29FABDCE00048B48 /* MySchema */ = {
+			isa = PBXGroup;
+			children = (
+				02E9AD7029FABDCE00048B48 /* MySchema.graphql.swift */,
+				02E9AD7129FABDCE00048B48 /* Operations */,
+				02E9AD7829FABDCE00048B48 /* Schema */,
+			);
+			path = MySchema;
+			sourceTree = "<group>";
+		};
+		02E9AD7129FABDCE00048B48 /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				02E9AD7229FABDCE00048B48 /* Mutations */,
+				02E9AD7629FABDCE00048B48 /* Queries */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		02E9AD7229FABDCE00048B48 /* Mutations */ = {
+			isa = PBXGroup;
+			children = (
+				02E9AD7329FABDCE00048B48 /* HandleDeepLinkMutation.graphql.swift */,
+				02E9AD7429FABDCE00048B48 /* LoginMutation.graphql.swift */,
+				02E9AD7529FABDCE00048B48 /* RegisterMutation.graphql.swift */,
+			);
+			path = Mutations;
+			sourceTree = "<group>";
+		};
+		02E9AD7629FABDCE00048B48 /* Queries */ = {
+			isa = PBXGroup;
+			children = (
+				02E9AD7729FABDCE00048B48 /* CredentialsQuery.graphql.swift */,
+			);
+			path = Queries;
+			sourceTree = "<group>";
+		};
+		02E9AD7829FABDCE00048B48 /* Schema */ = {
+			isa = PBXGroup;
+			children = (
+				02E9AD7929FABDCE00048B48 /* CustomScalars */,
+				02E9AD7B29FABDCE00048B48 /* Enums */,
+				02E9AD7D29FABDCE00048B48 /* Objects */,
+				02E9AD8329FABDCE00048B48 /* SchemaConfiguration.swift */,
+				02E9AD8429FABDCE00048B48 /* InputObjects */,
+				02E9AD8729FABDCE00048B48 /* SchemaMetadata.graphql.swift */,
+			);
+			path = Schema;
+			sourceTree = "<group>";
+		};
+		02E9AD7929FABDCE00048B48 /* CustomScalars */ = {
+			isa = PBXGroup;
+			children = (
+				02E9AD7A29FABDCE00048B48 /* JSON.swift */,
+			);
+			path = CustomScalars;
+			sourceTree = "<group>";
+		};
+		02E9AD7B29FABDCE00048B48 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				02E9AD7C29FABDCE00048B48 /* WalletRole.graphql.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		02E9AD7D29FABDCE00048B48 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				02E9AD7E29FABDCE00048B48 /* IndyCredentialObject.graphql.swift */,
+				02E9AD7F29FABDCE00048B48 /* Mutation.graphql.swift */,
+				02E9AD8029FABDCE00048B48 /* AuthorizableObject.graphql.swift */,
+				02E9AD8129FABDCE00048B48 /* Query.graphql.swift */,
+				02E9AD8229FABDCE00048B48 /* Wallet.graphql.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		02E9AD8429FABDCE00048B48 /* InputObjects */ = {
+			isa = PBXGroup;
+			children = (
+				02E9AD8529FABDCE00048B48 /* LoginInput.graphql.swift */,
+				02E9AD8629FABDCE00048B48 /* RegisterInput.graphql.swift */,
+			);
+			path = InputObjects;
 			sourceTree = "<group>";
 		};
 		02FBFBB429AE5C3500A70CDD /* QR Scan Success */ = {
@@ -1169,30 +1203,34 @@
 			buildActionMask = 2147483647;
 			files = (
 				0201FC58289CBC010030CE24 /* BaseSearchBar.swift in Sources */,
-				02BD97A329EEE19700913FCA /* MySchema.graphql.swift in Sources */,
+				02E9AD8A29FABDCF00048B48 /* LoginMutation.graphql.swift in Sources */,
 				0201FC8D289CBC200030CE24 /* UICollectionView+Rx.swift in Sources */,
 				02F8C59B29E46F0A002D8501 /* AppViewModel.swift in Sources */,
 				0201FCB6289CBE1C0030CE24 /* AppNavigator.swift in Sources */,
-				02BD97AB29EEE19700913FCA /* SchemaConfiguration.swift in Sources */,
 				021696F529F6D76200054091 /* ProfileViewController.swift in Sources */,
 				0201FC91289CBC200030CE24 /* UITableView+Extension.swift in Sources */,
 				0201FC5B289CBC010030CE24 /* BaseView.swift in Sources */,
 				0200D62829DB3CB90034B161 /* SettingKeyViewController.swift in Sources */,
 				02D7833829C21ECE00F48775 /* SettingViewController.swift in Sources */,
-				02BD97AD29EEE19700913FCA /* RegisterInput.graphql.swift in Sources */,
+				02E9AD6E29FA747700048B48 /* ChangePasswordViewModel.swift in Sources */,
 				0201FC53289CBC010030CE24 /* BaseViewController.swift in Sources */,
 				02D69DF6299934DB00F5BBB7 /* SignUpViewController.swift in Sources */,
 				0201FC84289CBC200030CE24 /* UIColor+extensions.swift in Sources */,
+				02E9AD9929FABE0D00048B48 /* IdentityViewModel.swift in Sources */,
 				0201FC8E289CBC200030CE24 /* UITableView+Rx.swift in Sources */,
 				0201FC2F289CB9530030CE24 /* ViewController.swift in Sources */,
+				02E9AD9629FABDCF00048B48 /* RegisterInput.graphql.swift in Sources */,
 				0201FC57289CBC010030CE24 /* BaseCollectionViewCell.swift in Sources */,
+				02E9AD9429FABDCF00048B48 /* SchemaConfiguration.swift in Sources */,
 				025C8D9829AB039900D97D9B /* SectionHeaderView.swift in Sources */,
 				02D69DF42998DEDF00F5BBB7 /* UITextField+Ex.swift in Sources */,
-				02BD97A629EEE19700913FCA /* RegisterMutation.graphql.swift in Sources */,
 				023E133729E7235D00C81553 /* ApolloNetworkHelper.swift in Sources */,
+				02E9AD8B29FABDCF00048B48 /* RegisterMutation.graphql.swift in Sources */,
+				02E9AD8829FABDCF00048B48 /* MySchema.graphql.swift in Sources */,
 				025D6D6229EA5CCF00EA6D5D /* SignInViewModel.swift in Sources */,
 				02E85C6129B48EFC00D3FD35 /* QRScanViewController.swift in Sources */,
 				0201FC87289CBC200030CE24 /* UICollectionViewCell+extensions.swift in Sources */,
+				02E9AD9129FABDCF00048B48 /* AuthorizableObject.graphql.swift in Sources */,
 				0201FC8C289CBC200030CE24 /* UIViewController+RxLifeCycle.swift in Sources */,
 				023E133529E7235D00C81553 /* ApolloAPI.swift in Sources */,
 				024AF63729BDEFA9009F75A6 /* IdentityViewController.swift in Sources */,
@@ -1206,7 +1244,6 @@
 				0201FC90289CBC200030CE24 /* UICollectionView+extensions.swift in Sources */,
 				0201FCA7289CBC2C0030CE24 /* Storage.swift in Sources */,
 				0201FC7F289CBC200030CE24 /* UIImage+Dowsampling+Extension.swift in Sources */,
-				02BD97A729EEE19700913FCA /* WalletRole.graphql.swift in Sources */,
 				024958BD29EBDCC30058158A /* RegistSuccessViewController.swift in Sources */,
 				024A72502992A1A20053E369 /* ApplicationViewController.swift in Sources */,
 				0201FC95289CBC200030CE24 /* Consts.swift in Sources */,
@@ -1215,22 +1252,24 @@
 				0201FCA2289CBC2C0030CE24 /* ApiRequest+Login+extension.swift in Sources */,
 				0201FC7C289CBC200030CE24 /* UIApplication+Extension.swift in Sources */,
 				0201FC7E289CBC200030CE24 /* UIViewController+Storyboard.swift in Sources */,
+				02E9AD8D29FABDCF00048B48 /* JSON.swift in Sources */,
 				029432D8299E7DD000DA0C94 /* AuthCodeTableViewCell.swift in Sources */,
-				02BD97A529EEE19700913FCA /* LoginMutation.graphql.swift in Sources */,
-				02BD97A829EEE19700913FCA /* Mutation.graphql.swift in Sources */,
 				02C900E329F12322004C3174 /* CheckPasswordViewController.swift in Sources */,
 				0201FCB0289CBC410030CE24 /* EnvirontmentConfigs.swift in Sources */,
 				0233BC5C29BB2EBD009996EE /* QRScannerView.swift in Sources */,
 				0233BC5D29BB2EBD009996EE /* Bundle+Module.swift in Sources */,
+				02E9AD9529FABDCF00048B48 /* LoginInput.graphql.swift in Sources */,
 				0281C05029C9AF91007C2189 /* ChangePasswordViewController.swift in Sources */,
 				0201FC94289CBC200030CE24 /* NotificationName.swift in Sources */,
+				02E9AD9729FABDCF00048B48 /* SchemaMetadata.graphql.swift in Sources */,
 				0201FC8B289CBC200030CE24 /* UIScrollView+Extension.swift in Sources */,
 				024AF63F29BE20FE009F75A6 /* IdentityCell.swift in Sources */,
+				02E9AD8929FABDCF00048B48 /* HandleDeepLinkMutation.graphql.swift in Sources */,
 				0213D53B29A517BC00542D9C /* SectionTableViewCell.swift in Sources */,
 				0201FCA6289CBC2C0030CE24 /* ApiRequest.swift in Sources */,
-				02BD97AE29EEE19700913FCA /* SchemaMetadata.graphql.swift in Sources */,
 				0201FC96289CBC200030CE24 /* Enums.swift in Sources */,
 				0200D62129DB19240034B161 /* BiometricViewController.swift in Sources */,
+				02E9AD8C29FABDCF00048B48 /* CredentialsQuery.graphql.swift in Sources */,
 				024D024729F03D6200FC735B /* BiometricViewModel.swift in Sources */,
 				024A72542992A4140053E369 /* StartViewController.swift in Sources */,
 				0201FC59289CBC010030CE24 /* BaseTableViewCell.swift in Sources */,
@@ -1244,14 +1283,15 @@
 				02FBFBB629AE5CC800A70CDD /* QRScanView.swift in Sources */,
 				0233BC5E29BB2EBD009996EE /* QRScannerError.swift in Sources */,
 				0201FCA5289CBC2C0030CE24 /* ApiInput.swift in Sources */,
+				02E9AD8E29FABDCF00048B48 /* WalletRole.graphql.swift in Sources */,
+				02E9AD9229FABDCF00048B48 /* Query.graphql.swift in Sources */,
 				02A972B1299D285E0021229C /* HomeViewController.swift in Sources */,
-				02BD97A929EEE19700913FCA /* AuthorizableObject.graphql.swift in Sources */,
 				0201FC83289CBC200030CE24 /* UIFont+extensions.swift in Sources */,
 				0201FC85289CBC200030CE24 /* UIView+extentions.swift in Sources */,
-				02BD97AC29EEE19700913FCA /* LoginInput.graphql.swift in Sources */,
 				0201FCB7289CBE1C0030CE24 /* AppDelegate.swift in Sources */,
 				0201FC82289CBC200030CE24 /* UIButton+Extension.swift in Sources */,
 				0201FC7D289CBC200030CE24 /* UIViewController+extensions.swift in Sources */,
+				02E9AD8F29FABDCF00048B48 /* IndyCredentialObject.graphql.swift in Sources */,
 				0200D62D29DB419E0034B161 /* GenerateKeyViewController.swift in Sources */,
 				0201FCA4289CBC2C0030CE24 /* ApiRouter.swift in Sources */,
 				02C900E729F1260B004C3174 /* CheckPasswordViewModel.swift in Sources */,
@@ -1260,13 +1300,13 @@
 				0201FC89289CBC200030CE24 /* NSObject+extensions.swift in Sources */,
 				0201FC56289CBC010030CE24 /* BaseLabel.swift in Sources */,
 				024958C529EBF1FE0058158A /* String+Extension.swift in Sources */,
+				02E9AD9029FABDCF00048B48 /* Mutation.graphql.swift in Sources */,
 				0201FCA8289CBC2C0030CE24 /* LGKeychainAccess.swift in Sources */,
 				0201FC5A289CBC010030CE24 /* BaseButton.swift in Sources */,
 				0201FC88289CBC200030CE24 /* CALayer+extensions.swift in Sources */,
 				0200D62529DB33C20034B161 /* UISwitch+Ex.swift in Sources */,
-				02BD97A429EEE19700913FCA /* HandleDeepLinkMutation.graphql.swift in Sources */,
-				02BD97AA29EEE19700913FCA /* Wallet.graphql.swift in Sources */,
 				0201FC81289CBC200030CE24 /* Date+Extension.swift in Sources */,
+				02E9AD9329FABDCF00048B48 /* Wallet.graphql.swift in Sources */,
 				0201FC55289CBC010030CE24 /* ShadowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

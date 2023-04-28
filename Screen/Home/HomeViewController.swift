@@ -28,27 +28,27 @@ class HomeViewController: BaseViewController {
 //               self?.startTime()
 //        }
 
-        getDeeflink()
+//        getDeeflink()
         setupViews()
     }
 
-    func getDeeflink() {
-        ApolloNetwork.shared.apollo.perform(mutation: MySchema.HandleDeepLinkMutation(url: "https://kmaauth.tek4.vn/?data=eyJpZCI6ImNsZ243bXZ5cDAwNHdseTAxNXl5MmJ4N2siLCJ0eXBlIjoiUFJPT0YifQ%3D%3D")) { result in
-            switch result {
-            case .success(let queryResult):
-                if let error = queryResult.errors {
-                    let message = error.map{ $0.localizedDescription }
-                    print("Error: \(message.first)")
-                    return
-                }
-                if let data = queryResult.data?.handleDeepLink {
-                    print("Success accessToken: \(data)")
-                }
-            case .failure(let error):
-                print("Fail Query: \(error)")
-            }
-        }
-    }
+//    func getDeeflink() {
+//        ApolloNetwork.shared.apollo.perform(mutation: MySchema.HandleDeepLinkMutation(url: "https://kmaauth.tek4.vn/?data=eyJpZCI6ImNsZ243bXZ5cDAwNHdseTAxNXl5MmJ4N2siLCJ0eXBlIjoiUFJPT0YifQ%3D%3D")) { result in
+//            switch result {
+//            case .success(let queryResult):
+//                if let error = queryResult.errors {
+//                    let message = error.map{ $0.localizedDescription }
+//                    print("Error: \(message.first)")
+//                    return
+//                }
+//                if let data = queryResult.data?.handleDeepLink {
+//                    print("Success accessToken: \(data)")
+//                }
+//            case .failure(let error):
+//                print("Fail Query: \(error)")
+//            }
+//        }
+//    }
 
     func setupViews() {
         setupTableView()

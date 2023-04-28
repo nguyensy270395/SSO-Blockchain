@@ -35,6 +35,7 @@ class SignUpViewModel: BaseViewModel, BaseViewModelProtocol {
                     }
                     if let data = queryResult.data?.register.accessToken {
                         UserDefaults.standard.set(data, forKey: "token")
+                        UserDefaults.standard.set(userName, forKey: "user")
                         UserDefaults.standard.set(Date(), forKey: "timeLogin")
                         print("Success accessToken: \(data)")
                         loginSuccess.onNext(true)

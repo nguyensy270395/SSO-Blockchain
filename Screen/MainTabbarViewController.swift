@@ -119,7 +119,7 @@ enum TabbarItem: Int, CaseIterable {
             return BaseNavigationViewController(rootViewController: vc)
         case .identity:
             let vc = IdentityViewController.instantiate { coder in
-                return IdentityViewController(coder: coder)
+                return IdentityViewController(coder: coder, viewModel: .init())
             }
             return BaseNavigationViewController(rootViewController: vc)
         case .setting:

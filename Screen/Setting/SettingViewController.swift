@@ -40,7 +40,7 @@ class SettingViewController: BaseTableViewController {
             self.navigationController?.pushViewController(vc, animated: true)
         case .resetPassword:
             let vc = ChangePasswordViewController.instantiate { coder in
-                return ChangePasswordViewController(coder: coder)
+                return ChangePasswordViewController(coder: coder, viewModel: .init() )
             }
             self.navigationController?.pushViewController(vc, animated: true)
         case .information:
@@ -56,7 +56,8 @@ class SettingViewController: BaseTableViewController {
     }
 
     func showSignoutMessage() {
-        let alert = UIAlertController(title: "Đăng xuất", message: "Bạn có muốn đăng xuất khỏi SSO-Blockchain?", preferredStyle: .alert)
+        let messageSignout = "Toàn bộ dữ liệu OTP key của bạn sẽ bị xoá khi bạn đăng xuất khỏi ứng dụng.\nBạn có muốn đăng xuất khỏi SSO-Blockchain?"
+        let alert = UIAlertController(title: "Đăng xuất", message: messageSignout, preferredStyle: .alert)
 
         alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (action: UIAlertAction) -> Void in
             self.dismiss(animated: true, completion: nil)

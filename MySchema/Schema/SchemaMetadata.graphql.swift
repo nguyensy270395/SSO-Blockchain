@@ -34,6 +34,8 @@ public extension MySchema {
       case "Mutation": return MySchema.Objects.Mutation
       case "AuthorizableObject": return MySchema.Objects.AuthorizableObject
       case "Wallet": return MySchema.Objects.Wallet
+      case "Query": return MySchema.Objects.Query
+      case "IndyCredentialObject": return MySchema.Objects.IndyCredentialObject
       default: return nil
       }
     }

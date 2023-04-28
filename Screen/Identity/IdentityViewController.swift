@@ -9,23 +9,39 @@ import UIKit
 import Rswift
 import SnapKit
 
-class IdentityViewController: BaseViewController {
+class IdentityViewController: BaseViewController, BaseViewControllerProtocol{
 
+    var viewModel: IdentityViewModel!
 
     @IBOutlet weak var indentityTableView: UITableView!
 
-    required init?(coder: NSCoder) {
+    required init?(coder: NSCoder, viewModel: IdentityViewModel) {
+        self.viewModel = viewModel
         super.init(coder: coder)
+    }
+
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setupRx()
         setupViews()
+        bindingViewModels()
     }
 
     func setupViews() {
         setupTableView()
+    }
+
+    func bindingViewModels() {
+        let input = IdentityViewModel.Input(getData: self.rx.viewWillAppear.asObservable())
+        viewModel.transfrom(from: input)
+    }
+
+    func setupRx() {
+
     }
 
     func setupTableView() {

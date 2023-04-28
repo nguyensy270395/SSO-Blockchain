@@ -25,7 +25,7 @@ class CheckPasswordViewModel: BaseViewModel, BaseViewModelProtocol {
         let loginSuccess = PublishSubject<Bool>()
         input.actionCheckPass.subscribe(onNext: {passWord in
             UIApplication.shared.showProgress()
-            let user = (UserDefaults.standard.string(forKey: "user") ?? "").desDecrypt(key: passWord) ?? ""
+            let user = UserDefaults.standard.string(forKey: "user") ?? ""
             let data = MySchema.LoginInput(email: user, password: passWord)
             ApolloNetwork.shared.apollo.perform(mutation: MySchema.LoginMutation(data: data)) { result in
                 switch result {
