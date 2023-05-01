@@ -60,261 +60,33 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="8KD-AE-Eek">
-                                <rect key="frame" x="16" y="292" width="343" height="444"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W6Y-P7-QOG">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="62.333333333333336"/>
-                                        <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="brj-Jx-Jvz">
-                                                <rect key="frame" x="8" y="0.0" width="327" height="57.333333333333336"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tên tài khoản" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TdH-AY-pAy">
-                                                        <rect key="frame" x="0.0" y="0.0" width="327" height="32.666666666666664"/>
-                                                        <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="15"/>
-                                                        <color key="textColor" name="colorFCFCFC"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nguyễn Thanh Sỹ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jCP-ve-tIF">
-                                                        <rect key="frame" x="0.0" y="32.666666666666686" width="327" height="24.666666666666671"/>
-                                                        <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="18"/>
-                                                        <color key="textColor" name="colorFCFCFC"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                            </stackView>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Ce-9a-BNV">
-                                                <rect key="frame" x="0.0" y="61.333333333333314" width="343" height="1"/>
-                                                <color key="backgroundColor" name="color9A9BA2"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="1" id="QtP-4y-cs9"/>
-                                                </constraints>
-                                            </view>
-                                        </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstItem="brj-Jx-Jvz" firstAttribute="top" secondItem="W6Y-P7-QOG" secondAttribute="top" id="4dh-iK-Skn"/>
-                                            <constraint firstAttribute="trailing" secondItem="9Ce-9a-BNV" secondAttribute="trailing" id="JVM-8H-TWY"/>
-                                            <constraint firstItem="brj-Jx-Jvz" firstAttribute="leading" secondItem="W6Y-P7-QOG" secondAttribute="leading" constant="8" id="K6D-Gh-s9B"/>
-                                            <constraint firstAttribute="trailing" secondItem="brj-Jx-Jvz" secondAttribute="trailing" constant="8" id="YLu-Oy-bSy"/>
-                                            <constraint firstItem="9Ce-9a-BNV" firstAttribute="leading" secondItem="W6Y-P7-QOG" secondAttribute="leading" id="btN-WN-3Vq"/>
-                                            <constraint firstItem="9Ce-9a-BNV" firstAttribute="top" secondItem="brj-Jx-Jvz" secondAttribute="bottom" constant="4" id="mwu-jm-cpc"/>
-                                            <constraint firstAttribute="bottom" secondItem="9Ce-9a-BNV" secondAttribute="bottom" id="oy5-4l-ZsB"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D0H-cB-WMl">
-                                        <rect key="frame" x="0.0" y="76.333333333333314" width="343" height="62.333333333333343"/>
-                                        <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="2no-ES-dQA">
-                                                <rect key="frame" x="8" y="0.0" width="327" height="57.333333333333336"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ngày sinh" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="drQ-HG-xLB">
-                                                        <rect key="frame" x="0.0" y="0.0" width="327" height="32.666666666666664"/>
-                                                        <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="15"/>
-                                                        <color key="textColor" name="colorFCFCFC"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="27/03/2002" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XpH-Vb-dJq">
-                                                        <rect key="frame" x="0.0" y="32.666666666666686" width="327" height="24.666666666666671"/>
-                                                        <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="18"/>
-                                                        <color key="textColor" name="colorFCFCFC"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                            </stackView>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L2v-rO-aAd">
-                                                <rect key="frame" x="0.0" y="61.333333333333371" width="343" height="1"/>
-                                                <color key="backgroundColor" name="color9A9BA2"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="1" id="coH-tV-4yz"/>
-                                                </constraints>
-                                            </view>
-                                        </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstItem="2no-ES-dQA" firstAttribute="top" secondItem="D0H-cB-WMl" secondAttribute="top" id="7Se-ky-Vu9"/>
-                                            <constraint firstItem="2no-ES-dQA" firstAttribute="leading" secondItem="D0H-cB-WMl" secondAttribute="leading" constant="8" id="9Eq-eR-xxd"/>
-                                            <constraint firstAttribute="trailing" secondItem="L2v-rO-aAd" secondAttribute="trailing" id="U6W-D2-E09"/>
-                                            <constraint firstAttribute="trailing" secondItem="2no-ES-dQA" secondAttribute="trailing" constant="8" id="Wrn-dt-kD4"/>
-                                            <constraint firstItem="L2v-rO-aAd" firstAttribute="leading" secondItem="D0H-cB-WMl" secondAttribute="leading" id="mSw-bV-miF"/>
-                                            <constraint firstAttribute="bottom" secondItem="L2v-rO-aAd" secondAttribute="bottom" id="nQw-Nb-7Ap"/>
-                                            <constraint firstItem="L2v-rO-aAd" firstAttribute="top" secondItem="2no-ES-dQA" secondAttribute="bottom" constant="4" id="p1L-XY-v6x"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PYP-XK-0ln">
-                                        <rect key="frame" x="0.0" y="152.66666666666669" width="343" height="62.333333333333343"/>
-                                        <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="vfm-kW-7LV">
-                                                <rect key="frame" x="8" y="0.0" width="327" height="57.333333333333336"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Giới tính" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Huo-ar-2rA">
-                                                        <rect key="frame" x="0.0" y="0.0" width="327" height="32.666666666666664"/>
-                                                        <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="15"/>
-                                                        <color key="textColor" name="colorFCFCFC"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nam" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ihu-Ji-2zc">
-                                                        <rect key="frame" x="0.0" y="32.666666666666629" width="327" height="24.666666666666671"/>
-                                                        <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="18"/>
-                                                        <color key="textColor" name="colorFCFCFC"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                            </stackView>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4m9-ih-GYN">
-                                                <rect key="frame" x="0.0" y="61.333333333333314" width="343" height="1"/>
-                                                <color key="backgroundColor" name="color9A9BA2"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="1" id="xtJ-Xb-UeN"/>
-                                                </constraints>
-                                            </view>
-                                        </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstItem="vfm-kW-7LV" firstAttribute="leading" secondItem="PYP-XK-0ln" secondAttribute="leading" constant="8" id="0OO-Ng-BS8"/>
-                                            <constraint firstAttribute="trailing" secondItem="vfm-kW-7LV" secondAttribute="trailing" constant="8" id="3W8-ql-UJ5"/>
-                                            <constraint firstAttribute="bottom" secondItem="4m9-ih-GYN" secondAttribute="bottom" id="Kuf-hd-ZFw"/>
-                                            <constraint firstItem="4m9-ih-GYN" firstAttribute="top" secondItem="vfm-kW-7LV" secondAttribute="bottom" constant="4" id="QOM-f3-xE5"/>
-                                            <constraint firstAttribute="trailing" secondItem="4m9-ih-GYN" secondAttribute="trailing" id="hqc-XR-DnZ"/>
-                                            <constraint firstItem="vfm-kW-7LV" firstAttribute="top" secondItem="PYP-XK-0ln" secondAttribute="top" id="nmJ-Lz-fnO"/>
-                                            <constraint firstItem="4m9-ih-GYN" firstAttribute="leading" secondItem="PYP-XK-0ln" secondAttribute="leading" id="rVu-Fv-XtP"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3qe-28-19l">
-                                        <rect key="frame" x="0.0" y="229.00000000000003" width="343" height="62.333333333333343"/>
-                                        <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="nY8-cu-Cay">
-                                                <rect key="frame" x="8" y="0.0" width="327" height="57.333333333333336"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ngày cấp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="74K-Rh-LMy">
-                                                        <rect key="frame" x="0.0" y="0.0" width="327" height="32.666666666666664"/>
-                                                        <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="15"/>
-                                                        <color key="textColor" name="colorFCFCFC"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="22/12/2022" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZT6-um-RNN">
-                                                        <rect key="frame" x="0.0" y="32.666666666666629" width="327" height="24.666666666666671"/>
-                                                        <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="18"/>
-                                                        <color key="textColor" name="colorFCFCFC"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                            </stackView>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lf3-ew-Go3">
-                                                <rect key="frame" x="0.0" y="61.333333333333371" width="343" height="1"/>
-                                                <color key="backgroundColor" name="color9A9BA2"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="1" id="Zqu-sv-7K2"/>
-                                                </constraints>
-                                            </view>
-                                        </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstItem="lf3-ew-Go3" firstAttribute="top" secondItem="nY8-cu-Cay" secondAttribute="bottom" constant="4" id="3lP-hZ-um7"/>
-                                            <constraint firstAttribute="trailing" secondItem="lf3-ew-Go3" secondAttribute="trailing" id="90m-2s-C7K"/>
-                                            <constraint firstAttribute="bottom" secondItem="lf3-ew-Go3" secondAttribute="bottom" id="Bvr-qG-LJK"/>
-                                            <constraint firstAttribute="trailing" secondItem="nY8-cu-Cay" secondAttribute="trailing" constant="8" id="Mb4-ze-jxd"/>
-                                            <constraint firstItem="lf3-ew-Go3" firstAttribute="leading" secondItem="3qe-28-19l" secondAttribute="leading" id="PUD-ad-bkz"/>
-                                            <constraint firstItem="nY8-cu-Cay" firstAttribute="top" secondItem="3qe-28-19l" secondAttribute="top" id="St5-ia-RaE"/>
-                                            <constraint firstItem="nY8-cu-Cay" firstAttribute="leading" secondItem="3qe-28-19l" secondAttribute="leading" constant="8" id="xrG-cg-ixR"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VK9-5F-47d">
-                                        <rect key="frame" x="0.0" y="305.33333333333337" width="343" height="62.333333333333314"/>
-                                        <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="8Qr-qG-ehi">
-                                                <rect key="frame" x="8" y="0.0" width="327" height="57.333333333333336"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ngày hết hạn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S7M-II-zqO">
-                                                        <rect key="frame" x="0.0" y="0.0" width="327" height="32.666666666666664"/>
-                                                        <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="15"/>
-                                                        <color key="textColor" name="colorFCFCFC"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="22/12/2024" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xBN-2M-17I">
-                                                        <rect key="frame" x="0.0" y="32.666666666666629" width="327" height="24.666666666666671"/>
-                                                        <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="18"/>
-                                                        <color key="textColor" name="colorFCFCFC"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                            </stackView>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZdP-js-KH1">
-                                                <rect key="frame" x="0.0" y="61.333333333333258" width="343" height="1"/>
-                                                <color key="backgroundColor" name="color9A9BA2"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="1" id="JlF-6c-xGF"/>
-                                                </constraints>
-                                            </view>
-                                        </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstItem="ZdP-js-KH1" firstAttribute="top" secondItem="8Qr-qG-ehi" secondAttribute="bottom" constant="4" id="2tP-ks-vF1"/>
-                                            <constraint firstItem="8Qr-qG-ehi" firstAttribute="top" secondItem="VK9-5F-47d" secondAttribute="top" id="8VW-oQ-Yt8"/>
-                                            <constraint firstItem="8Qr-qG-ehi" firstAttribute="leading" secondItem="VK9-5F-47d" secondAttribute="leading" constant="8" id="QQa-hh-Cha"/>
-                                            <constraint firstItem="ZdP-js-KH1" firstAttribute="leading" secondItem="VK9-5F-47d" secondAttribute="leading" id="S5h-Vw-0tZ"/>
-                                            <constraint firstAttribute="trailing" secondItem="ZdP-js-KH1" secondAttribute="trailing" id="erZ-c7-qHQ"/>
-                                            <constraint firstAttribute="bottom" secondItem="ZdP-js-KH1" secondAttribute="bottom" id="kLE-jW-PCL"/>
-                                            <constraint firstAttribute="trailing" secondItem="8Qr-qG-ehi" secondAttribute="trailing" constant="8" id="ywT-eJ-xYb"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eVC-iJ-t6u">
-                                        <rect key="frame" x="0.0" y="381.66666666666663" width="343" height="62.333333333333314"/>
-                                        <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="4NL-BP-P0l">
-                                                <rect key="frame" x="8" y="0.0" width="327" height="57.333333333333336"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ứng dụng đang dùng" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6XB-Py-2iz">
-                                                        <rect key="frame" x="0.0" y="0.0" width="327" height="32.666666666666664"/>
-                                                        <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="15"/>
-                                                        <color key="textColor" name="colorFCFCFC"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Figma, canva" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l3N-dI-dLD">
-                                                        <rect key="frame" x="0.0" y="32.666666666666742" width="327" height="24.666666666666671"/>
-                                                        <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="18"/>
-                                                        <color key="textColor" name="colorFCFCFC"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                            </stackView>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nyt-D3-dBP">
-                                                <rect key="frame" x="0.0" y="61.333333333333371" width="343" height="1"/>
-                                                <color key="backgroundColor" name="color9A9BA2"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="1" id="UUQ-uR-NoN"/>
-                                                </constraints>
-                                            </view>
-                                        </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstItem="4NL-BP-P0l" firstAttribute="top" secondItem="eVC-iJ-t6u" secondAttribute="top" id="8kK-Jc-lCc"/>
-                                            <constraint firstAttribute="trailing" secondItem="nyt-D3-dBP" secondAttribute="trailing" id="KcB-Hq-fVR"/>
-                                            <constraint firstItem="4NL-BP-P0l" firstAttribute="leading" secondItem="eVC-iJ-t6u" secondAttribute="leading" constant="8" id="Kof-xp-znv"/>
-                                            <constraint firstItem="nyt-D3-dBP" firstAttribute="leading" secondItem="eVC-iJ-t6u" secondAttribute="leading" id="Op4-em-ad2"/>
-                                            <constraint firstItem="nyt-D3-dBP" firstAttribute="top" secondItem="4NL-BP-P0l" secondAttribute="bottom" constant="4" id="aNZ-af-xSu"/>
-                                            <constraint firstAttribute="bottom" secondItem="nyt-D3-dBP" secondAttribute="bottom" id="fn3-wr-7n4"/>
-                                            <constraint firstAttribute="trailing" secondItem="4NL-BP-P0l" secondAttribute="trailing" constant="8" id="y6k-As-UZ6"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                            </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="TuT-ql-IoP">
+                                <rect key="frame" x="16" y="284" width="343" height="494"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" name="color283442"/>
                         <constraints>
                             <constraint firstItem="hGw-Eb-H7p" firstAttribute="top" secondItem="Sgu-7w-5v6" secondAttribute="bottom" constant="8" id="71Z-8w-ZOr"/>
+                            <constraint firstItem="TuT-ql-IoP" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="Bqo-18-ac3"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="TuT-ql-IoP" secondAttribute="bottom" id="G0d-eh-4Tl"/>
+                            <constraint firstItem="TuT-ql-IoP" firstAttribute="top" secondItem="hGw-Eb-H7p" secondAttribute="bottom" constant="24" id="HlL-HI-wYz"/>
                             <constraint firstItem="OIo-lS-KCU" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="18" id="ITj-33-rbO"/>
                             <constraint firstItem="hGw-Eb-H7p" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="L5k-3y-GGS"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="TuT-ql-IoP" secondAttribute="trailing" constant="16" id="ML6-63-yn9"/>
                             <constraint firstItem="OIo-lS-KCU" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="MvV-If-Mny"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="8KD-AE-Eek" secondAttribute="trailing" constant="16" id="Rxv-QT-AFs"/>
-                            <constraint firstItem="8KD-AE-Eek" firstAttribute="top" secondItem="hGw-Eb-H7p" secondAttribute="bottom" constant="32" id="f6Y-Rb-mJL"/>
                             <constraint firstItem="hGw-Eb-H7p" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="iNh-Qb-NPP"/>
-                            <constraint firstItem="8KD-AE-Eek" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="mOZ-sh-84o"/>
                             <constraint firstItem="Sgu-7w-5v6" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="tup-Dy-8bx"/>
                             <constraint firstItem="Sgu-7w-5v6" firstAttribute="top" secondItem="OIo-lS-KCU" secondAttribute="bottom" constant="16" id="uxM-1s-bmq"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="dateCreateLabel" destination="57B-0y-Jk1" id="UID-Wo-ptP"/>
+                        <outlet property="informationTableView" destination="TuT-ql-IoP" id="4Ia-P2-XAF"/>
+                        <outlet property="profileIDLabel" destination="8VT-iP-ipP" id="ASn-oQ-LSu"/>
+                        <outlet property="profileNameLabel" destination="Sgu-7w-5v6" id="xWL-vK-Cv6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

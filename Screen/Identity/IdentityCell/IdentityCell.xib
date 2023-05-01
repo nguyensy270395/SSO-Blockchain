@@ -51,7 +51,7 @@
                                         <color key="textColor" name="color050C1E"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2/4 is working" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vRD-jz-Yxc">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/4 is working" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vRD-jz-Yxc">
                                         <rect key="frame" x="0.0" y="80.5" width="312" height="20.5"/>
                                         <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="15"/>
                                         <color key="textColor" name="colorDD9F43"/>
@@ -59,7 +59,7 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WR8-3Z-8Ce">
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WR8-3Z-8Ce">
                                 <rect key="frame" x="254" y="21.5" width="90" height="90"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="jm1-hp-jHS">
@@ -179,6 +179,12 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="activeLabel" destination="n66-KQ-FAr" id="2sq-NT-KrI"/>
+                <outlet property="appLabel" destination="XEI-i6-qLA" id="39G-yX-kpl"/>
+                <outlet property="identityLabel" destination="H9a-j3-ObN" id="shQ-Hf-ExW"/>
+                <outlet property="workingLabel" destination="vRD-jz-Yxc" id="Qbc-qA-Kfd"/>
+            </connections>
             <point key="canvasLocation" x="456.52173913043481" y="26.450892857142858"/>
         </tableViewCell>
     </objects>

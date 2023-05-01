@@ -21,7 +21,13 @@ class AuthCodeTableViewCell: BaseTableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         setupTimeView()
-        setupOTP()
+        setupCell()
+    }
+
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        setupTimeView()
+        setupCell()
     }
 
     func setupTimeView() {
@@ -34,16 +40,16 @@ class AuthCodeTableViewCell: BaseTableViewCell {
             maker.leading.equalToSuperview()
         }
         animationView?.contentMode = .scaleAspectFit
-        animationView?.loopMode = .loop
         animationView?.animationSpeed = 1
-        animationView?.play()
     }
 
-    func setupOTP() {
-        guard let data = base32DecodeToData("ABCDEFGHIJKLMNOP") else { return }
-
-        if let hotp = HOTP(secret: data) {
-            otpLabel.text = hotp.generate(counter: 60)
+    func setupCell() {
+        animationView?.loopMode = .playOnce
+        var frame = (Double(Date().second % 30) / 30.0) * (animationView?.animation?.endFrame ?? 0)
+        animationView?.play(fromFrame: frame, toFrame: animationView?.animation?.endFrame ?? 0)
+        guard let data = base32DecodeToData("MABMMELHGEYSQ4TM") else { return }
+        if let hotp = TOTP(secret: data, digits: 6) {
+            otpLabel.text = hotp.generate(secondsPast1970: Int(Date().timeIntervalSince1970))
         }
     }
 }

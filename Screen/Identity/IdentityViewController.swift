@@ -37,7 +37,13 @@ class IdentityViewController: BaseViewController, BaseViewControllerProtocol{
 
     func bindingViewModels() {
         let input = IdentityViewModel.Input(getData: self.rx.viewWillAppear.asObservable())
-        viewModel.transfrom(from: input)
+        let output = viewModel.transfrom(from: input)
+        output.updateData.drive(onNext: {[weak self] data in
+            if data {
+                self?.indentityTableView.reloadData()
+            }
+
+        }).disposed(by: disposeBag)
     }
 
     func setupRx() {
@@ -55,12 +61,13 @@ class IdentityViewController: BaseViewController, BaseViewControllerProtocol{
 
 extension IdentityViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 6
+        return viewModel.credentialData.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(IdentityCell.self, for: indexPath)
         cell.contentView.backgroundColor = .clear
+        cell.setupCell(data: viewModel.credentialData[indexPath.row])
         return cell
     }
 
@@ -79,8 +86,8 @@ extension IdentityViewController: UITableViewDataSource, UITableViewDelegate {
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let vc = ProfileViewController.instantiate { coder in
-            return ProfileViewController(coder: coder)
+        let vc = ProfileViewController.instantiate {[weak self] coder in
+            return ProfileViewController(coder: coder, data: (self?.viewModel.credentialData[indexPath.row])!)
         }
         self.navigationController?.pushViewController(vc, animated: true)
     }

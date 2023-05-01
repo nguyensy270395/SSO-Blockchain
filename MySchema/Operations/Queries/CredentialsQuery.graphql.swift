@@ -44,13 +44,13 @@ public extension MySchema {
         public static var __parentType: Apollo.ParentType { MySchema.Objects.IndyCredentialObject }
         public static var __selections: [Apollo.Selection] { [
           .field("__typename", String.self),
-          .field("attrs", MySchema.JSON?.self),
+          .field("attrs", MySchema.CustomJSON?.self),
           .field("cred_def_id", String?.self),
           .field("referent", String?.self),
           .field("schema_id", String?.self),
         ] }
 
-        public var attrs: MySchema.JSON? { __data["attrs"] }
+        public var attrs: MySchema.CustomJSON? { __data["attrs"] }
         public var cred_def_id: String? { __data["cred_def_id"] }
         /// credId - Credential identifier
         public var referent: String? { __data["referent"] }

@@ -13,20 +13,24 @@ import RxCocoa
 class AppViewModel {
     public var updateTime = PublishSubject<Void>()
     private var clockTimer: Timer?
-    private var serverDateTime: TimeInterval?
 
     init() {
         DispatchQueue.main.async {[weak self] in
-               self?.startTime()
+            self?.startTime()
         }
     }
 
     func startTime() {
-        clockTimer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { [weak self] (_) in
-            guard let self = self, let dateTime = self.serverDateTime else { return }
-            self.updateTime.onNext(())
-            self.serverDateTime = dateTime + 1
-        })
-        self.clockTimer?.fire()
+        var time = 30.0 - Double(Date().second % 30)
+
+        DispatchQueue.main.asyncAfter(deadline: .now() + time) {[weak self] in
+            guard let self = self else { return }
+            self.clockTimer = Timer.scheduledTimer(withTimeInterval: 30, repeats: true, block: { [weak self] (_) in
+                guard let self = self else { return }
+                let now = Date().second
+                self.updateTime.onNext(())
+            })
+            self.clockTimer?.fire()
+        }
     }
 }

@@ -131,6 +131,8 @@
 		029432D9299E7DD000DA0C94 /* AuthCodeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 029432D7299E7DD000DA0C94 /* AuthCodeTableViewCell.xib */; };
 		02A2C7802997B7E400316C82 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A2C77F2997B7E400316C82 /* SignInViewController.swift */; };
 		02A2C7822997B7F700316C82 /* SignInViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02A2C7812997B7F700316C82 /* SignInViewController.storyboard */; };
+		02A40FA229FD28E7009BCC62 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A40FA029FD28E7009BCC62 /* ProfileCell.swift */; };
+		02A40FA329FD28E7009BCC62 /* ProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02A40FA129FD28E7009BCC62 /* ProfileCell.xib */; };
 		02A972B1299D285E0021229C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A972B0299D285E0021229C /* HomeViewController.swift */; };
 		02A972B3299D286A0021229C /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02A972B2299D286A0021229C /* HomeViewController.storyboard */; };
 		02A972B6299D2B7D0021229C /* MainTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A972B5299D2B7D0021229C /* MainTabbarViewController.swift */; };
@@ -297,6 +299,8 @@
 		029432D7299E7DD000DA0C94 /* AuthCodeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthCodeTableViewCell.xib; sourceTree = "<group>"; };
 		02A2C77F2997B7E400316C82 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		02A2C7812997B7F700316C82 /* SignInViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignInViewController.storyboard; sourceTree = "<group>"; };
+		02A40FA029FD28E7009BCC62 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
+		02A40FA129FD28E7009BCC62 /* ProfileCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileCell.xib; sourceTree = "<group>"; };
 		02A972B0299D285E0021229C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		02A972B2299D286A0021229C /* HomeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeViewController.storyboard; sourceTree = "<group>"; };
 		02A972B5299D2B7D0021229C /* MainTabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbarViewController.swift; sourceTree = "<group>"; };
@@ -701,6 +705,7 @@
 		021696F329F6D73D00054091 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				02A40F9F29FD28B1009BCC62 /* ProfileCell */,
 				021696F429F6D76200054091 /* ProfileViewController.swift */,
 				021696F629F6D76E00054091 /* ProfileViewController.storyboard */,
 			);
@@ -849,6 +854,15 @@
 				029432D7299E7DD000DA0C94 /* AuthCodeTableViewCell.xib */,
 			);
 			path = "Home Cell";
+			sourceTree = "<group>";
+		};
+		02A40F9F29FD28B1009BCC62 /* ProfileCell */ = {
+			isa = PBXGroup;
+			children = (
+				02A40FA029FD28E7009BCC62 /* ProfileCell.swift */,
+				02A40FA129FD28E7009BCC62 /* ProfileCell.xib */,
+			);
+			path = ProfileCell;
 			sourceTree = "<group>";
 		};
 		02A972AF299D282A0021229C /* Home */ = {
@@ -1093,6 +1107,7 @@
 				0293DDC7299543290098FC0D /* Nunito-Regular.ttf in Resources */,
 				0233BC5F29BB2EBD009996EE /* Images.xcassets in Resources */,
 				02E85C6329B48F0700D3FD35 /* QRScanViewController.storyboard in Resources */,
+				02A40FA329FD28E7009BCC62 /* ProfileCell.xib in Resources */,
 				024AF64029BE20FE009F75A6 /* IdentityCell.xib in Resources */,
 				0207122E29E5B04A00407DBD /* InformationViewController.storyboard in Resources */,
 				023E133829E7235D00C81553 /* ApolloAPI.graphql in Resources */,
@@ -1210,6 +1225,7 @@
 				021696F529F6D76200054091 /* ProfileViewController.swift in Sources */,
 				0201FC91289CBC200030CE24 /* UITableView+Extension.swift in Sources */,
 				0201FC5B289CBC010030CE24 /* BaseView.swift in Sources */,
+				02A40FA229FD28E7009BCC62 /* ProfileCell.swift in Sources */,
 				0200D62829DB3CB90034B161 /* SettingKeyViewController.swift in Sources */,
 				02D7833829C21ECE00F48775 /* SettingViewController.swift in Sources */,
 				02E9AD6E29FA747700048B48 /* ChangePasswordViewModel.swift in Sources */,

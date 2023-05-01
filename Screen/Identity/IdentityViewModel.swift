@@ -12,34 +12,40 @@ import RxCocoa
 
 class IdentityViewModel: BaseViewModel, BaseViewModelProtocol {
 
+    var credentialData: [MySchema.CredentialsQuery.Data.Credential] = []
+
     struct Input {
         let getData: Observable<Void>
     }
 
     struct Output {
-
+        let updateData: Driver<Bool>
     }
 
     func transfrom(from input: Input) -> Output {
+        let updateData = PublishSubject<Bool>()
         input.getData.subscribe(onNext: {_ in
-            ApolloNetwork.shared.apollo.fetch(query: MySchema.CredentialsQuery()) {result in
+            ApolloNetwork.shared.apollo.fetch(query: MySchema.CredentialsQuery()) {[weak self] result in
                 switch result {
                 case .success(let queryResult):
                     if let error = queryResult.errors {
                         let message = error.map{ $0.localizedDescription }
+                        updateData.onNext(false)
                         print("Error: \(message.first)")
                         return
                     }
                     if let data = queryResult.data?.credentials{
-                        print("Success: \(data)")
+                        self?.credentialData = data
+                        updateData.onNext(true)
                     }
                 case .failure(let error):
+                    updateData.onNext(false)
                     print("Fail Query: \(error)")
                 }
             }
         }).disposed(by: disposeBag)
         
-        return Output()
+        return Output(updateData: updateData.asDriver(onErrorJustReturn: false))
     }
 
 

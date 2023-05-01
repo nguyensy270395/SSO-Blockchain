@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nunito-Bold.ttf">
+            <string>Nunito-Bold</string>
+        </array>
+        <array key="Nunito-Regular.ttf">
+            <string>Nunito-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="77" id="KGk-i7-Jjw" customClass="ProfileCell" customModule="SSO_Blockchain" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="77"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="77"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oec-h8-bev">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="61"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Yig-G5-0CX">
+                                <rect key="frame" x="8" y="0.0" width="304" height="56"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Tên tài khoản" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SLH-X2-hBX">
+                                        <rect key="frame" x="0.0" y="0.0" width="304" height="31.333333333333332"/>
+                                        <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="15"/>
+                                        <color key="textColor" name="colorFCFCFC"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nguyễn Thanh Sỹ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8BK-fH-W3W">
+                                        <rect key="frame" x="0.0" y="31.333333333333329" width="304" height="24.666666666666671"/>
+                                        <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="18"/>
+                                        <color key="textColor" name="colorFCFCFC"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ktJ-nk-Z2Z">
+                                <rect key="frame" x="0.0" y="60" width="320" height="1"/>
+                                <color key="backgroundColor" name="color9A9BA2"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="zcF-Eo-IhN"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ktJ-nk-Z2Z" secondAttribute="trailing" id="1H6-Kq-hYZ"/>
+                            <constraint firstItem="Yig-G5-0CX" firstAttribute="top" secondItem="Oec-h8-bev" secondAttribute="top" id="HfB-av-e5y"/>
+                            <constraint firstItem="ktJ-nk-Z2Z" firstAttribute="top" secondItem="Yig-G5-0CX" secondAttribute="bottom" constant="4" id="Ifj-CP-CcZ"/>
+                            <constraint firstAttribute="bottom" secondItem="ktJ-nk-Z2Z" secondAttribute="bottom" id="nQL-i0-FQ5"/>
+                            <constraint firstItem="Yig-G5-0CX" firstAttribute="leading" secondItem="Oec-h8-bev" secondAttribute="leading" constant="8" id="uAJ-Cq-0hT"/>
+                            <constraint firstItem="ktJ-nk-Z2Z" firstAttribute="leading" secondItem="Oec-h8-bev" secondAttribute="leading" id="uS8-QV-qbS"/>
+                            <constraint firstAttribute="trailing" secondItem="Yig-G5-0CX" secondAttribute="trailing" constant="8" id="xUj-wf-VUl"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" name="color283442"/>
+                <constraints>
+                    <constraint firstItem="Oec-h8-bev" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Vj6-fq-f25"/>
+                    <constraint firstItem="Oec-h8-bev" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ekg-1H-BfO"/>
+                    <constraint firstAttribute="bottom" secondItem="Oec-h8-bev" secondAttribute="bottom" constant="16" id="fJ8-k4-SsQ"/>
+                    <constraint firstAttribute="trailing" secondItem="Oec-h8-bev" secondAttribute="trailing" id="oze-nE-RxM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="contentLabel" destination="8BK-fH-W3W" id="LKR-M1-EOE"/>
+                <outlet property="titleLabel" destination="SLH-X2-hBX" id="YmE-zw-iIE"/>
+            </connections>
+            <point key="canvasLocation" x="42.748091603053432" y="32.04225352112676"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="color283442">
+            <color red="0.15700000524520874" green="0.20399999618530273" blue="0.25900000333786011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="color9A9BA2">
+            <color red="0.60399997234344482" green="0.60799998044967651" blue="0.63499999046325684" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="colorFCFCFC">
+            <color red="0.98799997568130493" green="0.98799997568130493" blue="0.98799997568130493" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
