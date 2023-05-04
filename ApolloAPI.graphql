@@ -32,3 +32,37 @@ query Credentials {
     schema_id
   }
 }
+
+query RetrieveMessagePayload($payloadId: String!) {
+  retrieveMessagePayload(payloadId: $payloadId) {
+    id
+    payload
+  }
+}
+
+query ParseDeeplink($deeplink: String!) {
+  parseDeeplink(deeplink: $deeplink) {
+    ... on DeeplinkProofPayloadObject {
+      id
+      type
+    }
+    ... on DeeplinkCredPayloadObject {
+      credentialExchange {
+        attributes {
+          name
+          value
+        }
+        id
+        indyFilter
+        issuerConnectionId
+        issuerWalletId
+      }
+      id
+      type
+    }
+  }
+}
+
+mutation SendPresentation($data: PresentationInput!) {
+  sendPresentation(data: $data)
+}

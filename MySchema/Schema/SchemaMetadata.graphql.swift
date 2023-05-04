@@ -36,6 +36,11 @@ public extension MySchema {
       case "Wallet": return MySchema.Objects.Wallet
       case "Query": return MySchema.Objects.Query
       case "IndyCredentialObject": return MySchema.Objects.IndyCredentialObject
+      case "MessagePayload": return MySchema.Objects.MessagePayload
+      case "DeeplinkCredPayloadObject": return MySchema.Objects.DeeplinkCredPayloadObject
+      case "DeeplinkProofPayloadObject": return MySchema.Objects.DeeplinkProofPayloadObject
+      case "CredentialExchangeObject": return MySchema.Objects.CredentialExchangeObject
+      case "CredentialExchangeAttributeObject": return MySchema.Objects.CredentialExchangeAttributeObject
       default: return nil
       }
     }
