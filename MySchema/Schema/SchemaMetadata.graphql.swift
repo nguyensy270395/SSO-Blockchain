@@ -41,6 +41,9 @@ public extension MySchema {
       case "DeeplinkProofPayloadObject": return MySchema.Objects.DeeplinkProofPayloadObject
       case "CredentialExchangeObject": return MySchema.Objects.CredentialExchangeObject
       case "CredentialExchangeAttributeObject": return MySchema.Objects.CredentialExchangeAttributeObject
+      case "Subscription": return MySchema.Objects.Subscription
+      case "ProofExchangeReqReceivedEventObject": return MySchema.Objects.ProofExchangeReqReceivedEventObject
+      case "ProofCredAttributeObject": return MySchema.Objects.ProofCredAttributeObject
       default: return nil
       }
     }

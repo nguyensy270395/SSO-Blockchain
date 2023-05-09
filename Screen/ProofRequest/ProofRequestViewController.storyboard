@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nunito-Bold.ttf">
+            <string>Nunito-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Proof Request View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="ProofRequestViewController" id="Y6W-OH-hqX" customClass="ProofRequestViewController" customModule="SSO_Blockchain" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X7A-eh-59L">
+                                <rect key="frame" x="0.0" y="47" width="375" height="731"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="6AZ-x2-pdm">
+                                        <rect key="frame" x="16" y="0.0" width="343" height="731"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="6AZ-x2-pdm" firstAttribute="leading" secondItem="X7A-eh-59L" secondAttribute="leading" constant="16" id="2rW-kl-jyL"/>
+                                    <constraint firstAttribute="bottom" secondItem="6AZ-x2-pdm" secondAttribute="bottom" id="5p2-9u-5HE"/>
+                                    <constraint firstItem="6AZ-x2-pdm" firstAttribute="top" secondItem="X7A-eh-59L" secondAttribute="top" id="VUY-aH-YcY"/>
+                                    <constraint firstAttribute="trailing" secondItem="6AZ-x2-pdm" secondAttribute="trailing" constant="16" id="VVr-o1-DYM"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YJv-xe-0el">
+                                <rect key="frame" x="0.0" y="624" width="375" height="188"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="4e5-LK-aCZ">
+                                        <rect key="frame" x="16" y="16" width="343" height="122"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yrp-Xq-xv8">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="56"/>
+                                                <color key="backgroundColor" name="color283442"/>
+                                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="21"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Share Attributes">
+                                                    <color key="titleColor" name="colorFCFCFC"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nvo-vW-miw">
+                                                <rect key="frame" x="0.0" y="66" width="343" height="56"/>
+                                                <color key="backgroundColor" name="colorFCFCFC"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="56" id="kJR-zd-Pr7"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="21"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Cancel">
+                                                    <color key="titleColor" name="color283442"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="color283442"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.15700000524520874" green="0.20399999618530273" blue="0.25900000333786011" alpha="0.23991990247309603" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="4e5-LK-aCZ" firstAttribute="top" secondItem="YJv-xe-0el" secondAttribute="top" constant="16" id="8pr-Up-c6W"/>
+                                    <constraint firstAttribute="trailing" secondItem="4e5-LK-aCZ" secondAttribute="trailing" constant="16" id="OQk-V9-iCC"/>
+                                    <constraint firstAttribute="bottom" secondItem="4e5-LK-aCZ" secondAttribute="bottom" constant="50" id="UWd-ZY-kuZ"/>
+                                    <constraint firstItem="4e5-LK-aCZ" firstAttribute="leading" secondItem="YJv-xe-0el" secondAttribute="leading" constant="16" id="vue-Sz-Anj"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" name="colorFCFCFC"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="YJv-xe-0el" secondAttribute="trailing" id="6yc-wf-Z1z"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="X7A-eh-59L" secondAttribute="trailing" id="7I8-CO-cSE"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="X7A-eh-59L" secondAttribute="bottom" id="9zN-gw-qBu"/>
+                            <constraint firstAttribute="bottom" secondItem="YJv-xe-0el" secondAttribute="bottom" id="Foh-cp-dwf"/>
+                            <constraint firstItem="X7A-eh-59L" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Sy1-d4-p3l"/>
+                            <constraint firstItem="YJv-xe-0el" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="nWa-8R-bfw"/>
+                            <constraint firstItem="X7A-eh-59L" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="qfL-AI-KjB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cancelButton" destination="nvo-vW-miw" id="Uw0-pc-Lmu"/>
+                        <outlet property="proofTableView" destination="6AZ-x2-pdm" id="FAt-Ag-i8U"/>
+                        <outlet property="shareButton" destination="yrp-Xq-xv8" id="ALJ-8w-v3J"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="-27"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="color283442">
+            <color red="0.15700000524520874" green="0.20399999618530273" blue="0.25900000333786011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="colorFCFCFC">
+            <color red="0.98799997568130493" green="0.98799997568130493" blue="0.98799997568130493" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

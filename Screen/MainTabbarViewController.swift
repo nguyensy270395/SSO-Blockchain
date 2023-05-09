@@ -114,7 +114,7 @@ enum TabbarItem: Int, CaseIterable {
             return BaseNavigationViewController(rootViewController: vc)
         case .qr:
             let vc = QRScanViewController.instantiate { coder in
-                return QRScanViewController(coder: coder)
+                return QRScanViewController(coder: coder, viewModel: .init())
             }
             return BaseNavigationViewController(rootViewController: vc)
         case .identity:

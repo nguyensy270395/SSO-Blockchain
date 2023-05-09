@@ -66,7 +66,7 @@
                         </constraints>
                     </view>
                 </subviews>
-                <color key="backgroundColor" name="color283442"/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstItem="Oec-h8-bev" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Vj6-fq-f25"/>
                     <constraint firstItem="Oec-h8-bev" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ekg-1H-BfO"/>
@@ -75,6 +75,7 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
                 <outlet property="contentLabel" destination="8BK-fH-W3W" id="LKR-M1-EOE"/>
                 <outlet property="titleLabel" destination="SLH-X2-hBX" id="YmE-zw-iIE"/>
@@ -83,9 +84,6 @@
         </tableViewCell>
     </objects>
     <resources>
-        <namedColor name="color283442">
-            <color red="0.15700000524520874" green="0.20399999618530273" blue="0.25900000333786011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <namedColor name="color9A9BA2">
             <color red="0.60399997234344482" green="0.60799998044967651" blue="0.63499999046325684" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

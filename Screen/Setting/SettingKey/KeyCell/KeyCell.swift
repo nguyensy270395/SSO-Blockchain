@@ -38,4 +38,5 @@ class KeyCell: UITableViewCell {
             uncheck()
         }
     }
+
 }

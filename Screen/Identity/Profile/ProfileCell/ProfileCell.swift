@@ -14,6 +14,19 @@ class ProfileCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
+        titleLabel.textColor = R.color.colorFCFCFC()
+        contentLabel.textColor = R.color.colorFCFCFC()
+    }
+
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        titleLabel.textColor = R.color.colorFCFCFC()
+        contentLabel.textColor = R.color.colorFCFCFC()
+    }
+
+    func setupProofCell() {
+        titleLabel.textColor = R.color.color283442()
+        contentLabel.textColor = R.color.color283442()
     }
     
     func setupCell(data: (String, AnyHashable)) {

@@ -49,11 +49,11 @@ public extension MySchema {
         public static var __selections: [Apollo.Selection] { [
           .field("__typename", String.self),
           .field("id", MySchema.ID.self),
-          .field("payload", MySchema.JSON.self),
+          .field("payload", MySchema.CustomJSON.self),
         ] }
 
         public var id: MySchema.ID { __data["id"] }
-        public var payload: MySchema.JSON { __data["payload"] }
+        public var payload: MySchema.CustomJSON { __data["payload"] }
       }
     }
   }

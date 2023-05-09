@@ -66,3 +66,23 @@ query ParseDeeplink($deeplink: String!) {
 mutation SendPresentation($data: PresentationInput!) {
   sendPresentation(data: $data)
 }
+
+mutation HandleProofDeepLink($url: String!) {
+  handleProofDeepLink(url: $url)
+}
+
+subscription ProofExchangeReqReceived {
+  proofExchangeReqReceived {
+    attributes {
+      credentials {
+        attrs
+        cred_def_id
+        referent
+        schema_id
+      }
+      name
+      ruleId
+    }
+    proofExchangeId
+  }
+}

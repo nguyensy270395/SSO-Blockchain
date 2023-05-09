@@ -122,14 +122,14 @@ public extension MySchema {
               .field("__typename", String.self),
               .field("attributes", [Attribute].self),
               .field("id", MySchema.ID.self),
-              .field("indyFilter", MySchema.JSON.self),
+              .field("indyFilter", MySchema.CustomJSON.self),
               .field("issuerConnectionId", String?.self),
               .field("issuerWalletId", String.self),
             ] }
 
             public var attributes: [Attribute] { __data["attributes"] }
             public var id: MySchema.ID { __data["id"] }
-            public var indyFilter: MySchema.JSON { __data["indyFilter"] }
+            public var indyFilter: MySchema.CustomJSON { __data["indyFilter"] }
             public var issuerConnectionId: String? { __data["issuerConnectionId"] }
             public var issuerWalletId: String { __data["issuerWalletId"] }
 
