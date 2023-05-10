@@ -39,11 +39,13 @@ class SelectAtributeViewController: BaseViewController {
     }
 
     func setupRx() {
+        doneButton.rx.tap.subscribe(onNext: {[weak self] _ in
+            self?.navigationController?.popViewController(animated: true)
+        }).disposed(by: disposeBag)
         cancelButton.rx.tap.subscribe(onNext: {[weak self] _ in
-            self?.dismiss(animated: true)
+            self?.navigationController?.popViewController(animated: true)
         }).disposed(by: disposeBag)
     }
-
 }
 
 extension SelectAtributeViewController: UITableViewDataSource, UITableViewDelegate {

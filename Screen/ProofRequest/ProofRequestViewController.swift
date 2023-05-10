@@ -64,7 +64,6 @@ extension ProofRequestViewController: UITableViewDelegate, UITableViewDataSource
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-
         if indexPath.row == 0 {
             let cell = tableView.dequeueReusableCell(ProofRequestHeader.self, for: indexPath)
             return cell
@@ -75,6 +74,15 @@ extension ProofRequestViewController: UITableViewDelegate, UITableViewDataSource
             let cell = tableView.dequeueReusableCell(ProfileCell.self, for: indexPath)
             cell.setupProofCell()
             return cell
+        }
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row == (viewModel.numberCell - 1) {
+            let vc = SelectAtributeViewController.instantiate { coder in
+                return SelectAtributeViewController(coder: coder)
+            }
+            self.navigationController?.pushViewController(vc, animated: true)
         }
     }
 }
