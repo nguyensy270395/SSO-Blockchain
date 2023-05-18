@@ -86,3 +86,10 @@ subscription ProofExchangeReqReceived {
     proofExchangeId
   }
 }
+
+mutation AddDevice($token: String!) {
+  addDevice(token: $token) {
+    token
+    walletId
+  }
+}

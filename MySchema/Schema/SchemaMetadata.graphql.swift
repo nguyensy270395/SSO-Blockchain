@@ -44,6 +44,7 @@ public extension MySchema {
       case "Subscription": return MySchema.Objects.Subscription
       case "ProofExchangeReqReceivedEventObject": return MySchema.Objects.ProofExchangeReqReceivedEventObject
       case "ProofCredAttributeObject": return MySchema.Objects.ProofCredAttributeObject
+      case "Device": return MySchema.Objects.Device
       default: return nil
       }
     }

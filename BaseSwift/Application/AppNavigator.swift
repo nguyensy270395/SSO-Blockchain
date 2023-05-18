@@ -27,7 +27,7 @@ final class AppNavigator: AppNavigatorType {
     
     func start() {
         if let timeLogin = UserDefaults.standard.object(forKey: "timeLogin") as? Date {
-            if timeLogin.add(minutes: 0) > Date() {
+            if timeLogin.add(minutes: 30) > Date() {
                 switchToMain()
             } else {
                 let vc = SignInViewController.instantiate { coder in
@@ -48,7 +48,7 @@ final class AppNavigator: AppNavigatorType {
 
     func loadFirstView() {
         let vc = ApplicationViewController.instantiate { coder in
-            return ApplicationViewController(coder: coder)
+            return ApplicationViewController(coder: coder, viewModel: .init())
         }
         let nav = UINavigationController(rootViewController: vc)
         switchTo(viewController: nav)

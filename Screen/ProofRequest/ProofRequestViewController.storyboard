@@ -57,6 +57,9 @@
                                                         <real key="value" value="8"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="shareAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="MN6-k8-h7A"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nvo-vW-miw">
                                                 <rect key="frame" x="0.0" y="66" width="343" height="56"/>

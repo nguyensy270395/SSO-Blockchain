@@ -17,6 +17,22 @@ class ProofRequestViewController: BaseViewController, BaseViewControllerProtocol
     @IBOutlet weak var cancelButton: UIButton!
     @IBOutlet weak var shareButton: UIButton!
 
+    @IBAction func shareAction(_ sender: Any) {
+        viewModel.checkLogin().subscribe(onNext: {[weak self] bio in
+            guard let self = self else { return }
+            if bio {
+                self.viewModel.callAPI.onNext(())
+            } else {
+                let checkPass = self.showCheckPassword()
+                checkPass.subscribe(onNext: {[weak self]check in
+                    if check {
+                        self?.viewModel.callAPI.onNext(())
+                    }
+                }).disposed(by: self.disposeBag)
+            }
+        }).disposed(by: self.disposeBag)
+    }
+    
     required init?(coder: NSCoder, viewModel: ProofRequestViewModel) {
         self.viewModel = viewModel
         super.init(coder: coder)
@@ -44,11 +60,18 @@ class ProofRequestViewController: BaseViewController, BaseViewControllerProtocol
     }
 
     func setupViews() {
-
     }
 
     func bindingViewModels() {
-
+        let input = ProofRequestViewModel.Input(actionShare: viewModel.callAPI.asObserver())
+        let output = viewModel.transfrom(from: input)
+        output.checkDone.drive(onNext: {[weak self]_ in
+            let alert = UIAlertController(title: "Xác thực danh tính thành công", message: nil , preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: {[weak self]_ in
+                self?.dismiss(animated: true)
+            }))
+            self?.present(alert, animated: true)
+        }).disposed(by: disposeBag)
     }
 
     func setupRx() {
@@ -73,6 +96,7 @@ extension ProofRequestViewController: UITableViewDelegate, UITableViewDataSource
         } else {
             let cell = tableView.dequeueReusableCell(ProfileCell.self, for: indexPath)
             cell.setupProofCell()
+            cell.setupCell(data: viewModel.dataAttribute[indexPath.row - 1])
             return cell
         }
     }

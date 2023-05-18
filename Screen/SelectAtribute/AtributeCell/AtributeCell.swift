@@ -34,6 +34,10 @@ class AtributeCell: UITableViewCell {
         self.layoutIfNeeded()
     }
 
+    func setupCell(title: String) {
+        titleCell.text = title
+    }
+
     override func setSelected(_ selected: Bool, animated: Bool) {
         if selected {
             subCellView.image = R.image.iconActive()

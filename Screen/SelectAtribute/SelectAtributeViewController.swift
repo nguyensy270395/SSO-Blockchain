@@ -17,7 +17,7 @@ class SelectAtributeViewController: BaseViewController {
         super.init(coder: coder)
     }
 
-    let arr: [SectionCell] = [.init(), .init(), .init(), .init()]
+    let arr: [SectionCell] = [.init(title: "Student"), .init(title: "ID")]
     var selectSection: Int? = nil
 
     override func viewDidLoad() {
@@ -67,14 +67,18 @@ extension SelectAtributeViewController: UITableViewDataSource, UITableViewDelega
                 if (selectSection < indexPath.row) && (indexPath.row <= (selectSection + arr[selectSection - 1].array.count)) {
                     let cell = tableView.dequeueReusableCell(AtributeCell.self, for: indexPath)
                     cell.setupProfileCell()
+                    cell.setupCell(title: arr[selectSection - 1].array[indexPath.row - selectSection - 1])
                     return cell
                 } else {
                     let cell = tableView.dequeueReusableCell(AtributeCell.self, for: indexPath)
+                    let index = indexPath.row - (selectSection + arr[selectSection - 1].array.count)
+                    cell.setupCell(title: arr[index > 0 ? index : indexPath.row - 1].title)
                     return cell
                 }
 
             } else {
                 let cell = tableView.dequeueReusableCell(AtributeCell.self, for: indexPath)
+                cell.setupCell(title: arr[indexPath.row - 1].title)
                 return cell
             }
         }
@@ -105,6 +109,6 @@ struct SectionCell {
     let array: [String]
     init(title: String = "Section", array: [String] = ["1","2","3"]) {
         self.title = title
-        self.array = array
+        self.array = array.map{"\(title) \($0)"}
     }
 }

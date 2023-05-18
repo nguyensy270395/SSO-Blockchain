@@ -12,6 +12,7 @@ import RxCocoa
 
 class AppViewModel {
     public var updateTime = PublishSubject<Void>()
+    public var handleNoti = PublishSubject<String>()
     private var clockTimer: Timer?
 
     init() {

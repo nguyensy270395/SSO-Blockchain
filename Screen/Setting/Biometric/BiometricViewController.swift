@@ -32,7 +32,7 @@ class BiometricViewController: BaseViewController {
         biometricSwitch.rx.value.skip(1).subscribe(onNext: {[weak self] value in
             guard let self = self else { return }
             if value {
-                self.showCheckPassword()?.subscribe(onNext: {[weak self]check in
+                self.showCheckPassword().subscribe(onNext: {[weak self]check in
                     self?.biometricSwitch.isOn = check
                 }).disposed(by: self.disposeBag)
             }

@@ -67,13 +67,13 @@ class BaseViewController: UIViewController, UIGestureRecognizerDelegate {
         return true
     }
 
-    func showCheckPassword() -> Observable<Bool>? {
+    func showCheckPassword() -> Observable<Bool> {
         let vc = CheckPasswordViewController.instantiate { coder in
             return CheckPasswordViewController(coder: coder, viewModel: .init())
         }
         vc.modalPresentationStyle = .fullScreen
         navigationController?.present(vc, animated: true)
-        return vc.passWordCheck
+        return vc.passWordCheck.asObserver()
     }
     
     deinit {

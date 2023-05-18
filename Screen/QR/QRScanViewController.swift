@@ -76,7 +76,7 @@ class QRScanViewController: BaseViewController, BaseViewControllerProtocol {
             guard let self = self else { return }
             if check {
                 let vc = ProofRequestViewController.instantiate { coder in
-                    return ProofRequestViewController(coder: coder, viewModel: .init())
+                    return ProofRequestViewController(coder: coder, viewModel: .init(data: self.viewModel.data!))
                 }
                 let vc2 = SelectAtributeViewController.instantiate { coder in
                     return SelectAtributeViewController(coder: coder)
